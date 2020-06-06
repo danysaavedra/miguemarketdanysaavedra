@@ -1,0 +1,1342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-moz-selection {
+  color: red;
+  text-shadow: none;
+  background: #64a19d;
+}
+::selection {
+  color: red;
+  text-shadow: none;
+  background: #64a19d;
+}
+
+.container-fluid {
+  padding: 0!important;
+  position: relative;
+}
+
+
+.cantidad{
+width:10%;
+
+}
+p {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
+  color: #3B7590;
+  font-size: 16px;
+}
+a{
+  color: #597aa6;
+    text-decoration: none;
+    background-color: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fredoka One', cursive;
+  color: #597aa6;
+  font-weight: 400;
+}
+.btn-primary {
+  background-color: #64a19d;
+  border: none;
+  text-transform: uppercase;
+  font-family: 'Quicksand', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+.btn-link {
+  color: #64a19d;
+}
+
+/* Estilos del Nav */
+
+.logoMigue {
+    background-image: url(../img/logoHoriz2.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: 30px;
+    left: 24px;
+    width: 35%;
+    height: auto;
+    margin: 15px 15px 14px 67px;
+    padding: 65px 0px 68px 20px;
+}
+nav{
+  background-color: #e2efee;
+  height: 174px;
+  z-index: 1000;
+
+}
+.navbar {
+  padding: 0;
+}
+.navbar-expand-lg .navbar-nav {
+  background-color: #e2efee;
+  width: 100%;
+  padding: 1% 1% 1% 1%;
+  font-size: 10px;
+  font-weight: bold;
+  justify-content: flex-end;
+  text-align: center;
+}
+.navbar-dark .navbar-toggler {
+  position: absolute;
+  right: 15px;
+  border: 2px solid rgba(255, 255, 255);
+}
+.navbar-dark i.fa-bars {
+  font-size: 1em;
+  margin-top: 6px;
+}
+.navbar-collapse {
+  padding-top: 0px;
+}
+.navbar-expand-lg .navbar-nav {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+ul.nav {
+    list-style: none;
+}
+ul.nav ul {
+    list-style: none;
+}
+
+ion-icon {
+color: #597aa6;
+font-size: 4em;
+}
+
+nav ul {
+background-color: #e2efee;
+}
+
+nav ul li a{
+  font-family: 'Krona One', sans-serif;
+  font-size: 0.8em;
+  color: #597aa6;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+nav ul li a :hover{
+  background-color:#597aa6;
+  color: white;
+}
+nav i{
+  font-size: 1.5em;
+  color: #597aa6;
+  margin-bottom: 6px;
+}
+
+nav ul li{
+    padding-left: 0px;
+}
+
+nav ul li a p {
+  display: none;
+}
+
+img.foto{
+  border-radius: 50%;
+  width: 50px;
+  height: 40px;
+}
+
+
+.nav > li {
+color: #e2efee;
+float:left;
+}
+
+.nav li a {
+  text-decoration: none;
+  list-style-type: none;
+color: #597aa6;
+display:block;
+padding:10px 12px;
+}
+
+.nav li a:hover {
+background:white;
+}
+.nav li ul {
+display:none;
+position:absolute;
+min-width:140px;
+}
+.nav li:hover > ul {
+  list-style-type: none;
+display:block;
+}
+.nav li ul li {
+position:relative;
+}
+
+.nav li ul li ul {
+list-style-type: none;
+margin-left: 210px;
+right:-140px;
+top:0;
+}
+.nav li .flecha{
+font-size: 9px;
+padding-left: 6px;
+display: none;
+}
+.nav li a:not(:last-child) .flecha {
+display: inline;
+}
+
+
+
+
+
+
+
+.enlace_desactivado {
+pointer-events: none!important;
+cursor: default!important;
+}
+
+
+.dropdown-menu{
+  color: #e2efee;
+  min-width: 5rem;
+  padding: 0.5rem;
+}
+.dropdown-item{
+  color: #597aa6;
+
+}
+.dropdown-menu.show{
+  display: inline;
+}
+.pagination{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  border-radius: .25rem;
+  padding-right: 15px;
+}
+.page-item.active .page-link {
+  background-color: #fff;
+color: #597aa6;
+  border: 2px solid #000;
+  font-weight: 700;
+}
+.page-link {
+color: #597aa6;
+  font-family: 'Quicksand', sans serif;
+}
+
+footer {
+    background-color: #e2efee;
+    padding-top: 5px;
+    text-align: center;
+    bottom: 0;
+}
+footer .container {
+    margin: 3px auto 2px auto;
+}
+footer .footer-copyright {
+    background-color: #597aa6;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+footer .footer-copyright p {
+    font-size: 0.8em;
+    margin: 10px;
+    color: #ccc;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+footer .logo-footer {
+  width: 274px;
+  height: auto;
+  margin: 0 0 10px 0px;
+}
+
+footer h5 {
+    font-size: 1.3em;
+
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+footer a {
+  color: #597aa6;
+  text-decoration: none;
+  list-style-type: none;
+}
+footer a:hover, footer a:active {
+    text-decoration: none;
+    color: white;
+}
+footer h1 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+footer .iconos-redes {
+    display: inline;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+footer .iconos-redes a {
+  font-size: 12px;
+    color: #e2efee;
+    padding: 5px;
+    transition: 0.2s;
+}
+footer .iconos-redes a ion-icon
+{
+  font-size: 2.5em;
+}
+
+footer .iconos-redes a:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #64a19d;
+}
+
+footer .btn {
+    color: white;
+    background-color: #597aa6;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+/* @media screen and (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+    footer .logo-footer {
+      width: 350px;
+      height: auto;
+      margin: 0 0 10px 0px;
+    } */
+
+
+@media (min-width:319px)
+{
+
+    .logoMigue {
+      background-image: url(../img/logoHoriz2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0px;
+      left: 33px;
+      width: 77%;
+      height: auto;
+      margin: 15px 17px 14px 34px;
+      padding: 1px 0px 68px 20px;
+  }
+
+
+    .logo-footer {
+        width: 258px;
+        height: auto;
+        margin: 0 0 10px 0px;
+    }
+    .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+    nav {
+    background-color: #e2efee;
+    height: 89px;
+    z-index: 1000;
+  }
+    .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:170px;
+    }
+    .nav li ul li ul {
+      margin-right: -14px;
+      margin-left: 205px;
+      top:1px;
+
+    }
+    .navbar-expand-lg .navbar-nav {
+      background-color: #e2efee;
+      width: 100%;
+      padding: 5% 2% 2% 2%;
+      font-size: 10px;
+      font-weight: bold;
+      justify-content: flex-end;
+      text-align: center;
+  }
+    nav h1 {
+      padding: 12px 0px 0 15px;
+    }
+    .navbar-toggler {
+      padding: 1.25rem .75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+  }
+  .w-100 {
+      height: 100%;
+      width: 100%!important;
+  }
+
+}
+
+@media (min-width:374px)
+{
+  .logoMigue {
+    background-image: url(../img/logoHoriz2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: 33px;
+    width: 77%;
+    height: auto;
+    margin: 15px 17px 14px 34px;
+    padding: 1px 0px 68px 20px;
+}
+
+
+    .logo-footer {
+        width: 258px;
+        height: auto;
+        margin: 0 0 10px 0px;
+    }
+
+    /* .navbar-collapse {
+        padding-top: 0px;
+        margin-left:340px;
+        margin-right:  00px;
+        border-radius: 20px;
+        border-style: solid 5px;
+    } */
+    .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+    nav {
+    background-color: #e2efee;
+    height: 89px;
+    z-index: 1000;
+  }
+    .nav li ul {
+    display:none;
+    position:absolute;
+    min-width:170px;
+    }
+    .nav li ul li ul {
+      margin-right: -14px;
+      margin-left: 205px;
+      top:1px;
+
+    }
+    .navbar-expand-lg .navbar-nav {
+      background-color: #e2efee;
+      width: 100%;
+      padding: 5% 2% 2% 2%;
+      font-size: 10px;
+      font-weight: bold;
+      justify-content: flex-end;
+      text-align: center;
+  }
+    nav h1 {
+      padding: 12px 0px 0 15px;
+    }
+    .navbar-toggler {
+      padding: 1.25rem .75rem;
+      font-size: 1.25rem;
+      line-height: 1;
+      background-color: transparent;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+  }
+  .w-100 {
+      height: 100%;
+      width: 100%!important;
+  }
+}
+
+@media (min-width:424px)
+{
+  .logoMigue {
+    background-image: url(../img/logoHoriz2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: 63px;
+    width: 64%;
+    height: auto;
+    margin: 11px 17px 14px 34px;
+    padding: 1px 0px 68px 20px;
+}
+
+
+
+  .logo-footer {
+      width: 258px;
+      height: auto;
+      margin: 0 0 10px 0px;
+  }
+
+  /* .navbar-collapse {
+      padding-top: 0px;
+      margin-left:340px;
+      margin-right:  00px;
+      border-radius: 20px;
+      border-style: solid 5px;
+  } */
+  .nav li ul {
+  display:none;
+  position:absolute;
+  min-width:170px;
+  }
+  .nav li ul li ul {
+    margin-right: -29px;
+    margin-left: 210px;
+  top:3px;
+
+  }
+  .navbar-expand-lg .navbar-nav {
+    background-color: #e2efee;
+    width: 100%;
+    padding: 5% 2% 2% 2%;
+    font-size: 11px;
+    font-weight: bold;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.w-100 {
+    height: 100%;
+    width: 100%!important;
+}
+  nav h1 {
+    padding: 12px 0px 0 15px;
+  }
+  .navbar-toggler {
+    padding: 1rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+}
+
+@media (min-width:767px)
+{
+  nav {
+    background-color: #e2efee;
+    height: 103px;
+    z-index: 1000;
+}
+
+  footer .iconos-redes ion-icon {
+  color: #597aa6;
+  font-size: 1em;
+  }
+
+  footer .iconos-redes {
+    display: inline;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+footer .logo-footer {
+  width: 306px;
+  height: auto;
+  margin: 9px 0 0px -34px;
+}
+
+  footer .btn {
+    color: white;
+    background-color: #597aa6;
+    border-radius: 20px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+  }
+footer.logo-footer {
+      width: 258px;
+      height: auto;
+      margin: 0 0 10px 0px;
+  }
+
+  nav .logoMigue{
+    background-image: url(../img/logoHoriz2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    left: 11px;
+    width: 30%;
+    height: auto;
+    margin: 16px 15px 14px 12px;
+    padding: 5px 0px 68px 20px;
+
+
+  }
+
+  nav ul li a{
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+
+  .dropdown-menu{
+    background-color: #e2efee;
+    min-width: 5rem;
+    padding: 0.5rem;
+  }
+  .dropdown-item{
+    color: #597aa6;
+  }
+  .dropdown-menu.show{
+    display: inline;
+  }
+  .navbar-expand-lg .navbar-collapse {
+  display: flex!important;
+  flex-basis: auto;
+  }
+  .navbar-collapse {
+      padding-top: 0px;
+      margin-left:00px;
+      margin-right:  00px;
+  }
+  .navbar-collapse {
+  padding-top: 0!important;
+  padding-right: 15px;
+  }
+  .navbar-expand-lg .navbar-toggler {
+  display: none;
+  }
+  .navbar-expand-lg .navbar-nav {
+    margin-left: 195px;
+  flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-nav {
+    font-size:8px;
+    width: 100%;
+    padding-top: 0%;
+    justify-content: flex-end;
+    text-align: center;
+  }
+  /* .navbar-expand-lg .navbar-nav {
+      width: 100%;
+      padding: 3% 3% 3% 2%;
+      justify-content: center;
+
+      text-align: center;
+
+  } */
+  /* ICONOS DEL NAV BOOT */
+  .navbar-nav .nav-link {
+      padding: 10px 12px;
+      margin-right: 00px;
+      margin-left: 00px;
+  }
+  nav h1 {
+    padding: 0px 0px 0 100px;
+  }
+
+
+  nav ul li a p {
+    display: inline;
+    text-transform: lowercase;
+    font-size: 0.8em;
+  }
+
+
+}
+
+@media (min-width:1024px)
+{
+  footer {
+      background-color: #e2efee;
+
+      padding-top: 5px;
+      text-align: center;
+      bottom: 0;
+  }
+  footer .container {
+      margin: auto 30px;
+  }
+  footer .footer-copyright {
+      background-color: #597aa6;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+  }
+  footer .footer-copyright p {
+      font-size: 0.8em;
+      margin: 10px;
+      color: #ccc;
+  }
+  footer ul {
+      list-style-type: none;
+      padding-left: 0;
+      line-height: 1.7;
+  }
+
+  footer .logo-footer {
+    width: 381px;
+    height: auto;
+    margin: 0px 0 0px -29px;
+  }
+
+  footer h5 {
+      font-size: 1.3em;
+
+      margin-top: 15px;
+      text-transform: uppercase;
+  }
+  footer a {
+    color: #597aa6;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  footer a:hover, footer a:active {
+      text-decoration: none;
+      color: white;
+  }
+  footer h1 a{
+      font-size: 50px;
+      text-align: center;
+      color: #fff;
+  }
+  footer .iconos-redes {
+      display: inline;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 16px;
+  }
+
+  footer .iconos-redes a {
+
+      color: #e2efee;
+      padding: 5px;
+      transition: 0.2s;
+  }
+  footer .iconos-redes a ion-icon
+  {
+    font-size: 2.5em;
+  }
+
+  footer .iconos-redes a:hover {
+      background-color: #fff;
+      text-decoration: none;
+      color: #64a19d;
+  }
+
+  footer .btn {
+      color: white;
+      background-color: #597aa6;
+      border-radius: 20px;
+      border: none;
+      width: 150px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      line-height: 25px;
+  }
+
+nav .logoMigue{
+
+      background-image: url(../img/logoHoriz2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 3px;
+      left: 45px;
+      width: 48%;
+      height: 82px;
+      margin: 15px 15px 14px 6px;
+      padding: 5px 0px 68px 20px;
+}
+
+
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding: 10px 12px;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+      width: 100%;
+      padding: 0% 3% 1% 15%;
+      justify-content: center;
+      text-align: center;
+
+  }
+  .navbar-collapse {
+    padding-top: -10px;
+    margin-left:0px;
+    margin-right:  00px;
+  }
+}
+
+@media (min-width: 1365px){
+
+.nav li ul li ul {
+    margin-right: -29px;
+
+    top: 5px;
+}
+
+  nav .logoMigue {
+    background-image: url(../img/logoHoriz2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 3px;
+    left: 46px;
+    width: 35%;
+    height: auto;
+    margin: 1px 15px 1px 116px;
+    padding: 22px 0px 68px 20px;
+}
+
+  footer {
+      background-color: #e2efee;
+
+      padding-top: 5px;
+      text-align: center;
+      bottom: 0;
+  }
+  footer .container {
+      margin: 5px auto 5px;
+  }
+  footer .footer-copyright {
+      background-color: #597aa6;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+  }
+  footer .footer-copyright p {
+      font-size: 0.8em;
+      margin: 10px;
+      color: #ccc;
+  }
+  footer ul {
+      font-size:1.3em;
+      list-style-type: none;
+      padding-left: 0;
+      line-height: 1.7;
+  }
+
+  footer .logo-footer {
+    width: 481px;
+    height: auto;
+    margin: 5px 0 10px -90px;
+  }
+
+  footer h5 {
+      font-size: 2.1em;
+
+      margin-top: 15px;
+      text-transform: uppercase;
+  }
+  footer a {
+      color: #597aa6;
+      text-decoration: none;
+      list-style-type: none;
+  }
+  footer a:hover, footer a:active {
+      text-decoration: none;
+      color: white;
+  }
+  footer h1 a{
+      font-size: 50px;
+      text-align: center;
+      color: #fff;
+  }
+  footer .iconos-redes {
+      display: inline;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 16px;
+  }
+
+  footer .iconos-redes a {
+
+      color: #e2efee;
+      padding: 5px;
+      transition: 0.2s;
+  }
+  footer .iconos-redes a ion-icon
+  {
+    font-size: 3.2em;
+  }
+
+  footer .iconos-redes a:hover {
+      background-color: #fff;
+      text-decoration: none;
+      color: #64a19d;
+  }
+
+  footer .btn {
+      color: white;
+      background-color: #597aa6;
+      border-radius: 20px;
+      border: none;
+      width: 220px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      line-height: 25px;
+  }
+
+  ion-icon {
+  color: #597aa6;
+  font-size: 3em;
+  }
+
+  nav ul li a {
+      font-size: 12px;
+  }
+
+
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+    padding: 0% 3% 1% 15%;
+    justify-content: center;
+    text-align: center;
+
+}
+.navbar-collapse {
+  padding-top: -10px;
+  margin-left:0px;
+  margin-right:  00px;
+}
+
+}
+@media (min-width: 1399px){
+
+.nav li ul li ul {
+    margin-right: -29px;
+
+    top: 5px;
+}
+
+  nav .logoMigue {
+    background-image: url(../img/logoHoriz2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 3px;
+    left: 46px;
+    width: 35%;
+    height: auto;
+    margin: 1px 15px 1px 116px;
+    padding: 22px 0px 68px 20px;
+}
+
+  footer {
+      background-color: #e2efee;
+
+      padding-top: 5px;
+      text-align: center;
+      bottom: 0;
+  }
+  footer .container {
+      margin: 5px auto 5px;
+  }
+  footer .footer-copyright {
+      background-color: #597aa6;
+      padding-top: 3px;
+      padding-bottom: 3px;
+
+  }
+  footer .footer-copyright p {
+      font-size: 0.8em;
+      margin: 10px;
+      color: #ccc;
+  }
+  footer ul {
+      font-size:1.3em;
+      list-style-type: none;
+      padding-left: 0;
+      line-height: 1.7;
+  }
+
+  footer .logo-footer {
+    width: 481px;
+    height: auto;
+    margin: 5px 0 10px -90px;
+  }
+
+  footer h5 {
+      font-size: 2.1em;
+
+      margin-top: 15px;
+      text-transform: uppercase;
+  }
+  footer a {
+      color: #597aa6;
+      text-decoration: none;
+      list-style-type: none;
+  }
+  footer a:hover, footer a:active {
+      text-decoration: none;
+      color: white;
+  }
+  footer h1 a{
+      font-size: 50px;
+      text-align: center;
+      color: #fff;
+  }
+  footer .iconos-redes {
+      display: inline;
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 16px;
+  }
+
+  footer .iconos-redes a {
+
+      color: #e2efee;
+      padding: 5px;
+      transition: 0.2s;
+  }
+  footer .iconos-redes a ion-icon
+  {
+    font-size: 3.2em;
+  }
+
+  footer .iconos-redes a:hover {
+      background-color: #fff;
+      text-decoration: none;
+      color: #64a19d;
+  }
+
+  footer .btn {
+      color: white;
+      background-color: #597aa6;
+      border-radius: 20px;
+      border: none;
+      width: 220px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      line-height: 25px;
+  }
+
+  ion-icon {
+  color: #597aa6;
+  font-size: 3em;
+  }
+
+  nav ul li a {
+      font-size: 12px;
+  }
+
+
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+    padding: 0% 3% 1% 15%;
+    justify-content: center;
+    text-align: center;
+
+}
+.navbar-collapse {
+  padding-top: -10px;
+  margin-left:0px;
+  margin-right:  00px;
+}
+
+}
+@media (min-width: 2559px){
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+    padding: 0% 3% 1% 15%;
+    justify-content: center;
+    text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Productos */
+h1.titulo-productos {
+  color: black;
+  font-size: 3em;
+  margin: 20px 0 0 15px;
+  font-weight: 300;
+}
+h1.titulo-productos strong {
+  font-weight: 700;
+}
+.card {
+  border: none;
+  text-align: center;
+}
+.card .titulo a {
+  border: 2px solid black;
+  margin: 10px auto;
+  padding: 10px 24px;
+  transition:0.2s background-color;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+.card .titulo a:hover, .card .titulo a:active {
+  background-color:#346397!important;
+  transform:translateY(2px);
+  transform:translateX(2px);
+}
+.card .titulo a h5 {
+  color: #000;
+  font-family: 'Quicksand', sans serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+.card .titulo a h5:hover {
+  color: #fff;
+  font-weight: 700;
+}
+.card .titulo p {
+  color: #6C6C6C;
+}
+.card .card-producto {
+  position: relative;
+}
+.card .card-producto .producto-hover {
+  background: #000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+.card .card-producto .producto-hover:hover {
+  opacity: 0.7;
+}
+.card-producto .producto-hover .producto-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 45%;
+  color: white;
+}
+.card-producto .producto-hover .producto-hover-content button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.card-producto .producto-hover .producto-hover-content i.fas {
+  font-size: 2em;
+  color: #fff;
+  padding: 0 15px;
+}
+.card-producto .producto-hover .producto-hover-content i.fas:hover {
+  opacity: 0.5;
+}
+
+/* Producto Detalle */
+form{
+  text-align: center;
+}
+#titDetalle{
+  font-size: 2rem;
+}
+#detalle-producto {
+  margin: 15px 0 40px 0;
+}
+#detalle-producto ul li {
+  list-style: none;
+  display: inline;
+}
+#detalle-producto ul li a {
+  text-decoration: none;
+  color: black;
+}
+#detalle-producto ul li a:hover {
+  font-weight: 700;
+}
+
+#detalle-producto .tarjeta h1{
+  color: black;
+  font-size: 3em;
+  margin: 10px 0;
+  font-weight: 300;
+}
+#detalle-producto .tarjeta p {
+  color: black;
+  font-family: 'Quicksand', sans serif;
+}
+#detalle-producto .tarjeta p span {
+  color: #64a19d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#detalle-producto .tarjeta p.precio {
+  color: #6C6C6C;
+  font-style: italic;
+}
+#detalle-producto .tarjeta button {
+  color: white;
+  border: 2px solid black;
+  background-color:#346397!important;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 10px 24px;
+  transition:0.2s ;
+
+}
+#detalle-producto .tarjeta button:hover, #detalle-producto .tarjeta button:active {
+background-color:#346397!important;
+  color: #fff;
+  transform:translateY(2px);
+  transform:translateX(2px);
+}
+#detalle-producto .tarjeta a {
+  border: 2px solid black;
+  background-color:#346397!important;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 10px 24px;
+  transition:0.2s background-color;
+}
+#detalle-producto .tarjeta a:hover, #detalle-producto .tarjeta a:active {
+  border: 2px solid black;
+background-color:#346397!important;
+  color: #000;
+  transform:translateY(2px);
+  transform:translateX(2px);
+}
+
+
+/* FAQS */
+.fondo-preguntas {
+  background-image: url("../img/fondo-preguntas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  padding: 50px 0 100px;
+}
+.preguntasF {
+  text-align: center;
+}
+.preguntasF h3{
+  color: #000;
+  font-size: 1.9em;
+  padding: 10px 0;
+}
+.preguntasF .card {
+  margin: 0 auto 10px;
+  max-width: 500px;
+  border: none;
+}
+.preguntasF .card-header {
+  background-color: #000;
+}
+.preguntasF .btn-link {
+  color: #fff;
+}
+.preguntasF .btn-link:hover, .preguntasF .btn-link:active{
+  text-decoration: none;
+}
+.preguntasF .card-body p {
+  color: #000!important;
+}
+
+
+
+.offset-md-4 {
+  margin: 0;
+}
+.text-md-right{
+  text-align: center ! important;
+}
+.row {
+  margin: auto;
+}
+form-check {
+  padding: 1rem;
+}
+div.col-sm-6{
+  margin: 0 auto;
+}
