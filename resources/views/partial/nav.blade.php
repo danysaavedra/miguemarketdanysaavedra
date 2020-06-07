@@ -38,9 +38,9 @@
     <ul class="navbar-nav mr-auto">
       <ul class="nav">
             <li>
-                <a class="enlace_desactivado" href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
+                <a class="" href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
                 <ul>
-                    <li><a class="enlace_desactivado" href="/productos/limp">Perfumería y Limpieza</a>
+                    <li><a class="" href="/productos/limp">Perfumería y Limpieza</a>
                       <ul>
                             <li><a class="" href="/productos/detallesSub/limp/super">Superficies y Pisos</a></li>
                             <li><a class="" href="/productos/detallesSub/limp/repelentes">Repelentes</a></li>
@@ -51,7 +51,7 @@
                           </ul>
                     </li>
                     <li>
-                      <a  class="enlace_desactivado" href="/productos/com">Comestibles</a>
+                      <a  class="" href="/productos/com">Comestibles</a>
                         <ul>
                             <li><a class="" href="/productos/detallesSub/com/fiambresQuesos">Fiambres y Quesos</a></li>
                             <li><a class="" href="/productos/detallesSub/com/aceites">Aceites Y Vinagres</a></li>

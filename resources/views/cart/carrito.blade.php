@@ -22,7 +22,7 @@
 @if(isset($detalles))
   <div class="carrito">
 
-    <h2 class="miCarrito">Mi Carrito</h2>
+    <h2 class="miCarrito">Este es tu Carrito {{Auth::user()->name}}</h2>
         <a href="/listaProductos">Seguir Comprando</a>
               <?php
                    $suma = 0;

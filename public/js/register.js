@@ -40,12 +40,7 @@ window.onload = function () {
             this.classList.remove('is-invalid');
         }
     }
-    var foto = document.querySelector('#foto');
-    foto.onblur = function () {
-        if (regexAvatar.test(this.value)) {
-            this.classList.remove('is-invalid');
-        }
-    }
+
 
 
     var form = document.querySelector('form');
@@ -75,14 +70,8 @@ window.onload = function () {
                 pintarError(elemento, 'Email invalido');
                 event.preventDefault();
             }
-            if (elemento.type != 'file' && validarVacio(elemento)) {
-                event.preventDefault();
-            }
+  
 
-            if (elemento.type == 'file' && !regexAvatar.test(elemento.value)){
-             pintarError(elemento, 'La extension de la imagen tiene que ser .JPG,.JPEG,.PNG.')
-             event.preventDefault();
-         }
             if (elemento.name == 'password') {
                 var confirm = document.querySelector('#password-confirm');
                 if (elemento.value.length < 8) {

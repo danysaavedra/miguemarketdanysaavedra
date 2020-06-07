@@ -9,9 +9,6 @@ Route::get('/subcategoriecreate','SubcategoryController@subcategory');
 Route::post('/subcategoriecreate', 'SubcategoryController@save');
 
 
-
-
-
 Route::get('/productos/agregar', 'ProductoController@createProduct');
 Route::get('/productos/detalles/{id}', 'ProductoController@detalle');
 
@@ -76,21 +73,27 @@ Route::get('/productos/detalles/{id}', 'ProductoController@detalle');
 Route::post('/productos', 'ProductoController@save');
 // ->middleware(['auth', 'admin']);
 
-Route::get('/productos/editar/{id}', 'ProductoController@edit');//->middleware(['auth', 'admin']);
+Route::get('/productos/editar/{id}', 'ProductoController@edit'); //->middleware(['auth', 'admin'])
 Route::post('/productos/editar/{id}', 'ProductoController@update');//->middleware(['auth', 'admin']);
 
 Route::get('/productos/delete/{id}', 'ProductoController@borrarProducto');//->middleware(['auth', 'admin']);
 Route::post('/productos/delete/{id}', 'ProductoController@borrar');//->middleware(['auth', 'admin']);
 
-Route::get('/carrito', 'CarritoController@index');
-// ->middleware('auth');
-Route::get('/carrito', 'CarritoController@miCarrito');
-// ->middleware('auth');
+Route::get('/carrito', 'CarritoController@index');//->middleware('auth');
+Route::get('/carrito', 'CarritoController@miCarrito');//->middleware('auth');
 
-Route::post('/productos/agregarCarrito', 'CarritoController@agregarAlCarrito');
-// ->middleware('auth');
 
-Route::post('/carrito/sacarCarrito', 'CarritoController@sacarDelCarrito')->middleware('auth');
+
+
+Route::get('/pedidos', 'CarritoController@seecMigue');
+
+
+
+
+Route::post('/productos/agregarCarrito', 'CarritoController@agregarAlCarrito')
+->middleware('auth');
+
+Route::post('/carrito/sacarCarrito', 'CarritoController@sacarDelCarrito');//->middleware('auth');
 
 Route::post('/productos/delete/{id}', 'ProductoController@borrar');
 

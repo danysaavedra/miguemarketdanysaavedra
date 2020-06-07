@@ -12,16 +12,26 @@ use App\Category;
 use App\Subcategory;
 class CarritoController extends Controller
 {
+
+
   public function index(){
 
       $subcategorias = Subcategory::all();
       return view('cart.carrito',compact('subcategorias'));
   }
 
+public function  seecMigue(){
+
+    $user =Auth::user();
+    $datalles=$user->carrito;
+
+    return view('pedidos')
+      ->with([
+        'detalles' => $datalles
+      ]);
 
 
-
-
+  }
 
   public function agregarAlCarrito(Request $request){
 
