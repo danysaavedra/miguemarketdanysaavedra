@@ -31,7 +31,7 @@
 
 @if(isset($subcategorias))
 @foreach($subcategorias as $subcategoria)
-<h2 class="titulo-productos"><strong>{{$subcategoria->name}}</strong></h2>
+<h2 class="titulo-productos"><strong> {{$subcategoria->name}}</strong></h2>
 @endforeach
 
 @foreach($subcategorias as $subcategoria)
@@ -64,6 +64,9 @@
 @endif
 
 @if(isset($subcategorias))
+<div style="display:flex" class="botoncat">
+
+
   <div class="dropdown">
       @foreach ($subcategorias as $subcategoria)
       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
@@ -104,6 +107,8 @@
     @endif
     @endforeach
   </div>
+</div>
+<strong style="padding:1% 1% 1% 3%; font-size:1.2rem"> Filtrá por Categorías </strong >
 </div>
 @endif
 

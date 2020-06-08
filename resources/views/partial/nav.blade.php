@@ -89,6 +89,7 @@
 
             <li><a href="/"><ion-icon name="home-outline"></ion-icon> <br> Home</a></li>
             <li><a href="#"><ion-icon name="mail-outline"></ion-icon> <br> Contacto<span class="flecha">&#9660;</span></a></li>
+            <li><a href="/preguntas"><ion-icon name="help-circle-outline"></ion-icon> <br> Preguntas <br>Frecuentes <span class="flecha">&#9660;</span></a></li>
 
                         @if((Auth::user()) && (Auth::user()->admin))
             <!-- <li>

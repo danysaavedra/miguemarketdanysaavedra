@@ -23,6 +23,7 @@
   </div>
 </form>
 
+
 <!-- primer carrusel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -32,13 +33,10 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="/img/carrB.png" class="d-block w-100" alt="...">
+        <img src="/img/comestibles.jpg" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="/img/bannEnv.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="/img/bannMar.jpg" class="d-block w-100" alt="...">
+        <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -52,13 +50,6 @@
   </div>
 
 
-  <div class="row">
-    <div class="col-12 " id="inf" >
-       <h1 class="elh1">Migue Market</h1>
-      <h3 class="elh3MP">Podés pagar con</h3>
-    </div>
-
-  </div>
 
  <!-- promo -->
   <section id="productosDestacados">
@@ -105,7 +96,15 @@
   </section>
 
 
+  <div class="row">
+    <div class="col-12 ">
+      <div class="migueblanco">
+        <img class="logoHoridex"src="/img/logoHoriz2.png" alt="">
+      </div>
 
+    </div>
+
+  </div>
 
     <!-- Perfu y Limpieza -->
     <section id="productosDestacados">
@@ -163,9 +162,15 @@
     <a href='/productos/limp'> <button type="button" class="btnon">Ver Más</button></a>
     </div>
     <!-- Elegi como hacer tus compras en tu SuperMigue -->
+    <div class="row">
+      <div class="col-12 " id="inf" >
+         <h1 class="elh1">Migue Market</h1>
+        <h3 class="elh3MP">Podés pagar con</h3>
+      </div>
 
+    </div>
 
-    <section id="sobreNosotros">
+    <!-- <section id="sobreNosotros">
       <div class="botonventaA">
 
       <div class="celeste">
@@ -206,7 +211,7 @@
         </div>
 
     </div>
-    </section>
+    </section> -->
   <!-- seccion comestible -->
   <section id="productosDestacados">
     <div class="titulo-productos">
@@ -267,7 +272,7 @@
 
     <section id="sobreNosotros2">
       <h3>-las calles estan vacias...<br>TE LO LLEVAMOS A TU CASA!-</h3>
-      <p>Envíos sin cargo hasta 3km.(consulte Zona)<strong>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <strong>
       </strong>
     <img src="img/carro.png" alt="">
 
