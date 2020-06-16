@@ -6,7 +6,8 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h4>{{ __('- REGISTRATE -') }}</h4></div>
+                <div style="background-color: #597aa6;
+                  color: white;" class="card-header"><h4>{{ __('- REGISTRATE -') }}</h4></div>
 
                 <div class="card-body">
                     <form name="form" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
@@ -67,7 +68,7 @@
 
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="nro" class="col-form-label text-md-left">{{ __('Número') }}</label>
+                                <label for="nro" class="col-form-label text-md-left">{{ __('Nro') }}</label>
                                 <input id="nro" type="number" class="form-control @error('nro') is-invalid @enderror" name="nro" value="{{ old('nro') }}" autocomplete="nro" autofocus>
 
                                 @error('nro')
@@ -83,11 +84,6 @@
                                 <label for="dto" class="col-form-label text-md-left">{{ __('Dpto.') }}</label>
                                 <input id="dto"  class="form-control @error('dto') is-invalid @enderror" name="dto" value="{{ old('dto') }}" autocomplete="dto" autofocus>
 
-                                @error('dto')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 
@@ -218,7 +214,7 @@
 
                         <div class="col-md-12">
                             <div class="form-group row mb-0">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-info">
                                     {{ __('Registrarme') }}
                                 </button>
 

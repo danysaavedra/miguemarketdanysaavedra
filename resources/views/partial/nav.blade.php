@@ -38,7 +38,7 @@
     <ul class="navbar-nav mr-auto">
       <ul class="nav">
             <li>
-                <a class="" href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
+                <a class="enlace_desactivado" href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
                 <ul>
                     <li><a class="" href="/productos/limp">Perfumería y Limpieza</a>
                       <ul>
@@ -78,10 +78,10 @@
                         </ul>
 
                     </li>
-                    <li><a class="enlace_desactivado" href="/productos/beb">Bebidas</a>
+                    <li><a class="" href="/productos/beb">Bebidas</a>
                         <ul>
-                            <li><a class="enlace_desactivado" href="">Con Alcohol</a></li>
-                            <li><a class="enlace_desactivado" href="">Sin Alcohol</a></li>
+                            <li><a class="" href="/productos/detallesSub/beb/alcohol">Con Alcohol</a></li>
+                            <li><a class="" href="/productos/detallesSub/beb/sinAlcohol">Sin Alcohol</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -1,32 +1,33 @@
-@extends('layouts.plantilla')
 
-@section('contenido')
+ @extends('layouts.plantilla')
 
-
-@if (session('mensaje'))
-    <div class="alert alert-warning">
-        {{ session('mensaje') }}
-    </div>
-@endif
-
-<div class="container-fluid">
-
-@if(isset($detalles))
-<div class="card" style="width: 88rem; text-align:left";>
-
-  <div class="card-header">
-    {{Auth::user()->name  }} {{Auth::user()->lastname}}
-  </div>
-
-  <ul class="list-group list-group-flush">
-    @foreach($detalles as $detalle)
-    <li class="list-group-item">{{$detalle->name}} Precio: ${{$detalle->price}} Seleccionados: {{$detalle->pivot->quantity}} Subtotal:  ${{$detalle->price * $detalle->pivot->quantity }} </li>
-    @endforeach
-  </ul>
-
-</div>
+ @section('contenido')
 
 
-@endif
-</div>
- @endsection
+ @if (session('mensaje'))
+     <div class="alert alert-warning">
+         {{ session('mensaje') }}
+     </div>
+ @endif
+
+ <div class="container-fluid">
+
+
+ <div class="card" style="width: 88rem; text-align:left";>
+   @foreach($detalles as $usuario)
+   <div class="card-header">
+{{$usuario->name}} {{$usuario->lastname}}
+   </div>
+
+
+   <ul class="list-group list-group-flush">
+     <li class="list-group-item"></li>
+   </ul>
+   @endforeach
+
+ </div>
+
+
+
+ </div>
+  @endsection

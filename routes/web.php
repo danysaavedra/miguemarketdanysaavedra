@@ -85,7 +85,7 @@ Route::get('/carrito', 'CarritoController@miCarrito');//->middleware('auth');
 
 
 
-Route::get('/pedidos', 'CarritoController@seecMigue');
+Route::get('/pedidos', 'serController@usuario');
 
 
 

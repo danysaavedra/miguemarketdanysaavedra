@@ -1,9 +1,12 @@
+/* #productosDestacados{
 
+
+} */
 .container .ir-arriba{
   display:none;
   background-repeat:no-repeat;
   font-size:20px;
-color: #597aa6!important;
+  color: #597aa6!important;
   cursor:pointer;
   position:fixed;
   bottom:10px;
@@ -14,39 +17,30 @@ color: #597aa6!important;
   display:none;
   background-repeat:no-repeat;
   font-size:20px;
-color: #597aa6!important;
+  color: #597aa6!important;
   cursor:pointer;
   position:fixed;
   bottom:10px;
   right:10px;
   z-index:2;
 }
-
 .cantidad{
 width:10%;
-
 }
-
 .productoPromo{
 width: 100%;
 }
 .slick-prev:before{
-
     font-size: 40px;
     line-height: 1;
     opacity: .75;
     color: #597aa6!important;
-
 }
-
-
 .slick-next:before{
-
     font-size: 40px;
     line-height: 1;
     opacity: .75;
-  color: #597aa6!important;
-
+    color: #597aa6!important;
 }
 .slick-prev, .slick-next {
 font-size: 40px;
@@ -291,7 +285,6 @@ border-radius: 100%;
 .btn-secondary {
   color: #597aa6;
   background-color: #e2efee;
-
   border: groove;
 }
 .btn-secondary:hover {

@@ -3,7 +3,6 @@
 @section('contenido')
 
 
-
 <div class="container-fluid">
 
 <!-- buscador -->
