@@ -20,7 +20,7 @@ class sederDePrueba extends Seeder
               'description' => 'Pocket con alas',
               'price' => 43,
               'avatar' => '../img/seedPro/toallFemCalipso.png',
-              'category_id' => 21,
+              'category_id' => 12,
               'stock' => 1,
               'promo' => 0,
 
@@ -33,7 +33,7 @@ class sederDePrueba extends Seeder
               'description' => 'Ultrafinas con alas',
               'price' => 65,
               'avatar' => '../img/seedPro/siemLib.png',
-              'category_id' => 21,
+              'category_id' => 12,
               'stock' => 1,
               'promo' => 0,
             ]
@@ -45,7 +45,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Unilever 125gr x 1U.',
                 'price' => 35,
                 'avatar' => '..\img\seedPro\jabTocRex1.png',
-                'category_id' =>21 ,
+                'category_id' => 12,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -56,7 +56,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Bactericida 65 mm.',
                 'price' => 80,
                 'avatar' => '..\img\seedPro\alcGel.png',
-                'category_id' => 21,
+                'category_id' => 12,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -67,7 +67,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Alcohol etílico 250mm.',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\alcFino.png',
-                'category_id' => 21,
+                'category_id' => 12,
                 'stock' => 1,
                 'promo' => 0,
 
@@ -79,7 +79,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Higienol x4u. 30mts',
                 'price' => 55,
                 'avatar' => '..\img\seedPro\papHig.png',
-                'category_id' => 21,
+                'category_id' => 12,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -95,7 +95,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Cuadriculada x 1U',
                 'price' => 27,
                 'avatar' => '..\img\seedPro\esponjMort.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -106,7 +106,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Repuesto pack 500cm3',
                 'price' => 55,
                 'avatar' => '..\img\seedPro\AntiAyu.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -117,7 +117,7 @@ class sederDePrueba extends Seeder
                 'description' => '750cm3 Crema',
                 'price' => 115,
                 'avatar' => '..\img\seedPro\cif75.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -128,7 +128,7 @@ class sederDePrueba extends Seeder
                 'description' => 'mata el 99.99% bacterias',
                 'price' => 120,
                 'avatar' => '..\img\seedPro\limVidOdexRp.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -139,7 +139,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Cif  300cm3',
                 'price' => 70,
                 'avatar' => '..\img\seedPro\lavavaCif300Lim.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -150,7 +150,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Cif  300cm3',
                 'price' => 70,
                 'avatar' => '..\img\seedPro\lavavaCif300Cit.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -161,7 +161,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Cif 300cm3',
                 'price' => 70,
                 'avatar' => '..\img\seedPro\lavavaCif300LimV.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -172,7 +172,7 @@ class sederDePrueba extends Seeder
                 'description' => '450cm3 d7 pack',
                 'price' => 70,
                 'avatar' => '..\img\seedPro\lavavaAla450.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -183,7 +183,7 @@ class sederDePrueba extends Seeder
                 'description' => '700cm3 en Gel',
                 'price' => 110,
                 'avatar' => '..\img\seedPro\lavAyuGel700.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -194,7 +194,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Repuesto Odex 450ml',
                 'price' => 40,
                 'avatar' => '..\img\seedPro\limVidOdexRp.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -205,7 +205,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Original x 2lts',
                 'price' => 92,
                 'avatar' => '..\img\seedPro\lavAyu2lt.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -216,7 +216,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Bidón x 5lts',
                 'price' => 190,
                 'avatar' => '..\img\seedPro\deter5lt.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -227,7 +227,7 @@ class sederDePrueba extends Seeder
                 'description' => '900cm3 color negro',
                 'price' => 245,
                 'avatar' => '..\img\seedPro\aublem900Neg.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -238,7 +238,7 @@ class sederDePrueba extends Seeder
                 'description' => '300cm3 color natural',
                 'price' => 160,
                 'avatar' => '..\img\seedPro\ausuiza300.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -249,7 +249,7 @@ class sederDePrueba extends Seeder
                 'description' => '450ml color natural',
                 'price' => 110,
                 'avatar' => '..\img\seedPro\aupoli450.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -260,7 +260,7 @@ class sederDePrueba extends Seeder
                 'description' => '360cm3 Autobrillo',
                 'price' => 155,
                 'avatar' => '..\img\seedPro\lustrablem.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -271,7 +271,7 @@ class sederDePrueba extends Seeder
                 'description' => '360cm3 Autobrillo',
                 'price' => 140,
                 'avatar' => '..\img\seedPro\lustraceramicol.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -282,7 +282,7 @@ class sederDePrueba extends Seeder
               'description' => '900cm3 Procenex',
               'price' => 57,
               'avatar' => '..\img\seedPro\procx900Lav.png',
-              'category_id' => 20,
+              'category_id' => 1,
               'stock' => 1,
               'promo' => 0,
                             ]
@@ -293,7 +293,7 @@ class sederDePrueba extends Seeder
               'description' => '900cm3 Procenex',
               'price' => 57,
               'avatar' => '..\img\seedPro\procx900Pin.png',
-              'category_id' => 20,
+              'category_id' => 1,
               'stock' => 1,
               'promo' => 0,
 
@@ -305,7 +305,7 @@ class sederDePrueba extends Seeder
               'description' => '900cm3 Procenex',
               'price' => 57,
               'avatar' => '..\img\seedPro\procx900Mar.png',
-              'category_id' => 20,
+              'category_id' => 1,
               'stock' => 1,
               'promo' => 0,
             ]
@@ -316,7 +316,7 @@ class sederDePrueba extends Seeder
               'description' => '900cm3 Procenex',
               'price' => 57,
               'avatar' => '..\img\seedPro\procx900Lim.png',
-              'category_id' => 20,
+              'category_id' => 1,
               'stock' => 1,
               'promo' => 0,
             ]
@@ -327,7 +327,7 @@ class sederDePrueba extends Seeder
               'description' => '900cm3 Procenex',
               'price' => 57,
               'avatar' => '..\img\seedPro\procx900Bebe.png',
-              'category_id' => 20,
+              'category_id' => 1,
               'stock' => 1,
               'promo' => 0,
             ]
@@ -338,7 +338,7 @@ class sederDePrueba extends Seeder
               'description' => '900cm3 Floral',
               'price' => 57,
               'avatar' => '..\img\seedPro\procx900Flor.png',
-              'category_id' => 20,
+              'category_id' => 1,
               'stock' => 1,
               'promo' => 0,
             ]
@@ -349,7 +349,7 @@ class sederDePrueba extends Seeder
               'description' => '360cm3 Glade',
               'price' => 68,
               'avatar' => '..\img\seedPro\desAmbGla360.png',
-              'category_id' => 20,
+              'category_id' => 1,
               'stock' => 1,
               'promo' => 0,
             ]
@@ -360,7 +360,7 @@ class sederDePrueba extends Seeder
                 'description' => '450ml Repuesto',
                 'price' => 98,
                 'avatar' => '..\img\seedPro\echo450Re.png',
-                'category_id' => 20,
+                'category_id' => 1,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -373,7 +373,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Mosquitrap caja x 12U.',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\espiMos.png',
-                'category_id' => 22,
+                'category_id' => 2,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -384,7 +384,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Mata moscas y mosquitos',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\insMosAero.png',
-                'category_id' => 22,
+                'category_id' => 2,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -395,7 +395,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Mata moscas y mosquitos',
                 'price' => 99,
                 'avatar' => '..\img\seedPro\insFuyiAero.png',
-                'category_id' => 22,
+                'category_id' => 2,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -406,7 +406,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Mata moscas y mosquitos',
                 'price' => 130,
                 'avatar' => '..\img\seedPro\insRaidAero.png',
-                'category_id' => 22,
+                'category_id' => 2,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -422,7 +422,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Mosquitrap caja x 12U.',
                 'price' => 106,
                 'avatar' => '..\img\seedPro\jabLiqWoo450.png',
-                'category_id' => 23,
+                'category_id' => 3,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -433,7 +433,7 @@ class sederDePrueba extends Seeder
                 'description' => '450cm3 Ala Matic',
                 'price' => 93,
                 'avatar' => '..\img\seedPro\jabLiqCamAla450.png',
-                'category_id' => 23,
+                'category_id' => 3,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -444,7 +444,7 @@ class sederDePrueba extends Seeder
                 'description' => '900cm3 Vivere',
                 'price' => 90,
                 'avatar' => '..\img\seedPro\suaViv900.png',
-                'category_id' => 23,
+                'category_id' => 3,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -455,7 +455,7 @@ class sederDePrueba extends Seeder
                 'description' => '900cm3 Comfort',
                 'price' => 134,
                 'avatar' => '..\img\seedPro\suaCom900.png',
-                'category_id' => 23,
+                'category_id' => 3,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -466,7 +466,7 @@ class sederDePrueba extends Seeder
                 'description' => '450cm3 Vanish.',
                 'price' => 68,
                 'avatar' => '..\img\seedPro\quitaVanish450.png',
-                'category_id' => 23,
+                'category_id' => 3,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -477,7 +477,7 @@ class sederDePrueba extends Seeder
                 'description' => '900cm3 Esencial',
                 'price' => 47,
                 'avatar' => '..\img\seedPro\suaEse900.png',
-                'category_id' => 23,
+                'category_id' => 3,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -488,7 +488,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Para planchar',
                 'price' => 180,
                 'avatar' => '..\img\seedPro\apresKlaro360.png',
-                'category_id' => 23,
+                'category_id' => 3,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -503,7 +503,7 @@ class sederDePrueba extends Seeder
                 'description' => 'precio x rollo',
                 'price' => 53,
                 'avatar' => '..\img\seedPro\papelMant.png',
-                'category_id' => 24,
+                'category_id' => 13,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -514,7 +514,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Varios diseños',
                 'price' => 98,
                 'avatar' => '..\img\seedPro\repa.png',
-                'category_id' => 24,
+                'category_id' => 13,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -525,7 +525,7 @@ class sederDePrueba extends Seeder
                 'description' => 'V. x 12U.',
                 'price' => 87,
                 'avatar' => '..\img\seedPro\velas.png',
-                'category_id' => 24,
+                'category_id' => 13,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -536,7 +536,7 @@ class sederDePrueba extends Seeder
                 'description' => 'goma de 40cm',
                 'price' => 135,
                 'avatar' => '..\img\seedPro\sec40.png',
-                'category_id' => 24,
+                'category_id' => 13,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -547,7 +547,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Clásico x 3',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\rolSusseX3.png',
-                'category_id' => 24,
+                'category_id' => 13,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -558,7 +558,7 @@ class sederDePrueba extends Seeder
                 'description' => 'B. de madera x 12U',
                 'price' => 35,
                 'avatar' => '..\img\seedPro\brochesx12.png',
-                'category_id' => 24,
+                'category_id' => 13,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -573,7 +573,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal x 454gr',
                 'price' => 210,
                 'avatar' => '..\img\seedPro\higosAlmiBro.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -584,7 +584,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal Light x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermBroLightArand.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -595,7 +595,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal Light x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermBroLigthNar.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -606,7 +606,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal Light x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermBroLigthFr.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -617,7 +617,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal light x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermBroLigthFrRoj.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -630,7 +630,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermBroCir.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -641,7 +641,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermBroDur.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -652,7 +652,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Brocal x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermBroFru.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -666,7 +666,7 @@ class sederDePrueba extends Seeder
                 'description' => 'La Campagnola x 454gr',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\mermCampC.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -677,7 +677,7 @@ class sederDePrueba extends Seeder
                 'description' => 'La Campagnola x 454gr',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\mermCampN.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -688,7 +688,7 @@ class sederDePrueba extends Seeder
                 'description' => 'La Campagnola x 454gr',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\mermCampD.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -701,7 +701,7 @@ class sederDePrueba extends Seeder
                 'description' => 'BC x 454gr',
                 'price' => 170,
                 'avatar' => '..\img\seedPro\mermCampBCfr.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -712,7 +712,7 @@ class sederDePrueba extends Seeder
                 'description' => 'BC x 454gr',
                 'price' => 170,
                 'avatar' => '..\img\seedPro\mermCampBCaran.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -723,7 +723,7 @@ class sederDePrueba extends Seeder
                 'description' => 'BC x 454grs',
                 'price' => 175,
                 'avatar' => '..\img\seedPro\jaleaCampBCmem.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -734,7 +734,7 @@ class sederDePrueba extends Seeder
                 'description' => 'La Campagnola x 454grs',
                 'price' => 110,
                 'avatar' => '..\img\seedPro\jaleaCampMem.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -748,7 +748,7 @@ class sederDePrueba extends Seeder
                 'description' => 'BC x 454gr',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\mermCampBCD.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -759,7 +759,7 @@ class sederDePrueba extends Seeder
                 'description' => 'BC x 454gr',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\mermCampBCDama.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -770,7 +770,7 @@ class sederDePrueba extends Seeder
                 'description' => 'BC x 454gr',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\mermCampBCC.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -781,7 +781,7 @@ class sederDePrueba extends Seeder
                 'description' => 'BC x 454gr',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\mermCampBCn.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -794,7 +794,7 @@ class sederDePrueba extends Seeder
                 'description' => 'sabor durazno x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermCabDurz.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -805,7 +805,7 @@ class sederDePrueba extends Seeder
                 'description' => 'sabor frambuesa x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermCabFb.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -816,7 +816,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Light durazno x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermCabLightDurz.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -827,7 +827,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Light frambuesa x 454gr',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermCabLightFb.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -843,7 +843,7 @@ class sederDePrueba extends Seeder
                 'description' => 'damasco x 454gr',
                 'price' => 71,
                 'avatar' => '..\img\seedPro\mermMolDam.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -854,7 +854,7 @@ class sederDePrueba extends Seeder
             'description' => 'Light damasco x 454gr',
             'price' => 75,
             'avatar' => '..\img\seedPro\mermMolLightDam.png',
-            'category_id' => 3,
+            'category_id' => 16,
             'stock' => 1,
             'promo' => 0,
           ]
@@ -865,7 +865,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Molto x 454gr',
                 'price' => 75,
                 'avatar' => '..\img\seedPro\mermMolLightDur.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -878,7 +878,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Marolio x 454gr',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\mermMarLightDam.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -893,7 +893,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Masseube Sin Azucar',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermMassSAFb.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -905,7 +905,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Masseube Sin Azucar',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermMassSAFr.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -917,7 +917,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Masseube Sin Azucar',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermMassSAFdelB.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -928,7 +928,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Masseube Con Azucar',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermMassCAFb.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -940,7 +940,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Masseube Con Azucar',
                 'price' => 185,
                 'avatar' => '..\img\seedPro\mermMassCAGuinda.png',
-                'category_id' => 3,
+                'category_id' => 16,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -953,7 +953,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Harina para preparar faina',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\fainalind.png',
-                'category_id' => 5,
+                'category_id' => 32,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -964,7 +964,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Harina 000',
                 'price' => 43,
                 'avatar' => '..\img\seedPro\hariMar000.png',
-                'category_id' => 5,
+                'category_id' => 32,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -976,7 +976,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr 0% grasas trans',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\mariNsLinoChia.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -987,7 +987,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr 0% grasas trans',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\mariNsMixSem.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -998,7 +998,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr 0% grasas trans',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\mariNsTra.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1013,7 +1013,7 @@ class sederDePrueba extends Seeder
                 'description' => '345gr tenor graso 11.5%',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\galleLeivaSalvX3.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1024,7 +1024,7 @@ class sederDePrueba extends Seeder
                 'description' => '345gr tenor graso 11.5%',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\galleLeivaX3.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1035,7 +1035,7 @@ class sederDePrueba extends Seeder
                 'description' => '345gr Light',
                 'price' => 80,
                 'avatar' => '..\img\seedPro\galleLeivaLightX3.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1048,7 +1048,7 @@ class sederDePrueba extends Seeder
                 'description' => '450gr Sin Sal',
                 'price' => 48,
                 'avatar' => '..\img\seedPro\galleGranixSalvSinSal.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1059,7 +1059,7 @@ class sederDePrueba extends Seeder
                 'description' => '450gr Sin Sal',
                 'price' => 48,
                 'avatar' => '..\img\seedPro\galleGranixSinSalX3.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1070,7 +1070,7 @@ class sederDePrueba extends Seeder
                 'description' => '175gr Sin Sal',
                 'price' => 54,
                 'avatar' => '..\img\seedPro\galleGranixSesamoSinSal.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1082,7 +1082,7 @@ class sederDePrueba extends Seeder
                 'description' => '155gr 139Kcal x porción',
                 'price' => 50,
                 'avatar' => '..\img\seedPro\galleCereBagleyAvena.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1093,7 +1093,7 @@ class sederDePrueba extends Seeder
                 'description' => '155gr 139Kcal x porción',
                 'price' => 50,
                 'avatar' => '..\img\seedPro\galleCereBagleyArroz.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1104,7 +1104,7 @@ class sederDePrueba extends Seeder
                 'description' => '155gr 139Kcal x porción',
                 'price' => 50,
                 'avatar' => '..\img\seedPro\galleCereBagleyInt.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1115,7 +1115,7 @@ class sederDePrueba extends Seeder
                 'description' => '112gr Amor',
                 'price' => 39,
                 'avatar' => '..\img\seedPro\galleAmor.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1126,7 +1126,7 @@ class sederDePrueba extends Seeder
                 'description' => '250gr Chocolinas Bagley',
                 'price' => 39,
                 'avatar' => '..\img\seedPro\galleBgleyCho.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1137,7 +1137,7 @@ class sederDePrueba extends Seeder
                 'description' => '55gr Ópera Bagley',
                 'price' => 35,
                 'avatar' => '..\img\seedPro\galleOpera55.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1151,7 +1151,7 @@ class sederDePrueba extends Seeder
                 'description' => 'pack x 3',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\galleSerraX3.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1167,7 +1167,7 @@ class sederDePrueba extends Seeder
                 'description' => '2 pack de 100gr',
                 'price' => 60,
                 'avatar' => '..\img\seedPro\tostRieraDul.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1178,7 +1178,7 @@ class sederDePrueba extends Seeder
                 'description' => '2 pack de 100gr',
                 'price' => 70,
                 'avatar' => '..\img\seedPro\tostRieraInt.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1189,7 +1189,7 @@ class sederDePrueba extends Seeder
                 'description' => 'tostaditas de arroz',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\tostRieraInt.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1204,7 +1204,7 @@ class sederDePrueba extends Seeder
                 'description' => '180 gr. Tradicionales',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\grisGrissiTra.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1215,7 +1215,7 @@ class sederDePrueba extends Seeder
                 'description' => '180 gr. Sin Sal',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\grisGrissiSinSal.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1226,7 +1226,7 @@ class sederDePrueba extends Seeder
                 'description' => '180 gr. Salvado',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\grisGrissiSalv.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1241,7 +1241,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Bizcochos Dulces',
                 'price' => 27,
                 'avatar' => '..\img\seedPro\bizDulcyDul.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1252,7 +1252,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Bizcochos Salados',
                 'price' => 27,
                 'avatar' => '..\img\seedPro\bizDulcyDul.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1263,7 +1263,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Ideales para acompañar el mate',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\grisGrissiSinSal.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1274,7 +1274,7 @@ class sederDePrueba extends Seeder
                 'description' => '200gr grasa',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\bizDonSal.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1285,7 +1285,7 @@ class sederDePrueba extends Seeder
                 'description' => '200gr agridulces',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\bizDonDul.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1296,7 +1296,7 @@ class sederDePrueba extends Seeder
                 'description' => '200gr agridulces',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\bizDonNeg.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1310,7 +1310,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr sabor queso',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\taliTosQu.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1321,7 +1321,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr sabor cebolla',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\taliTosCeb.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1332,7 +1332,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr sabor clásicas',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\taliTosClasic.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1347,7 +1347,7 @@ class sederDePrueba extends Seeder
                 'description' => '250 gr 16 U.',
                 'price' => 00,
                 'avatar' => '..\img\seedPro\biscuitSor.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1358,7 +1358,7 @@ class sederDePrueba extends Seeder
                 'description' => '320gr 14U',
                 'price' => 00,
                 'avatar' => '..\img\seedPro\vainMauri.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1369,7 +1369,7 @@ class sederDePrueba extends Seeder
                 'description' => '480gr 36U.',
                 'price' => 110,
                 'avatar' => '..\img\seedPro\vainValen.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1380,7 +1380,7 @@ class sederDePrueba extends Seeder
                 'description' => '16gr 12U.',
                 'price' => 00,
                 'avatar' => '..\img\seedPro\vainiBimb.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1393,7 +1393,7 @@ class sederDePrueba extends Seeder
                 'description' => '140gr chocolate Par Nor',
                 'price' => 33,
                 'avatar' => '..\img\seedPro\galleMoroPar.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1404,7 +1404,7 @@ class sederDePrueba extends Seeder
                 'description' => '170gr coco y vainilla Par Nor',
                 'price' => 33,
                 'avatar' => '..\img\seedPro\galleCoquiPar.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1415,7 +1415,7 @@ class sederDePrueba extends Seeder
                 'description' => '160gr Chocolate Par Nor',
                 'price' => 00,
                 'avatar' => '..\img\seedPro\gallePituCh.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1426,7 +1426,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr Dulces Pepay',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\galleBana.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1437,7 +1437,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr Dulces Pepay',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\gallePolvo.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1448,7 +1448,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr Dulces Pepay',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\gallePepVari.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1459,7 +1459,7 @@ class sederDePrueba extends Seeder
                 'description' => '72gr chocolate',
                 'price' => 38,
                 'avatar' => '..\img\seedPro\galleFormis.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1471,7 +1471,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr coco vainilla Cilo',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\galleLengu.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1482,7 +1482,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr Dulces Light Cilo',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\gallePepasCiloLigth.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1493,7 +1493,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr Limón Cilo',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\galleCiloAnill.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1504,7 +1504,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr Dulces Light Cilo',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\gallePepasCiloLigth.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1515,7 +1515,7 @@ class sederDePrueba extends Seeder
                 'description' => '225gr Marmolada con chips',
                 'price' => 57,
                 'avatar' => '..\img\seedPro\madalenaValen.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1526,7 +1526,7 @@ class sederDePrueba extends Seeder
                 'description' => '250gr Frutigran Tropical',
                 'price' => 80,
                 'avatar' => '..\img\seedPro\galleFruti.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1538,7 +1538,7 @@ class sederDePrueba extends Seeder
                 'description' => '500gr Pepas Tradicional',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\gallePepPepasClasic.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1549,7 +1549,7 @@ class sederDePrueba extends Seeder
                 'description' => '500gr Pepas limón',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\gallePepPepasLimon.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1560,7 +1560,7 @@ class sederDePrueba extends Seeder
                 'description' => '500gr Pepas chocolate',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\gallePepPepasCh.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1573,7 +1573,7 @@ class sederDePrueba extends Seeder
                 'description' => '50gr dulce de leche',
                 'price' => 63,
                 'avatar' => '..\img\seedPro\galleTodyDuleche.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1584,7 +1584,7 @@ class sederDePrueba extends Seeder
                 'description' => '50gr chocolate',
                 'price' => 63,
                 'avatar' => '..\img\seedPro\galleTodyBlack.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1597,7 +1597,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Subom x 6U',
                 'price' => 44,
                 'avatar' => '..\img\seedPro\alfaSubonx6.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1610,7 +1610,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Minimouse x 6U',
                 'price' => 89,
                 'avatar' => '..\img\seedPro\alfaJorx6.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1621,7 +1621,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Arcor x 6U',
                 'price' => 56,
                 'avatar' => '..\img\seedPro\turronx6.png',
-                'category_id' => 5,
+                'category_id' => 18,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1635,7 +1635,7 @@ class sederDePrueba extends Seeder
                 'description' => '400gr de pan blanco',
                 'price' => 120,
                 'avatar' => '..\img\seedPro\panBimbx400.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1646,7 +1646,7 @@ class sederDePrueba extends Seeder
                 'description' => '600gr de pan blanco',
                 'price' => 195,
                 'avatar' => '..\img\seedPro\panBimbx600.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1657,7 +1657,7 @@ class sederDePrueba extends Seeder
                 'description' => '240gr 6 U',
                 'price' => 84,
                 'avatar' => '..\img\seedPro\panPchBimbArte.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1669,7 +1669,7 @@ class sederDePrueba extends Seeder
                 'description' => '240gr 6 U',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\panPchBimbClas.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1680,7 +1680,7 @@ class sederDePrueba extends Seeder
                 'description' => '240gr 4 U',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\panBimbHamb.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1691,7 +1691,7 @@ class sederDePrueba extends Seeder
                 'description' => '500gr pan Artesano',
                 'price' => 150,
                 'avatar' => '..\img\seedPro\panBimbArte.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1702,7 +1702,7 @@ class sederDePrueba extends Seeder
                 'description' => '500gr pan con lino',
                 'price' => 135,
                 'avatar' => '..\img\seedPro\panBimbLino.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1713,7 +1713,7 @@ class sederDePrueba extends Seeder
                 'description' => '500gr pan integral',
                 'price' => 115,
                 'avatar' => '..\img\seedPro\panBimbInt.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1724,7 +1724,7 @@ class sederDePrueba extends Seeder
                 'description' => '500gr pan blanco',
                 'price' => 200,
                 'avatar' => '..\img\seedPro\panPchBimbArte.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1736,7 +1736,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Rapiditas clásicas',
                 'price' => 98,
                 'avatar' => '..\img\seedPro\rapiClas.png',
-                'category_id' => 15,
+                'category_id' => 27,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1749,7 +1749,7 @@ class sederDePrueba extends Seeder
                 'description' => '160gr Sin Azucar',
                 'price' => 45,
                 'avatar' => '..\img\seedPro\cereGranixSinSal160.png',
-                'category_id' => 16,
+                'category_id' => 28,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1760,7 +1760,7 @@ class sederDePrueba extends Seeder
                 'description' => '200gr Fibra Total',
                 'price' => 82,
                 'avatar' => '..\img\seedPro\cereGranixPasas.png',
-                'category_id' => 16,
+                'category_id' => 28,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1771,7 +1771,7 @@ class sederDePrueba extends Seeder
                 'description' => '160gr Con Azucar',
                 'price' => 65,
                 'avatar' => '..\img\seedPro\cereGranixSkarch.png',
-                'category_id' => 16,
+                'category_id' => 28,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1782,7 +1782,7 @@ class sederDePrueba extends Seeder
                 'description' => '180gr frutilla',
                 'price' => 93,
                 'avatar' => '..\img\seedPro\almBocFruGranix.png',
-                'category_id' => 16,
+                'category_id' => 28,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1795,7 +1795,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Corte Tradicional',
                 'price' => 85,
                 'avatar' => '..\img\seedPro\papasKraClasic.png',
-                'category_id' => 12,
+                'category_id' => 24,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1806,7 +1806,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Corte americano',
                 'price' => 85,
                 'avatar' => '..\img\seedPro\papasKraAmeric.png',
-                'category_id' => 12,
+                'category_id' => 24,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -1820,7 +1820,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr con hierbas',
               'price' => 120,
               'avatar' => '..\img\seedPro\yerbaCachaAma500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1831,7 +1831,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr con hierbas',
               'price' => 120,
               'avatar' => '..\img\seedPro\yerbaCachaRos500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1842,7 +1842,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr pack',
               'price' => 130,
               'avatar' => '..\img\seedPro\yerbaPlaya500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1853,7 +1853,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr pack',
               'price' => 150,
               'avatar' => '..\img\seedPro\yerbaRomSua500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1865,7 +1865,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr pack',
               'price' => 130,
               'avatar' => '..\img\seedPro\yerbaAndre500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1876,7 +1876,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr pack',
               'price' => 130,
               'avatar' => '..\img\seedPro\yerbaPipo500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1887,7 +1887,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr pack',
               'price' => 158,
               'avatar' => '..\img\seedPro\yerbaAndreEsp500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1898,7 +1898,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr pack',
               'price' => 115,
               'avatar' => '..\img\seedPro\yerbaTarag500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1909,7 +1909,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr con hierbas serranas',
               'price' => 120,
               'avatar' => '..\img\seedPro\yerbaCbse500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1920,7 +1920,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr Tradicional pack',
               'price' => 132,
               'avatar' => '..\img\seedPro\yerbaRos500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1931,7 +1931,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr suave pack',
               'price' => 136,
               'avatar' => '..\img\seedPro\yerbaRosSua500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1942,7 +1942,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr pack',
               'price' => 115,
               'avatar' => '..\img\seedPro\yerbaUnionSua500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1953,7 +1953,7 @@ class sederDePrueba extends Seeder
               'description' => '500gr Campo y Monte',
               'price' => 225,
               'avatar' => '..\img\seedPro\yerbaLaMer500.png',
-              'category_id' => 25,
+              'category_id' => 33,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1967,7 +1967,7 @@ class sederDePrueba extends Seeder
               'description' => '25 saquitos',
               'price' => 40,
               'avatar' => '..\img\seedPro\mateCrysfx25.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1978,7 +1978,7 @@ class sederDePrueba extends Seeder
               'description' => '50 saquitos',
               'price' => 75,
               'avatar' => '..\img\seedPro\mateCrysfx50.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -1991,7 +1991,7 @@ class sederDePrueba extends Seeder
               'description' => '20 saquitos',
               'price' => 53,
               'avatar' => '..\img\seedPro\teCachaHier.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2002,7 +2002,7 @@ class sederDePrueba extends Seeder
               'description' => '20 saquitos',
               'price' => 53,
               'avatar' => '..\img\seedPro\teCachaManz.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2013,7 +2013,7 @@ class sederDePrueba extends Seeder
               'description' => '20 saquitos',
               'price' => 55,
               'avatar' => '..\img\seedPro\teCachaRosa.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2024,7 +2024,7 @@ class sederDePrueba extends Seeder
               'description' => '20 saquitos',
               'price' => 50,
               'avatar' => '..\img\seedPro\teCachaVerd.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2036,7 +2036,7 @@ class sederDePrueba extends Seeder
               'description' => '50 saquitos',
               'price' => 70,
               'avatar' => '..\img\seedPro\teCrysfx50.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2047,7 +2047,7 @@ class sederDePrueba extends Seeder
               'description' => '25 saquitos',
               'price' => 40,
               'avatar' => '..\img\seedPro\teCrysfx25.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2058,7 +2058,7 @@ class sederDePrueba extends Seeder
               'description' => '50 saquitos',
               'price' => 76,
               'avatar' => '..\img\seedPro\teTarax50.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2069,7 +2069,7 @@ class sederDePrueba extends Seeder
               'description' => '100 saquitos',
               'price' => 155,
               'avatar' => '..\img\seedPro\teTarax100.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2080,7 +2080,7 @@ class sederDePrueba extends Seeder
               'description' => '20 saquitos',
               'price' => 53,
               'avatar' => '..\img\seedPro\teBigBenBol.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2091,7 +2091,7 @@ class sederDePrueba extends Seeder
               'description' => '50 saquitos',
               'price' => 72,
               'avatar' => '..\img\seedPro\teVirx50.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2102,7 +2102,7 @@ class sederDePrueba extends Seeder
               'description' => '50 saquitos',
               'price' => 85,
               'avatar' => '..\img\seedPro\teGreenx50.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2116,7 +2116,7 @@ class sederDePrueba extends Seeder
               'description' => 'La Serenisima',
               'price' => 78,
               'avatar' => '..\img\seedPro\lecheSereLgVi.png',
-              'category_id' => 14,
+              'category_id' => 26,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2127,7 +2127,7 @@ class sederDePrueba extends Seeder
               'description' => 'La Serenisima',
               'price' => 108,
               'avatar' => '..\img\seedPro\lechePolvoSereEnt.png',
-              'category_id' => 14,
+              'category_id' => 26,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2138,7 +2138,7 @@ class sederDePrueba extends Seeder
               'description' => 'La Serenisima',
               'price' => 108,
               'avatar' => '..\img\seedPro\lechePolvoSereDes.png',
-              'category_id' => 14,
+              'category_id' => 26,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2149,7 +2149,7 @@ class sederDePrueba extends Seeder
               'description' => '200mm Nesquik',
               'price' => 36,
               'avatar' => '..\img\seedPro\chocoNesq200.png',
-              'category_id' => 14,
+              'category_id' => 26,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2160,7 +2160,7 @@ class sederDePrueba extends Seeder
               'description' => '1lt Cindor',
               'price' => 135,
               'avatar' => '..\img\seedPro\chocoCin.png',
-              'category_id' => 14,
+              'category_id' => 26,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2173,7 +2173,7 @@ class sederDePrueba extends Seeder
               'description' => '1kg Ledesma',
               'price' => 75,
               'avatar' => '..\img\seedPro\azucarLedes.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2184,7 +2184,7 @@ class sederDePrueba extends Seeder
               'description' => '500g Light',
               'price' => 75,
               'avatar' => '..\img\seedPro\azucarLightLedes.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2195,7 +2195,7 @@ class sederDePrueba extends Seeder
               'description' => '1kg Domino',
               'price' => 65,
               'avatar' => '..\img\seedPro\azucarDom.png',
-              'category_id' => 6,
+              'category_id' => 19,
               'stock' => 1,
               'promo' => 0,
           ]
@@ -2209,7 +2209,7 @@ class sederDePrueba extends Seeder
                 'description' => '100 sobres Clásico',
                 'price' => 120,
                 'avatar' => '..\img\seedPro\edulHilClasicx100.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2220,7 +2220,7 @@ class sederDePrueba extends Seeder
                 'description' => '50 sobres Sweet',
                 'price' => 58,
                 'avatar' => '..\img\seedPro\edulHilSwx50.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2231,7 +2231,7 @@ class sederDePrueba extends Seeder
                 'description' => '50 sobres Clásico',
                 'price' => 68,
                 'avatar' => '..\img\seedPro\edulHilClasicx50.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2242,7 +2242,7 @@ class sederDePrueba extends Seeder
                 'description' => '100 sobres Sweet',
                 'price' => 90,
                 'avatar' => '..\img\seedPro\edulHilSwx100.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2253,7 +2253,7 @@ class sederDePrueba extends Seeder
                 'description' => '50 sobres Zucra',
                 'price' => 75,
                 'avatar' => '..\img\seedPro\edulHilZucx50.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2265,7 +2265,7 @@ class sederDePrueba extends Seeder
                 'description' => '50 sobres',
                 'price' => 75,
                 'avatar' => '..\img\seedPro\edulEqSwx50.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2276,7 +2276,7 @@ class sederDePrueba extends Seeder
                 'description' => '100 sobres Clásico',
                 'price' => 147,
                 'avatar' => '..\img\seedPro\edulEqSwx100Clasic.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2287,7 +2287,7 @@ class sederDePrueba extends Seeder
                 'description' => '200 sobres',
                 'price' => 278,
                 'avatar' => '..\img\seedPro\edulEqSwx200.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2298,7 +2298,7 @@ class sederDePrueba extends Seeder
                 'description' => '400 sobres Clásico',
                 'price' => 475,
                 'avatar' => '..\img\seedPro\edulEqSwx400Clasic.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2310,7 +2310,7 @@ class sederDePrueba extends Seeder
                 'description' => '250cm3',
                 'price' => 96,
                 'avatar' => '..\img\seedPro\edulSemx250.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2321,7 +2321,7 @@ class sederDePrueba extends Seeder
                 'description' => '500cm3',
                 'price' => 135,
                 'avatar' => '..\img\seedPro\edulSemx500.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2332,7 +2332,7 @@ class sederDePrueba extends Seeder
                 'description' => '250cm3',
                 'price' => 70,
                 'avatar' => '..\img\seedPro\edulChucx250.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2343,7 +2343,7 @@ class sederDePrueba extends Seeder
                 'description' => '500cm3',
                 'price' => 135,
                 'avatar' => '..\img\seedPro\edulChucx500.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2357,7 +2357,7 @@ class sederDePrueba extends Seeder
                 'description' => '20 saquitos',
                 'price' => 140,
                 'avatar' => '..\img\seedPro\cafCabSaq20.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2368,7 +2368,7 @@ class sederDePrueba extends Seeder
                 'description' => '500grs Colombiano',
                 'price' => 450,
                 'avatar' => '..\img\seedPro\cafCabColx500.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2379,7 +2379,7 @@ class sederDePrueba extends Seeder
                 'description' => '170grs suave',
                 'price' => 195,
                 'avatar' => '..\img\seedPro\cafDol170.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2390,7 +2390,7 @@ class sederDePrueba extends Seeder
                 'description' => '170grs intenso',
                 'price' => 195,
                 'avatar' => '..\img\seedPro\cafDolInt170.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2401,7 +2401,7 @@ class sederDePrueba extends Seeder
                 'description' => '250gr intenso',
                 'price' => 128,
                 'avatar' => '..\img\seedPro\cafBonSua250.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2412,7 +2412,7 @@ class sederDePrueba extends Seeder
                 'description' => '250gr suave',
                 'price' => 128,
                 'avatar' => '..\img\seedPro\cafBonInt250.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2423,7 +2423,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr cortado',
                 'price' => 115,
                 'avatar' => '..\img\seedPro\cafDolCort125.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2434,7 +2434,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr con leche',
                 'price' => 115,
                 'avatar' => '..\img\seedPro\cafDoleche125.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2445,7 +2445,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr instantáneo',
                 'price' => 148,
                 'avatar' => '..\img\seedPro\cafCabCapu125.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2456,7 +2456,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Lungo Dolce',
                 'price' => 520,
                 'avatar' => '..\img\seedPro\capLunDol.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2467,7 +2467,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Expresso Dolce',
                 'price' => 520,
                 'avatar' => '..\img\seedPro\capExpDol.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2478,7 +2478,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Cortado Dolce',
                 'price' => 520,
                 'avatar' => '..\img\seedPro\capCortDol.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2489,7 +2489,7 @@ class sederDePrueba extends Seeder
                 'description' => 'Cappuccino Dolce',
                 'price' => 520,
                 'avatar' => '..\img\seedPro\capCapuDol.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2500,7 +2500,7 @@ class sederDePrueba extends Seeder
                 'description' => 'cápsulas para nespresso',
                 'price' => 520,
                 'avatar' => '..\img\seedPro\capCabpNess.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2515,7 +2515,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr pack',
                 'price' => 92,
                 'avatar' => '..\img\seedPro\maltaElpoPack.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2526,7 +2526,7 @@ class sederDePrueba extends Seeder
                 'description' => '170gr frasco',
                 'price' => 150,
                 'avatar' => '..\img\seedPro\maltaElpoFr.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2537,7 +2537,7 @@ class sederDePrueba extends Seeder
                 'description' => '170gr frasco',
                 'price' => 215,
                 'avatar' => '..\img\seedPro\maltaMaltiFr.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2548,7 +2548,7 @@ class sederDePrueba extends Seeder
                 'description' => '125gr pack',
                 'price' => 175,
                 'avatar' => '..\img\seedPro\maltaMaltiPack.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2559,7 +2559,7 @@ class sederDePrueba extends Seeder
                 'description' => 'filtro papel n2',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\maltaMelFil2.png',
-                'category_id' => 6,
+                'category_id' => 19,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2573,7 +2573,7 @@ class sederDePrueba extends Seeder
                 'description' => '520gr Salsati',
                 'price' => 50,
                 'avatar' => '..\img\seedPro\pulpaToSal.png',
-                'category_id' => 7,
+                'category_id' => 20,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2585,7 +2585,7 @@ class sederDePrueba extends Seeder
                 'description' => 'tomates pelados peritas',
                 'price' => 62,
                 'avatar' => '..\img\seedPro\lataTomGen.png',
-                'category_id' => 7,
+                'category_id' => 20,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2597,7 +2597,7 @@ class sederDePrueba extends Seeder
                 'description' => '500g Gentleman',
                 'price' => 86,
                 'avatar' => '..\img\seedPro\botTomGen.png',
-                'category_id' => 7,
+                'category_id' => 20,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2609,7 +2609,7 @@ class sederDePrueba extends Seeder
                 'description' => '1k Don Francisco',
                 'price' => 85,
                 'avatar' => '..\img\seedPro\botTomDon.png',
-                'category_id' => 7,
+                'category_id' => 20,
                 'stock' => 1,
                 'promo' => 0,
             ]
@@ -2621,7 +2621,7 @@ class sederDePrueba extends Seeder
                   'description' => 'lentejas remojadas',
                   'price' => 52,
                   'avatar' => '..\img\seedPro\lataLentCara.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2632,7 +2632,7 @@ class sederDePrueba extends Seeder
                   'description' => 'lentejas remojadas',
                   'price' => 48,
                   'avatar' => '..\img\seedPro\lataLentBan.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2644,7 +2644,7 @@ class sederDePrueba extends Seeder
                   'description' => 'lentejas remojadas',
                   'price' => 48,
                   'avatar' => '..\img\seedPro\lataLentBan.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2655,7 +2655,7 @@ class sederDePrueba extends Seeder
                   'description' => 'morrones enteros',
                   'price' => 73,
                   'avatar' => '..\img\seedPro\lataMorrMar.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2666,7 +2666,7 @@ class sederDePrueba extends Seeder
                   'description' => 'morrones enteros',
                   'price' => 83,
                   'avatar' => '..\img\seedPro\lataMorrCara.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2677,7 +2677,7 @@ class sederDePrueba extends Seeder
               'description' => 'arvejas remojadas',
               'price' => 51,
               'avatar' => '..\img\seedPro\lataArvCamp.png',
-              'category_id' => 7,
+              'category_id' => 20,
               'stock' => 1,
               'promo' => 0,
             ]
@@ -2688,7 +2688,7 @@ class sederDePrueba extends Seeder
                   'description' => 'arvejas remojadas',
                   'price' => 35,
                   'avatar' => '..\img\seedPro\lataArvCara.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2699,7 +2699,7 @@ class sederDePrueba extends Seeder
                   'description' => 'arvejas remojadas',
                   'price' => 35,
                   'avatar' => '..\img\seedPro\tetraArvMol.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2710,7 +2710,7 @@ class sederDePrueba extends Seeder
                   'description' => 'jardinera Molto',
                   'price' => 39,
                   'avatar' => '..\img\seedPro\tetraJardMol.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2722,7 +2722,7 @@ class sederDePrueba extends Seeder
                   'description' => 'Choclo en grano lata',
                   'price' => 95,
                   'avatar' => '..\img\seedPro\lataChoGen.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2733,7 +2733,7 @@ class sederDePrueba extends Seeder
                   'description' => 'Choclo cremoso lata',
                   'price' => 37,
                   'avatar' => '..\img\seedPro\lataChoCrMol.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2747,7 +2747,7 @@ class sederDePrueba extends Seeder
                   'description' => 'Lomito La Campagnola',
                   'price' => 175,
                   'avatar' => '..\img\seedPro\lataAtunDesNatCamp.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2758,7 +2758,7 @@ class sederDePrueba extends Seeder
                   'description' => 'en aceite Caracas',
                   'price' => 65,
                   'avatar' => '..\img\seedPro\lataAtunDesAceiCara.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2769,7 +2769,7 @@ class sederDePrueba extends Seeder
                   'description' => 'en aceite El Dique',
                   'price' => 53,
                   'avatar' => '..\img\seedPro\lataAtunDesAceiDiq.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2780,7 +2780,7 @@ class sederDePrueba extends Seeder
                   'description' => 'natural Caracas',
                   'price' => 65,
                   'avatar' => '..\img\seedPro\lataAtunDesNatCara.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2791,7 +2791,7 @@ class sederDePrueba extends Seeder
                   'description' => 'natural El Dique',
                   'price' => 53,
                   'avatar' => '..\img\seedPro\lataAtunDesNatDiq.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2802,7 +2802,7 @@ class sederDePrueba extends Seeder
                   'description' => 'desmenuzado natural',
                   'price' => 37,
                   'avatar' => '..\img\seedPro\lataAtunDesNatCuma.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2816,7 +2816,7 @@ class sederDePrueba extends Seeder
                   'description' => 'Bajas calorías',
                   'price' => 99,
                   'avatar' => '..\img\seedPro\lataAtunDesNatCuma.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2828,7 +2828,7 @@ class sederDePrueba extends Seeder
                   'description' => 'Bajas calorías',
                   'price' => 135,
                   'avatar' => '..\img\seedPro\lataAtunDesNatCuma.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2840,7 +2840,7 @@ class sederDePrueba extends Seeder
                   'description' => 'Coctel de 5 frutas',
                   'price' => 135,
                   'avatar' => '..\img\seedPro\lataAtunDesNatCuma.png',
-                  'category_id' => 7,
+                  'category_id' => 20,
                   'stock' => 1,
                   'promo' => 0,
               ]
@@ -2857,7 +2857,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 33,
                     'avatar' => '..\img\seedPro\fideosCodMar.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2868,7 +2868,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 33,
                     'avatar' => '..\img\seedPro\fideosMosMar.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2879,7 +2879,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 33,
                     'avatar' => '..\img\seedPro\fideosDedaMar.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2890,7 +2890,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 33,
                     'avatar' => '..\img\seedPro\fideosCabAngMar.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2904,7 +2904,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 40,
                     'avatar' => '..\img\seedPro\fideosMosMol.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2915,7 +2915,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 40,
                     'avatar' => '..\img\seedPro\fideosDedaMol.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2926,7 +2926,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 40,
                     'avatar' => '..\img\seedPro\fideosCodMol.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2937,7 +2937,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 40,
                     'avatar' => '..\img\seedPro\fideosEspaMol.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2950,7 +2950,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 120,
                     'avatar' => '..\img\seedPro\fideosEspaGen.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2961,7 +2961,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 120,
                     'avatar' => '..\img\seedPro\fideosTallGen.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2972,7 +2972,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 120,
                     'avatar' => '..\img\seedPro\fideosBucaGen.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2985,7 +2985,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 120,
                     'avatar' => '..\img\seedPro\fideosPeneGen.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -2996,7 +2996,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 120,
                     'avatar' => '..\img\seedPro\fideosMonoGen.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                 ]
             );
@@ -3010,7 +3010,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 50,
                     'avatar' => '..\img\seedPro\fideosAvMa308.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3021,7 +3021,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 50,
                     'avatar' => '..\img\seedPro\fideosDed308.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3032,7 +3032,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 50,
                     'avatar' => '..\img\seedPro\fideosMono308.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3043,7 +3043,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto. 3 Vegetales',
                     'price' => 48,
                     'avatar' => '..\img\seedPro\fideosMosVg308.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3054,7 +3054,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 65,
                     'avatar' => '..\img\seedPro\fideosMonoGen.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3065,7 +3065,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 65,
                     'avatar' => '..\img\seedPro\fideosMonoGen.png',
-                    'category_id' => 11,
+                    'category_id' => 23,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3079,7 +3079,7 @@ class sederDePrueba extends Seeder
                     'description' => '1k peso neto.',
                     'price' => 70,
                     'avatar' => '..\img\seedPro\arrozLgFinMol1k.png',
-                    'category_id' => 10,
+                    'category_id' => 22,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3090,7 +3090,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 36,
                     'avatar' => '..\img\seedPro\arrozLgFinMol500g.png',
-                    'category_id' => 10,
+                    'category_id' => 22,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3101,7 +3101,7 @@ class sederDePrueba extends Seeder
                     'description' => '1k peso neto.',
                     'price' => 95,
                     'avatar' => '..\img\seedPro\arrozAmaParMol1k.png',
-                    'category_id' => 10,
+                    'category_id' => 22,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3112,7 +3112,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 50,
                     'avatar' => '..\img\seedPro\arrozAmaParMol500g.png',
-                    'category_id' => 10,
+                    'category_id' => 22,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3123,7 +3123,7 @@ class sederDePrueba extends Seeder
                     'description' => '1k peso neto.',
                     'price' => 130,
                     'avatar' => '..\img\seedPro\arrozDblCaroMol1k.png',
-                    'category_id' => 10,
+                    'category_id' => 22,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3134,7 +3134,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr peso neto.',
                     'price' => 66,
                     'avatar' => '..\img\seedPro\arrozDblCaroMol500g.png',
-                    'category_id' => 10,
+                    'category_id' => 22,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3148,7 +3148,7 @@ class sederDePrueba extends Seeder
                     'description' => '1lt Molto.',
                     'price' => 66,
                     'avatar' => '..\img\seedPro\vinaManMol1lt.png',
-                    'category_id' => 2,
+                    'category_id' => 15,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3159,7 +3159,7 @@ class sederDePrueba extends Seeder
                     'description' => '500cm3 Menoyo.',
                     'price' => 39,
                     'avatar' => '..\img\seedPro\vinaManMeno500g.png',
-                    'category_id' => 2,
+                    'category_id' => 15,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3170,7 +3170,7 @@ class sederDePrueba extends Seeder
                     'description' => '1lt Marolio .',
                     'price' => 57,
                     'avatar' => '..\img\seedPro\vinaManMa1lt.png',
-                    'category_id' => 2,
+                    'category_id' => 15,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3181,7 +3181,7 @@ class sederDePrueba extends Seeder
                     'description' => '500cm3 Marolio.',
                     'price' => 41,
                     'avatar' => '..\img\seedPro\vinaManMa500.png',
-                    'category_id' => 2,
+                    'category_id' => 15,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3192,7 +3192,7 @@ class sederDePrueba extends Seeder
                     'description' => '1lt Alcazar.',
                     'price' => 55,
                     'avatar' => '..\img\seedPro\vinaVinoAlca1lt.png',
-                    'category_id' => 2,
+                    'category_id' => 15,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3205,7 +3205,7 @@ class sederDePrueba extends Seeder
                     'description' => '500cm3 contenido neto.',
                     'price' => 178,
                     'avatar' => '..\img\seedPro\acetoMeno.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3216,7 +3216,7 @@ class sederDePrueba extends Seeder
                     'description' => '500cm3 contenido neto.',
                     'price' => 145,
                     'avatar' => '..\img\seedPro\acetoMonte.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3227,7 +3227,7 @@ class sederDePrueba extends Seeder
                     'description' => '500cm3 contenido neto.',
                     'price' => 58,
                     'avatar' => '..\img\seedPro\salsaSoja.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3240,7 +3240,7 @@ class sederDePrueba extends Seeder
                     'description' => '1k contenido neto.',
                     'price' => 40,
                     'avatar' => '..\img\seedPro\salGruesaCelu500.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3251,7 +3251,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr contenido neto.',
                     'price' => 35,
                     'avatar' => '..\img\seedPro\salFinaCelu500.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3262,7 +3262,7 @@ class sederDePrueba extends Seeder
                     'description' => '1k contenido neto.',
                     'price' => 30,
                     'avatar' => '..\img\seedPro\salGruesaDiq1k.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3273,7 +3273,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr contenido neto.',
                     'price' => 18,
                     'avatar' => '..\img\seedPro\salFinaDiq500.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3284,7 +3284,7 @@ class sederDePrueba extends Seeder
                     'description' => '500gr contenido neto.',
                     'price' => 26,
                     'avatar' => '..\img\seedPro\salFinaMar500.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3295,7 +3295,7 @@ class sederDePrueba extends Seeder
                     'description' => '1k Marolio.',
                     'price' => 38,
                     'avatar' => '..\img\seedPro\salParriMar1k.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3306,7 +3306,7 @@ class sederDePrueba extends Seeder
                     'description' => '1k Marolio.',
                     'price' => 40,
                     'avatar' => '..\img\seedPro\salParriMarEst1k.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3319,7 +3319,7 @@ class sederDePrueba extends Seeder
                     'description' => '250g contenido neto.',
                     'price' => 42,
                     'avatar' => '..\img\seedPro\mayoNat250.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3330,7 +3330,7 @@ class sederDePrueba extends Seeder
                     'description' => '500g contenido neto.',
                     'price' => 62,
                     'avatar' => '..\img\seedPro\mayoNat500.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3341,7 +3341,7 @@ class sederDePrueba extends Seeder
                     'description' => '500g contenido neto.',
                     'price' => 110,
                     'avatar' => '..\img\seedPro\mayoOliv500.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3352,7 +3352,7 @@ class sederDePrueba extends Seeder
                     'description' => '250g contenido neto.',
                     'price' => 45,
                     'avatar' => '..\img\seedPro\mayoHell250.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3363,7 +3363,7 @@ class sederDePrueba extends Seeder
                     'description' => '500g contenido neto.',
                     'price' => 98,
                     'avatar' => '..\img\seedPro\mayoHell500.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3376,7 +3376,7 @@ class sederDePrueba extends Seeder
                     'description' => '180g contenido neto.',
                     'price' => 55,
                     'avatar' => '..\img\seedPro\aceiRodNuc180.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3387,7 +3387,7 @@ class sederDePrueba extends Seeder
                     'description' => '180g contenido neto.',
                     'price' => 55,
                     'avatar' => '..\img\seedPro\aceiRellNuc180.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3398,7 +3398,7 @@ class sederDePrueba extends Seeder
                     'description' => '180g contenido neto.',
                     'price' => 52,
                     'avatar' => '..\img\seedPro\aceiSCNuc180.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3410,7 +3410,7 @@ class sederDePrueba extends Seeder
                     'description' => '100g contenido neto.',
                     'price' => 39,
                     'avatar' => '..\img\seedPro\aceiCCGen100.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3421,7 +3421,7 @@ class sederDePrueba extends Seeder
                 'description' => '100g Gentleman.',
                 'price' => 45,
                 'avatar' => '..\img\seedPro\aceiSCGen100.png',
-                'category_id' => 4,
+                'category_id' => 17,
                 'stock' => 1,
                 'promo' => 0,
               ]
@@ -3432,7 +3432,7 @@ class sederDePrueba extends Seeder
                     'description' => '100g contenido neto.',
                     'price' => 75,
                     'avatar' => '..\img\seedPro\pepiNuc.png',
-                    'category_id' => 4,
+                    'category_id' => 17,
                     'stock' => 1,
                     'promo' => 0,
                 ]
@@ -3446,7 +3446,7 @@ class sederDePrueba extends Seeder
                 'description' => 'rinde 13 porciones',
                 'price' => 95,
                 'avatar' => '..\img\seedPro\bizRavVai.png',
-                'category_id' => 9,
+               'category_id' => 25,
                 'stock' => 1,
                 'promo' => 0,
               ]
@@ -3457,11 +3457,12 @@ class sederDePrueba extends Seeder
                     'description' => 'rinde 8 porciones',
                     'price' => 32,
                     'avatar' => '..\img\seedPro\flanRavVai.png',
-                    'category_id' => 9,
+                   'category_id' => 25,
                     'stock' => 1,
                     'promo' => 0,
                 ]
             );
+            
 
 
     }

@@ -147,6 +147,7 @@ class ProductoController extends Controller
       $subcategorias = Subcategory::all();
       return view('product.products', compact('subcategorias'));
     }
+    
 
     public function catProdCom(){
       $subcategorias = Subcategory::where('name','=','Comestibles')->get();

@@ -78,7 +78,7 @@ class RegisterController extends Controller
      {
 
        //dd($data);
-       $nombreArchivo = 'user_default.jpg';
+       $nombreArchivo = '../../img\barbijo.png';
        //debemos tener en cuenta que si hay un archivo, lo subimos y le guardamos la ruta
        if(isset($data['foto'])){
          //al archivo que subi lo voy a guardar en el filesystem de laravel

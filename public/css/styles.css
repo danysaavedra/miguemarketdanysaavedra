@@ -1134,13 +1134,143 @@ nav ul li a{
 }
 
 }
-@media (min-width: 2559px){
+@media (min-width: 1919px){
 .navbar-expand-lg .navbar-nav {
     width: 100%;
     padding: 0% 3% 1% 15%;
     justify-content: center;
     text-align: center;
 }
+nav .logoMigue {
+  background-image: url(../img/logoHoriz2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 3px;
+      left: 14px;
+      width: 25%;
+      height: auto;
+      margin: 1px 1px 1px 1px;
+      margin: 3px 14px 2px 333px;
+       
+  }
+
+
+
+
+footer {
+    background-color: #e2efee;
+
+    padding-top: 5px;
+    text-align: center;
+    bottom: 0;
+}
+footer .container {
+    margin: 5px auto 5px;
+}
+footer .footer-copyright {
+    background-color: #597aa6;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+footer .footer-copyright p {
+    font-size: 0.8em;
+    margin: 10px;
+    color: #ccc;
+}
+footer ul {
+    font-size:1.3em;
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+footer .logo-footer {
+  width: 481px;
+  height: auto;
+  margin: 5px 0 10px -90px;
+}
+
+footer h5 {
+    font-size: 2.1em;
+
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+footer a {
+    color: #597aa6;
+    text-decoration: none;
+    list-style-type: none;
+}
+footer a:hover, footer a:active {
+    text-decoration: none;
+    color: white;
+}
+footer h1 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+footer .iconos-redes {
+    display: inline;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+footer .iconos-redes a {
+
+    color: #e2efee;
+    padding: 5px;
+    transition: 0.2s;
+}
+footer .iconos-redes a ion-icon
+{
+  font-size: 3.2em;
+}
+
+footer .iconos-redes a:hover {
+    background-color: #fff;
+    text-decoration: none;
+    color: #64a19d;
+}
+
+footer .btn {
+    color: white;
+    background-color: #597aa6;
+    border-radius: 20px;
+    border: none;
+    width: 220px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+ion-icon {
+color: #597aa6;
+font-size: 3em;
+}
+
+nav ul li a {
+    font-size: 12px;
+}
+
+
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+  padding: 0% 3% 1% 15%;
+  justify-content: center;
+  text-align: center;
+
+}
+.navbar-collapse {
+padding-top: -10px;
+margin-left:0px;
+margin-right:  00px;
+}
+
 }
 
 

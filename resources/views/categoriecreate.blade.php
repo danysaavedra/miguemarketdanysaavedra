@@ -11,21 +11,6 @@
     </div>
     <div class="contenedor">
 
-      <!-- BUSCADOR -->
-      <form class="form-inline pull-right" action="" method="get">
-          <div class="form-group">
-              Buscador de Categorias:
-              <input type="text" name="name" value="" class="form-control">
-              <button type="submit" class="btn btn-primary">Buscar</button>
-          </div>
-      </form>
-
-     @if (session('mensaje'))
-        <div class="alert alert-success">
-            {{ session('mensaje') }}
-        </div>
-     @endif
-<!-- BUSCADOR -->
 
       <form class="formulariogrande" id="formCreate" action="/categoriecreate" method="post" enctype="multipart/form-data">
        @csrf

@@ -40,7 +40,7 @@
             <li>
                 <a class="enlace_desactivado" href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
                 <ul>
-                    <li><a class="" href="/productos/limp">Perfumería y Limpieza</a>
+                    <li><a class="enlace_desactivado" href="/productos/limp">Perfumería y Limpieza</a>
                       <ul>
                             <li><a class="" href="/productos/detallesSub/limp/super">Superficies y Pisos</a></li>
                             <li><a class="" href="/productos/detallesSub/limp/repelentes">Repelentes</a></li>
@@ -51,7 +51,7 @@
                           </ul>
                     </li>
                     <li>
-                      <a  class="" href="/productos/com">Comestibles</a>
+                      <a  class="enlace_desactivado" href="/productos/com">Comestibles</a>
                         <ul>
                             <li><a class="" href="/productos/detallesSub/com/fiambresQuesos">Fiambres y Quesos</a></li>
                             <li><a class="" href="/productos/detallesSub/com/aceites">Aceites Y Vinagres</a></li>
@@ -78,7 +78,7 @@
                         </ul>
 
                     </li>
-                    <li><a class="" href="/productos/beb">Bebidas</a>
+                    <li><a class="enlace_desactivado" href="/productos/beb">Bebidas</a>
                         <ul>
                             <li><a class="" href="/productos/detallesSub/beb/alcohol">Con Alcohol</a></li>
                             <li><a class="" href="/productos/detallesSub/beb/sinAlcohol">Sin Alcohol</a></li>
@@ -91,11 +91,11 @@
             <li><a href="#"><ion-icon name="mail-outline"></ion-icon> <br> Contacto<span class="flecha">&#9660;</span></a></li>
             <li><a href="/preguntas"><ion-icon name="help-circle-outline"></ion-icon> <br> Preguntas <br>Frecuentes <span class="flecha">&#9660;</span></a></li>
 
-                        @if((Auth::user()) && (Auth::user()->admin))
-            <!-- <li>
+                     @if((Auth::user()) && (Auth::user()->admin))
+            <li>
               <a href="/productos/agregar"><ion-icon name="beer-outline"></ion-icon><br>Agregar</a>
-            </li> -->
-            <!-- <li class="nav-item active">
+            </li> 
+          <!--   <li class="nav-item active">
               <a  href="/categoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar Categoria </a>
             </li>
             <li class="nav-item active">

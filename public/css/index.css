@@ -62,7 +62,7 @@ background: transparent;
 }
 
 .buscador{
-  padding: 1% 1% 1.5% 1%;
+  padding: 1.5% 1% 2.5% 1%;
 background-color: #346397;
 
 }
@@ -82,7 +82,7 @@ background-color: #346397;
   background-size: cover;
 }
 h2{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 @media (min-width: 319px) {
 .elh1{
@@ -175,13 +175,6 @@ color: white;
 
   }
 }
-
-
-
-
-}
-
-
 
 
 #relativo {
@@ -471,7 +464,7 @@ section {
   @media (min-width: 319px) {
 
     .breadcrumb{
-      font-size: 1.2em;
+      font-size: 0.9em;
       border: groove;
       background-color: #e2efee;
       margin-top: 2%;
@@ -612,7 +605,7 @@ section {
   @media (min-width: 374px) {
 
     .breadcrumb{
-      font-size: 1.2em;
+      font-size: 0.9em;
       border: groove;
       background-color: #e2efee;
       margin-top: 2%;
@@ -754,7 +747,7 @@ section {
     ;
   }
   .breadcrumb{
-    font-size: 1.2em;
+    font-size: 0.9em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
@@ -902,7 +895,7 @@ section {
 }
 @media (min-width: 1023px){
   .breadcrumb{
-    font-size: 1.3em;
+    font-size: 1.2em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
@@ -1039,7 +1032,7 @@ height: 300px;
              border-color:cornflowerblue;
              width: 150px;
              align-items: center;
-             margin:0% 0% 0% 648px;
+             margin:0% 0% 0% 633px;
              margin-top: 10px;
              line-height: 49px;
 
@@ -1088,8 +1081,6 @@ height: 300px;
 }
 
 
-
-
 @media (min-width: 1399px) {
   .breadcrumb{
     font-size: 1.5em;
@@ -1115,8 +1106,11 @@ color: white;
 height: 350px;
 
 }
+
 }
-@media (min-width: 2559px) {
+
+
+@media (min-width: 1919px) {
   .breadcrumb{
     font-size: 2em;
     border: groove;
@@ -1125,11 +1119,14 @@ height: 350px;
   }
   .elh1{
     color: white;
-    margin: 6px 20px;
-    font-size: 26px;
+    margin: 36px 20px 0px 12px;
+    font-size: 149px;
   }
   .elh3MP{
-color: white;
+    padding-left: 120px;
+    font-size: 103px;
+    color: white;
+    padding: 56px;
   }
   #inf{
 
@@ -1148,6 +1145,19 @@ height: 500px;
 -o-background-size: cover;
 background-size: cover;
 }
+
+  .btnon {
+      color: white;
+      background-color: #597aa6;
+      border-radius: 20px;
+      border-color: cornflowerblue;
+      width: 150px;
+      align-items: center;
+      margin: 0% 0% 0% 46%;
+      margin-top: 10px;
+      line-height: 49px;
+  }
+  
 }
 
 
