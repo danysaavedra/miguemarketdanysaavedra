@@ -25,17 +25,23 @@ Route::get('/productos/detalles/{id}', 'ProductoController@detalle');
  Route::get('/listaProductos', 'ProductoController@prueba');
 
 
- Route::get('/productos/detallesSub', 'ProductoController@sub');
+ Route::get('/pedidos', 'UsuarioController@seccMigue');
 
+ route::post('/pedidos', 'UsuarioController@finalizar');
+
+//CATEGORIAS
+
+ Route::get('/productos/detallesSub', 'ProductoController@sub');
+//Perfumería y Limpieza
  Route::get('/productos/detallesSub/limp/higiene', 'ProductoController@subHig');
  Route::get('/productos/detallesSub/limp/super', 'ProductoController@subSuper');
  Route::get('/productos/detallesSub/limp/repelentes', 'ProductoController@subRepe');
  Route::get('/productos/detallesSub/limp/ropa', 'ProductoController@subRopa');
   Route::get('/productos/detallesSub/limp/varios', 'ProductoController@subVar');
-
+  //Bebidas
  Route::get('/productos/detallesSub/beb/alcohol', 'ProductoController@subCA');
  Route::get('/productos/detallesSub/beb/sinAlcohol', 'ProductoController@subSA');
-
+//Comestibles
  Route::get('/productos/detallesSub/com/fiambresQuesos', 'ProductoController@subFiam');
  Route::get('/productos/detallesSub/com/aceites', 'ProductoController@subAcei');
  Route::get('/productos/detallesSub/com/dulces', 'ProductoController@subDul');
@@ -59,17 +65,6 @@ Route::get('/productos/detalles/{id}', 'ProductoController@detalle');
  Route::get('/productos/detallesSub/com/congelados', 'ProductoController@subCong');
 
 
-
-
-
-
-
-
-
-
-
-
-
 Route::post('/productos', 'ProductoController@save');
 // ->middleware(['auth', 'admin']);
 
@@ -81,12 +76,6 @@ Route::post('/productos/delete/{id}', 'ProductoController@borrar');//->middlewar
 
 Route::get('/carrito', 'CarritoController@index');//->middleware('auth');
 Route::get('/carrito', 'CarritoController@miCarrito');//->middleware('auth');
-
-
-
-
-Route::get('/pedidos', 'serController@usuario');
-
 
 
 

@@ -21,51 +21,80 @@
 
 @if(isset($detalles))
   <div class="carrito">
-
     <h2 class="miCarrito">Este es tu Carrito {{Auth::user()->name}}</h2>
         <a href="/listaProductos">Seguir Comprando</a>
-              <?php
-                   $suma = 0;
-                    ?>
+              <?php $suma = 0; ?>
               @foreach($detalles as $detalle)
-              <form class="" action="/carrito/sacarCarrito" method="post">
-              @csrf
-            <br>
-            <div class="card-group">
 
-                          <div class="card" id="boton-sacarCarrito">
-                            <div class="card-body">
-                            <button class="btn btn-outline-danger" type="submit" name="detalle_id" value="{{$detalle->id}}"> <strong>X</strong> </button>
-                          </div>
-                          </div>
-              <div class="card">
-                  <div class="card-body" id="avatar-carrito" style="max">
-                  <img src="storage/{{$detalle->avatar}}" alt="">
-                </div>
-              </div>
-              <div class="card" id="prodcuto-nombre" >
-                <div class="card-body">
-              <p class="card-text"><small class="text-muted">{{$detalle->name}}</small></p>
-              </div>
-              </div>
-              <div class="card" id="producto-precio">
-                <div class="card-body">
-                  <p class="card-text"><small class="text-muted">Precio por Unidad:  ${{$detalle->price}}</small></p>
-                </div>
-              </div>
 
-              <div class="card" id="producto-precio">
-                <div class="card-body">
-                  <p class="card-text"><small class="text-muted">Seleccionados: {{$detalle->pivot->quantity}} <br> Subtotal:  ${{$detalle->price * $detalle->pivot->quantity }} </small></p>
-                </div>
-              </div>
+      <form class="" action="/carrito/sacarCarrito" method="post">
+          @csrf
+          <br>
+        <div class="card-group">
+          <div class="card" id="boton-sacarCarrito">
+            <div class="card-body">
+              <button class="btn btn-outline-danger" type="submit" name="detalle_id" value="{{$detalle->id}}"><strong>X</strong> </button>
             </div>
-    </form>
+          </div>
+      </form>
 
-<?php  $subtotal[]= $detalle->price * $detalle->pivot->quantity;
+        <div class="card">
+            <div class="card-body" id="avatar-carrito" style="max">
+            <img src="storage/{{$detalle->avatar}}" alt="">
+          </div>
+        </div>
+        <div class="card" id="prodcuto-nombre" >
+          <div class="card-body">
+          <p class="card-text"><small class="text-muted">{{$detalle->name}}</small></p>
+        </div>
+        </div>
+        <div class="card" id="producto-precio">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Precio por Unidad:  ${{$detalle->price}}</small></p>
+          </div>
+        </div>
+        <div class="card" id="producto-precio">
+          <div class="card-body">
+            <p class="card-text"><small class="text-muted">Seleccionados: {{$detalle->pivot->quantity}}<br>Subtotal: ${{$detalle->price * $detalle->pivot->quantity }}</small></p>
+          </div>
+        </div>
+      </div>
+  
+<?php  
+$subtotal[]= $detalle->price * $detalle->pivot->quantity;
  $suma = array_sum($subtotal);
 ?>
 @endforeach
+@endif
+@if(isset($detalles))
+<form action="/pedidos" method="post">
+@csrf
+
+<input type="hidden" value='{{Auth::user()->name}}' name="name">
+<input type="hidden" value="{{Auth::user()->lastname}}" name="lastname">
+<input type="hidden" value="{{Auth::user()->domicilio}}" name="domicilio">
+<input type="hidden" value="{{Auth::user()->nro}}" name="nro">
+<input type="hidden" value='{{Auth::user()->dto}}' name="dto" >
+<input type="hidden" value='{{Auth::user()->piso}}' name="piso" >
+<input type="hidden" value='{{Auth::user()->localidad}}' name="localidad" >
+<input type="hidden" value='{{Auth::user()->partido}}' name="partido"> 
+<input type="hidden" value='{{Auth::user()->calle1}}' name="calle1" >
+<input type="hidden" value='{{Auth::user()->calle2}}' name="calle2" >
+<input type="hidden" value='{{Auth::user()->tel1}}' name="tel1" >
+<input type="hidden" value='{{Auth::user()->tel2}}' name="tel2" > 
+
+@foreach($detalles as $detalle)
+
+<input type="hidden" value='{{$detalle->name}}' name="producto">
+<input type="hidden" value='{{$detalle->price}}' name="precio">
+<input type="hidden" value='{{$detalle->pivot->quantity}}' name="cantidad">
+<input type="hidden" value='{{$detalle->price * $detalle->pivot->quantity}}' name="total">
+
+
+<input type="hidden" value="strtotime( string $time [, int $now = time() ]): int" name='fecha_pedido'>
+
+@endforeach
+
 
 <div class="card text-black bg-primary mb-3">
   <div  class="total-carrito" >
@@ -85,24 +114,11 @@
     </ul>
 
   </div>
+
+
 </div>
-
-
-<!-- <div class="total-carrito"class="card-body text-dark" class="h-50 d-block" class="width:80%;">
-  <ul class="list-group list-group-horizontal">
-
-    <li class="list-group-item"><h5 style='color:black'  class="card-title">Total:</h5></li>
-    <li class="list-group-item" ><strong>${{$suma}}</strong></li>
-  </ul>
-  <button style="margin-bottom: 20px;" type="submit" name="" value="">Finalizar compra</button>
-</div> -->
-</div>
-  @endif
-  </div>
-</div>
-
-
-
+</form>
+@endif
 <script src="/js/botonarriba.js"></script>
 <script src="/js/librerias.js"></script>
 <script src="/js/products.js"></script>

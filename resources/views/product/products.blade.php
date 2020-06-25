@@ -30,13 +30,13 @@
   <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="/productos/limp">Perfumería y Limpieza</a></button> -->
 
 @if(isset($subcategorias))
-@foreach($subcategorias as $subcategoria)
-<h2 class="titulo-productos"><strong> {{$subcategoria->name}}</strong></h2>
-@endforeach
 
 @foreach($subcategorias as $subcategoria)
+
+<!-- <img class="fondo" src="{{$subcategoria->imagen}}" alt="ok"> -->
+
 @if($subcategoria->name=="Bebidas")
-<ol class="breadcrumb">
+<ol style='padding-left:8%' class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
@@ -44,7 +44,8 @@
  <!-- <a href="/productos/com"><button type="button" class="btnb btn-lg btn-inline-block">Comestibles</button></a>
 <a href="/productos/limp"><button type="button" class="btnb btn-lg btn-inline-block">Perfumería y Limpieza</button></a> -->
 @elseif($subcategoria->name=="Perfumería y Limpieza")
-<ol class="breadcrumb">
+<ol style='padding-left:8%'
+class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
   <li class="breadcrumb-item active" aria-current="page">Perfumería y Limpieza</li>
@@ -52,7 +53,8 @@
  <!-- <a href="/productos/com"><button type="button" class="btnb btn-lg btn-inline-block">Comestibles</button></a>
  <a href="/productos/beb"><button type="button" class="btnb btn-lg btn-inline-block">Bebidas</button></a> -->
 @elseif($subcategoria->name=="Comestibles")
-<ol class="breadcrumb">
+<ol style='padding-left:8%'
+ class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
   <li class="breadcrumb-item active" aria-current="page">Comestibles</li>
@@ -61,6 +63,10 @@
 <a href="/productos/limp"><button type="button" class="btnb btn-lg btn-inline-block">Perfumería y Limpieza</button></a> -->
 @endif
 @endforeach
+@foreach($subcategorias as $subcategoria)
+<h2 class="titulo-productos"><strong> {{$subcategoria->name}}</strong></h2>
+@endforeach
+
 @endif
 
 @if(isset($subcategorias))
@@ -119,7 +125,7 @@
       @foreach ($subcategorias as $subcategoria)
       @foreach($subcategoria ->categorias as $categoria)
       @foreach ($categoria->products as $product)
-  <div class="col-sm-4" id="div-producto{{$product->id}}">
+      <div class="col-sm-4" id="div-producto{{$product->id}}">
     <div class="card mb-3">
 
         <div class="card-producto">
@@ -127,25 +133,60 @@
               <div class="producto-hover-content">
                   <form action="/productos/agregarCarrito" method="post">
                   @csrf
-                  @if($product->stock > 0)
+                  
+                  @if(Auth::user() && $product->stock > 0)
 
-                  @if(Auth::user())
-                    <button type="submit" class=""  name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
-                    @endif
-                    <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
 
-                    @else
+                  <button type="submit" class=""  name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
+                  @endif
+                  @if($product->stock == 0)
+                   
                     <!-- <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a> -->
-                      <strong >SIN STOCK</strong> <br>
-                    <ion-icon style='color:white' name="alert-outline"></ion-icon>
-
+                    <strong >Sin stock</strong>
+                   
+                    @elseif($product->stock > 0)
+                  
+                    <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
                     @endif
 
               </div>
           </div>
+
+          @if($product->stock == 0)
+
+
+          <ul class="list-group">
+ 
+ <li class="list-group-item list-group-item-danger">Sin stock</li>
+  
+</ul>
+            <br>
+            @elseif($product->stock < 50)
+ 
+            <ul class="list-group">
+
+  <li class="list-group-item list-group-item-warning">Disponibilidad Limitada</li>
+
+</ul>
+            <br>
+            @elseif($product->stock >= 50)
+
+            
+            <ul class="list-group">
+
+  <li class="list-group-item list-group-item-success">Disponible</li>
+
+</ul>
+            <br>
+ 
+            @endif
+
+
             <img src="/storage/{{$product->avatar}}" alt="">
 
         </div>
+
+
         <div class="titulo">
             <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
             <p style="color:black; font-size:1em"><em> @if($product->stock > 0)

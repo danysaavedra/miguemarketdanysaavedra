@@ -13,25 +13,12 @@ use App\Subcategory;
 class CarritoController extends Controller
 {
 
-
   public function index(){
-
-      $subcategorias = Subcategory::all();
-      return view('cart.carrito',compact('subcategorias'));
+    $subcategorias = Subcategory::all();
+    return view('cart.carrito',compact('subcategorias'));
   }
 
-public function  seecMigue(){
 
-    $user =Auth::user();
-    $datalles=$user->carrito;
-
-    return view('pedidos')
-      ->with([
-        'detalles' => $datalles
-      ]);
-
-
-  }
 
   public function agregarAlCarrito(Request $request){
 
@@ -41,23 +28,25 @@ public function  seecMigue(){
   //  dd($producto);
 
     if ($producto) {
-      $cantidad = $producto->pivot->quantity + $request->quantity;
+      $cantidad = $producto->pivot->quantity + $request->quantity; 
+      
       $user->carrito()->updateExistingPivot($request->product_id,['quantity'=> $cantidad ]);
+
     } else {
+
       $cantidad =  $request->quantity;
       $user->carrito()->attach($request->product_id,['quantity'=> $cantidad]);
+
     }
 
-    if($request->isJson())
+  if($request->isJson())
     {
       return response()->json(['exito' => true, 'cantidad' => $user->carrito->sum('quantity')])->with('mensaje', 'Producto agregado al carrito exitosamente!');
     }
 
-    // return redirect('/productos/limp');
     return redirect( $_SERVER['HTTP_REFERER'])->with('mensaje', 'Producto agregado al carrito exitosamente!');
   }
-//
-// return redirect('/productos')->with('mensaje', 'Borrado de Producto exitoso!');
+
 
   public function miCarrito(){
     $user =Auth::user();
@@ -79,6 +68,9 @@ public function  seecMigue(){
 
   }
 
+
+  
+
   public function sacarDelCarrito( Request $request){
 
     $user =Auth::user();
@@ -90,7 +82,7 @@ public function  seecMigue(){
        $cantidad = $producto->pivot->quantity - 1;
           $user->carrito()->updateExistingPivot($request->product_id,['quantity'=> $cantidad ]);
         } else {
-    $user->carrito()->detach($request->detalle_id,['quantity'=>1]);
+      $user->carrito()->detach($request->detalle_id,['quantity'=>1]);
 
     return redirect('/carrito');
   }

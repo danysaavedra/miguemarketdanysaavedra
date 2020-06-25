@@ -3,8 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use \App\Cart;
-use \App\User;
+use App\Cart;
+use App\User;
 use App\Category;
 use App\Subcategory;
 
@@ -14,6 +14,9 @@ class Product extends Model
 
     protected $fillable = ['name', 'description', 'price','avatar','category_id', 'stock','promo'];
     protected $guarded = [];
+
+
+
 
     public function category()
     {

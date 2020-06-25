@@ -1,7 +1,16 @@
-/* #productosDestacados{
 
 
-} */
+.fondo{
+  width: 50vw;
+  height: 25vh;
+ position: relative;
+  display: block;
+  left: 10%;
+  right: 0;
+  top: 15%;
+  text-align: center;
+} 
+
 .container .ir-arriba{
   display:none;
   background-repeat:no-repeat;
@@ -61,8 +70,9 @@ outline: none;
 background: transparent;
 }
 
+
 .buscador{
-  padding: 1.5% 1% 2.5% 1%;
+padding: 2px 2px 2px 2px;
 background-color: #346397;
 
 }
@@ -71,9 +81,10 @@ background-color: #346397;
   width: 100%;
   height: 100%;
 }
+
+
 #inf{
-  border: 2px solid;
-  border-color: #597aa6;
+
   background-image: url('../img/bannMP.jpg');
   height: 500px;
   -webkit-background-size: cover;
@@ -84,7 +95,7 @@ background-color: #346397;
 h2{
   font-size: 2rem;
 }
-@media (min-width: 319px) {
+@media (min-width: 200px) {
 .elh1{
   color: white;
     margin: 9px -10px;
@@ -118,6 +129,7 @@ color: white;
       color: white;
     }
     #inf{
+      
       height: 102px;
     }
 
@@ -158,7 +170,7 @@ color: white;
         }
         .elh1{
           color: white;
-          margin: 40px 20px 10px 62px;
+          margin: 40px 20px 10px 20px;
           font-size: 59px;
         }
         .elh3MP{
@@ -292,7 +304,7 @@ border-radius: 100%;
   margin-top: 2%;
 }
 section {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 #productosDestacados {
   padding: 25px;
@@ -461,13 +473,26 @@ section {
              line-height: 49px;
 
        }
+
+
+
+
+
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 320 */
+
   @media (min-width: 319px) {
 
     .breadcrumb{
-      font-size: 0.9em;
+      font-size: 1.1em;
       border: groove;
       background-color: #e2efee;
       margin-top: 2%;
+      padding-left: 8%;
+      font-weight: bold;
     }
     .btnon {
                color: white;
@@ -483,11 +508,10 @@ section {
          }
 
     #productosDestacados {
-      padding: 25px;
+      
       text-align: center;
     }
     #productosDestacados h3 {
-
       padding: 15px 0;
     }
     #productosDestacados hr {
@@ -495,7 +519,7 @@ section {
       margin: 5px 0 15px 0;
     }
     .producto {
-      margin-bottom: 15px;
+      margin-bottom:38px;
       position: relative;
     }
     .producto img{
@@ -504,7 +528,6 @@ section {
     }
     #productosDestacados .container-productos .producto .fa-heart{
       font-size: 150%;
-
       color: red;
     }
     #productosDestacados .container-productos .producto .producto-hover {
@@ -596,30 +619,37 @@ section {
     }
 
 
-
-
-
-
-/* MEDIAQUERIES */
   }
+
+
+  
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 375 */
+
+
   @media (min-width: 374px) {
 
     .breadcrumb{
-      font-size: 0.9em;
+      font-size: 1.3em;
       border: groove;
       background-color: #e2efee;
       margin-top: 2%;
+      padding-left: 10%;
+      font-weight: bold;
     }
     .btnon {
-               color: white;
-               background-color: #597aa6;
-               border-radius: 20px;
-               border-color:cornflowerblue;
-               width: 150px;
-               align-items: center;
-               margin:0% 0% 0% 115px;
-               margin-top: 10px;
-               line-height: 49px;
+      color: white;
+      background-color: #597aa6;
+      border-radius: 20px;
+      border-color:cornflowerblue;
+      width: 150px;
+      align-items: center;
+      margin:0% 0% 0% 115px;
+      margin-top: 10px;
+      line-height: 49px;
 
          }
 
@@ -739,6 +769,16 @@ section {
     }
 
   }
+
+
+  
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 425 */
+
+
 @media (min-width: 424px) {
   #sobreNosotros2 p {
     padding: 30px 30px 10px;
@@ -747,10 +787,11 @@ section {
     ;
   }
   .breadcrumb{
-    font-size: 0.9em;
+    font-size: 1.4em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    font-weight: bold;
   }
   .btnon {
              color: white;
@@ -768,13 +809,21 @@ section {
 }
 
 
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 768 */
+
 @media (min-width: 767px) {
 
   .breadcrumb{
-    font-size: 1.2em;
+    font-size: 1.5em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    padding-left: 16%;
+    font-weight: bold;
   }
   .btnon {
              color: white;
@@ -871,6 +920,11 @@ section {
   }
 }
 
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 900 */
 
 @media (min-width: 900px) {
   .breadcrumb{
@@ -878,6 +932,7 @@ section {
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    font-weight: bold;
   }
   .producto img{
     width: 160px;
@@ -893,12 +948,23 @@ section {
   }
 
 }
+
+
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 1024 */
+
+
 @media (min-width: 1023px){
   .breadcrumb{
-    font-size: 1.2em;
+    font-size: 1.7em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    padding-left: 22%;
+    font-weight: bold;
   }
   .btnon {
              color: white;
@@ -980,12 +1046,19 @@ height: 237px;
 
 }
 
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 1365 */
+
 @media (min-width: 1365px) {
   .breadcrumb{
     font-size: 2em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    font-weight: bold;
   }
   .btnon {
              color: white;
@@ -1018,23 +1091,33 @@ height: 300px;
 
 }
 }
+
+
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 1440 */
+
+
 @media (min-width: 1439px){
   .breadcrumb{
     font-size: 2em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    font-weight: bold;
   }
   .btnon {
-             color: white;
-             background-color: #597aa6;
-             border-radius: 20px;
-             border-color:cornflowerblue;
-             width: 150px;
-             align-items: center;
-             margin:0% 0% 0% 633px;
-             margin-top: 10px;
-             line-height: 49px;
+      color: white;
+      background-color: #597aa6;
+      border-radius: 20px;
+      border-color:cornflowerblue;
+      width: 150px;
+      align-items: center;
+      margin:0% 0% 0% 633px;
+      margin-top: 10px;
+      line-height: 49px;
 
        }
   .producto img{
@@ -1081,17 +1164,23 @@ height: 300px;
 }
 
 
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 1400 */
 @media (min-width: 1399px) {
   .breadcrumb{
-    font-size: 1.5em;
+    font-size: 2.3em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    font-weight: bold;
   }
   .elh1{
-    color: white;
-    margin: 36px 20px 0px 12px;
-    font-size: 115px;
+       color: white;
+    margin: 56px 20px 0px 106px;
+    font-size: 90px;
   }
   .elh3MP{
 padding-left: 107px;
@@ -1099,7 +1188,7 @@ font-size: 81px;
 color: white;
   }
   #inf{
-    height: 377px;
+    height: 310px;
   }
 
 .carousel-item {
@@ -1109,29 +1198,53 @@ height: 350px;
 
 }
 
+                                            /* MEDIAQUERIES */
+
+
+
+                                                  /* 32 pulgadas */
 
 @media (min-width: 1919px) {
+
+  #productosDestacados .titulo-productos h3 {
+    font-size: 2.8em;
+}
+
+  .buscador{
+    padding: 21px 2px 21px 2px;
+    background-color: #346397;
+    
+    }
+    
+
+  .navbar {
+    height: 135px;
+    padding: 0;
+}
+
   .breadcrumb{
-    font-size: 2em;
+    font-size: 2.8em;
     border: groove;
     background-color: #e2efee;
     margin-top: 2%;
+    font-weight: bold;
   }
   .elh1{
     color: white;
-    margin: 36px 20px 0px 12px;
-    font-size: 149px;
-  }
+    margin: 40px 20px 0px 125px;
+    font-size: 115px;
+}
+  
   .elh3MP{
-    padding-left: 120px;
-    font-size: 103px;
+    
+    font-size: 85px;
     color: white;
-    padding: 56px;
+    padding: 56px 56px 56px 175px;
   }
   #inf{
 
     background-image: url('../img/bannMP.jpg');
-    height: 500px;
+    height: 400px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1139,7 +1252,7 @@ height: 350px;
   }
 
 .carousel-item {
-height: 500px;
+height: 440px;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -1264,9 +1377,26 @@ background-size: cover;
 .migueblanco{
   border: 2px solid;
   border-color: #597aa6;
-  background-color: #e2efee;
+  background-color: #e9efee;
   text-align: center;
 }
 .verMas{
-  margin: 1%  1%  1%  1%;
+  margin: 1%  1%  5%  1%;
+}
+
+.input-group {
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  width: 85%;
+  left: 8%;
+}
+
+.mt-3, .my-3 {
+  margin-top: 0.5rem!important;
 }
