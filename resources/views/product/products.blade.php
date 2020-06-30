@@ -140,8 +140,7 @@ class="breadcrumb">
                   <button type="submit" class=""  name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
                   @endif
                   @if($product->stock == 0)
-                   
-                    <!-- <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a> -->
+              
                     <strong >Sin stock</strong>
                    
                     @elseif($product->stock > 0)
@@ -165,7 +164,7 @@ class="breadcrumb">
  
             <ul class="list-group">
 
-  <li class="list-group-item list-group-item-warning">Disponibilidad Limitada</li>
+  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
 
 </ul>
             <br>
@@ -198,32 +197,6 @@ class="breadcrumb">
         </div>
       </div>
 
-    <!-- <div class="modal fade" id="producto{{$product->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-          <form class="modal-eliminar" id="form-{{$product->id}}" action="/productos/delete/{{$product->id}}" method="post">
-          @csrf
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Seguro querés eliminar este producto?</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body" style="color: black;">
-              {{$product->name}}
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Volver</button>
-
-              <input type="hidden" name="id" value="{{$product->id}}">
-              <input type="submit" class="btn btn-danger" name="" value="Borrar Producto">
-            </div>
-          </form>
-
-        </div>
-      </div>
-    </div> -->
 @endforeach
 @endforeach
 @endforeach

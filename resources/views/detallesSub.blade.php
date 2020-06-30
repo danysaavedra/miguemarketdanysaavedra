@@ -26,11 +26,11 @@
 
 @if(isset($categorias))
   @foreach($categorias as $categoria)
-  @if($categoria->name=="Higiene Personal"||$categoria->name=="Superficies y Pisos"||$categoria->name=="Repelentes"||$categoria->name=="Ropa"||$categoria->name=="Varios")
+  @if($categoria->name == "Higiene Personal"||$categoria->name=="Superficies y Pisos"||$categoria->name=="Repelentes"||$categoria->name=="Ropa"||$categoria->name=="Varios")
       <h2 class="titulo-productos">Perfumería y Limpieza</h2>
   @elseif($categoria->name=="Con Alcohol"||$categoria->name=="Sin Alcohol")
     <h2 class="titulo-productos">Bebidas</h2>
-      @else($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
+      @elseif($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
       <h2 class="titulo-productos">Comestibles</h2>
       @endif
   @endforeach
@@ -50,7 +50,7 @@
       <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
       <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
     </ol>
-    @else($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
+    @elseif($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
     <ol style='padding-left:8%' class="breadcrumb">
     <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
       <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
@@ -58,9 +58,9 @@
     </ol>
     @endif
     @endforeach
-@endif
 
-@if(isset($categorias))
+
+
 @foreach($categorias as $categoria)
 <h2>{{$categoria->name}}</h2>
 @endforeach
@@ -87,7 +87,7 @@
       <a class="dropdown-item" href="/productos/detallesSub/limp/repelentes">Repelentes</a>
       <a class="dropdown-item" href="/productos/detallesSub/limp/ropa">Ropa</a>
       <a class="dropdown-item" href="/productos/detallesSub/limp/varios">Varios</a>
-     @else($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
+     @elseif($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
 
       <a class="dropdown-item" href="/productos/detallesSub/com/fiambresQuesos">Fiambres y Quesos</a>
       <a class="dropdown-item" href="/productos/detallesSub/com/aceites">Aceites y Vinagres</a>
@@ -159,7 +159,7 @@
  
             <ul class="list-group">
 
-  <li class="list-group-item list-group-item-warning">Disp. Limitada</li>
+  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
 
 </ul>
             <br>

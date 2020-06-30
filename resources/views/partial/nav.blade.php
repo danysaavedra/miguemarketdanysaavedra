@@ -90,10 +90,10 @@
   <li><a href="/preguntas"><ion-icon name="help-circle-outline"></ion-icon> <br> Preguntas <br>Frecuentes <span class="flecha">&#9660;</span></a></li>
 
             @if((Auth::user()) && (Auth::user()->admin))
-  <li>
+  <!-- <li>
     <a href="/productos/agregar"><ion-icon name="beer-outline"></ion-icon><br>Agregar</a>
   </li> 
-<!--   <li class="nav-item active">
+  <li class="nav-item active">
     <a  href="/categoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar <br> Categoria </a>
   </li>
   <li class="nav-item active">

@@ -16,8 +16,11 @@ class UsuarioController extends Controller
 {
     public function  seccMigue(){
 
-        
-        return view('/pedidos');
+      $productos = Product::all();
+      $cart = Cart::all();
+      $user = User::all();
+
+        return view('/pedidos', compact('cart','user','productos'));
     
     
       }
@@ -27,7 +30,7 @@ class UsuarioController extends Controller
 
         $compraCliente = $request->all();
         
-     dd($compraCliente);
+    /*  dd($compraCliente); */
         return view('/pedidos', compact('compraCliente'));
       
 

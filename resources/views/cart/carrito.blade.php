@@ -91,7 +91,7 @@ $subtotal[]= $detalle->price * $detalle->pivot->quantity;
 <input type="hidden" value='{{$detalle->price * $detalle->pivot->quantity}}' name="total">
 
 
-<input type="hidden" value="strtotime( string $time [, int $now = time() ]): int" name='fecha_pedido'>
+<input type="hidden" value=" now() " name='fecha_pedido')>
 
 @endforeach
 

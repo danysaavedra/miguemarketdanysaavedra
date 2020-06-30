@@ -55,7 +55,7 @@
                   @endif
                   @elseif($caca->stock === 0)
 
-                <a href="{{ url()->previous() }}"> Producto Sin STOCK volver a seccion compras </a>
+                <a href="{{ url()->previous() }}">SIN STOCK. Volver a sección compras</a>
                 <br><br><br>
                 @endif
                   @if((Auth::user())&& (Auth::user()->admin))

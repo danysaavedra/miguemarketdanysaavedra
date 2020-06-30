@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Auth;
-
+use App\Role;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -54,7 +54,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'domicilio' => ['required', 'string', 'max:255'],
             'nro' => ['required', 'string', 'max:255'],
-            'dto' => ['string', 'max:255'],
+            'dto' => ['nullable','string', 'max:255'],
             'piso' => ['required', 'string', 'max:255'],
             'localidad' => ['required', 'string', 'max:255'],
             'partido' => ['required', 'string', 'max:255'],
@@ -104,5 +104,11 @@ class RegisterController extends Controller
              'password' => Hash::make($data['password']),
              'foto' => $nombreArchivo,
          ]);
+         
+         $user->roles()->attach(Role::where('name', 'user')->first());
+         return $user;
      }
+
+
+
 }

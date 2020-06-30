@@ -16,7 +16,10 @@ class Product extends Model
     protected $guarded = [];
 
 
-
+    public function usuarioss()
+    {
+      return $this->belongsTo(User::class);
+    }
 
     public function category()
     {

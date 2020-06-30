@@ -43,7 +43,7 @@
  <!-- promociones -->
   <section id="productosDestacados">
     <div class="titulo-productos">
-        <h3>PROMOCIONES <br>Semana del 3/6 al 15/6</h3>
+        <h3>PROMOCIONES <br>Semana del 3/7 al 10/7</h3>
       <hr>
     </div>
     @if(isset($productos))
@@ -69,14 +69,14 @@
             </a>
         </div>
  
-
+        <!-- https://fullstacklima2.slack.com/files/U6G1JK4KX/FRWDVE1UG/mercadopago_edit.mp4 -->
 
             @elseif( $producto->promo === 1 && $producto->stock < 50 )
             <div style="text-align:center">
             <a href="/productos/detalles/{{$producto->id}}">
             <ul class="list-group">
 
-  <li class="list-group-item list-group-item-warning">Disp. Limitada</li>
+  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
 
 </ul><img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
             <br>
@@ -174,19 +174,20 @@
 </ul>
             <br>
             @elseif($producto->stock < 50)
+            <a href="/productos/detalles/{{$producto->id}}">
             <br>
             <p>{{$producto->description}}</p>
             <br>
             <strong>${{$producto->price}}</strong>
             <br>
             <ul class="list-group">
-  <li class="list-group-item list-group-item-warning">Disp. Limitada</li>
+  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
 </ul>
             <br>
 
-            
+</a>
   @elseif($producto->stock >= 50)
-
+  <a href="/productos/detalles/{{$producto->id}}">
   <br>
             <p>{{$producto->description}}</p>
             <br>
@@ -196,6 +197,7 @@
             <li class="list-group-item list-group-item-success">Disponible</li>
 </ul>
             <br>
+</a>
 @endif
             </article>
           @endif
@@ -226,10 +228,15 @@
         <div class="carousel-item active">
           <img src="/img/comestibles.jpg" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
+
+      <div class="carousel-item">
+          <img src="/img/carrB.png" class="d-block w-100" alt="...">
+        </div>
+       
+      <div class="carousel-item">
           <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
         </div>
-      </div>
+    
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -282,7 +289,7 @@
 
                 
                   @if($producto->stock == 0)
-                  
+                 
             <br>
             <p>{{$producto->description}}</p>
             <br>
@@ -295,6 +302,7 @@
 </ul>
             <br>
             @elseif($producto->stock < 50)
+            <a href="/productos/detalles/{{$producto->id}}">
             <br>
             <p>{{$producto->description}}</p>
             <br>
@@ -304,10 +312,10 @@
   <li class="list-group-item list-group-item-warning">Disp. Limitada</li>
 </ul>
             <br>
-
+</a>
             
   @elseif($producto->stock >= 50)
-
+  <a href="/productos/detalles/{{$producto->id}}">
   <br>
             <p>{{$producto->description}}</p>
             <br>
@@ -317,6 +325,7 @@
             <li class="list-group-item list-group-item-success">Disponible</li>
 </ul>
             <br>
+            </a>
 @endif
             </article>
        

@@ -82,7 +82,7 @@
  
             <ul class="list-group">
 
-  <li class="list-group-item list-group-item-warning">Disp. Limitada</li>
+  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
 
 </ul>
             <br>

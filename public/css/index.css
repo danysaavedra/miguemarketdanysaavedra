@@ -307,7 +307,7 @@ section {
   margin-top: 0px;
 }
 #productosDestacados {
-  padding: 25px;
+  padding: 2px 25px;
   text-align: center;
 }
 #productosDestacados h3 {
@@ -487,7 +487,7 @@ section {
   @media (min-width: 319px) {
 
     .breadcrumb{
-      font-size: 1.1em;
+      font-size: 1.3em;
       border: groove;
       background-color: #e2efee;
       margin-top: 2%;
@@ -654,7 +654,7 @@ section {
          }
 
     #productosDestacados {
-      padding: 25px;
+      padding: 2px 25px;
       text-align: center;
     }
     #productosDestacados h3 {
@@ -780,6 +780,12 @@ section {
 
 
 @media (min-width: 424px) {
+
+  #productosDestacados {
+    padding: 2px 25px;
+    text-align: center;
+  }
+  
   #sobreNosotros2 p {
     padding: 30px 30px 10px;
     margin: 0 50px;
@@ -1179,7 +1185,7 @@ height: 300px;
   }
   .elh1{
        color: white;
-    margin: 56px 20px 0px 106px;
+    margin: 50px 20px 0px 106px;
     font-size: 90px;
   }
   .elh3MP{
@@ -1231,7 +1237,7 @@ height: 350px;
   }
   .elh1{
     color: white;
-    margin: 40px 20px 0px 125px;
+    margin: 30px 20px 0px 170px;
     font-size: 115px;
 }
   
