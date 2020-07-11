@@ -66,7 +66,7 @@
           </ul>
 
           </li>
-          <li><a class="enlace_desactivado" href="/productos/limp">Perfumería y Limpieza</a>
+          <li><a class="enlace_desactivado" href="/productos/limp">Perfumería <br>y Limpieza</a>
             <ul>
                   <li><a class="" href="/productos/detallesSub/limp/super">Superficies y Pisos</a></li>
                   <li><a class="" href="/productos/detallesSub/limp/repelentes">Repelentes</a></li>
@@ -87,7 +87,7 @@
 
   <li><a href="/"><ion-icon name="home-outline"></ion-icon> <br> Home</a></li>
   <li><a href="#"><ion-icon name="mail-outline"></ion-icon> <br> Contacto<span class="flecha">&#9660;</span></a></li>
-  <li><a href="/preguntas"><ion-icon name="help-circle-outline"></ion-icon> <br> Preguntas <br>Frecuentes <span class="flecha">&#9660;</span></a></li>
+
 
             @if((Auth::user()) && (Auth::user()->admin))
   <!-- <li>
@@ -107,6 +107,7 @@
       (<span style="color:red"; id="cantCar">{{ $user->carrito()->sum('quantity') }}</span>)
       <br> Carrito</a>
     </li>
+    <li><a href="/pedidos"><ion-icon name="people-circle-outline"></ion-icon><br> Perfil <br>{{Auth::user()->name}} </a></li>
     @endif
 
   @guest
@@ -137,9 +138,9 @@
       </div>
     </li>
 
-            @endguest 
-            </ul>
-          </ul>
-        </div>
-      </nav>
+      @endguest 
+      </ul>
+    </ul>
+  </div>
+</nav>
 </div>

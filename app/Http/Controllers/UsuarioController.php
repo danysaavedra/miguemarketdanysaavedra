@@ -8,31 +8,43 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use \App\Cart;
 use \App\User;
-use \App\Product;
-use App\Category;
-use App\Subcategory;
+use \App\Order;
 
 class UsuarioController extends Controller
 {
     public function  seccMigue(){
 
-      $productos = Product::all();
-      $cart = Cart::all();
-      $user = User::all();
+      $orders = Auth::user()->orders;
 
-        return view('/pedidos', compact('cart','user','productos'));
-    
-    
+      $orders->transform(function($order, $key)
+      {
+          $order->cart = unserialize($order->cart);
+          return $order;
+      });
+
+
+      return view('/pedidos',['orders' => $orders]);
       }
+
+
+//esta funcion debe estar en PrincipalController
 
       public function finalizar(Request $request){
 
+      $carritoCompra = $request->all();
+     $cart = new Cart ($carritoCompra);
 
-        $compraCliente = $request->all();
-        
-    /*  dd($compraCliente); */
-        return view('/pedidos', compact('compraCliente'));
+     $order = new Order();
+     $order->cart = serialize($cart);
+     
+     Auth::user()->orders()->save($order);
+     
+      
+     return redirect('/')->with('mensaje', 'TU COMPRA SE PROCESÓ CON EXITO! En breve nos comunicaremos con vos.');
       
 
       }
+
+          
+ 
 }

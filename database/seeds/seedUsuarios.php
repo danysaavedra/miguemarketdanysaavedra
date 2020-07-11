@@ -43,7 +43,7 @@ class seedUsuarios extends Seeder
             [
               'name' => 'Fiambres y Quesos',
               'imagen' => '../img/subComestibles.jpg',
-              'sub_category_id' => 4,
+              'sub_category_id' => 1,
             ]
         );
 
@@ -51,7 +51,7 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Aceites y Vinagres',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
                 ]
             );
             
@@ -60,7 +60,7 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Dulces y Mermeladas',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
 
@@ -69,7 +69,7 @@ class seedUsuarios extends Seeder
             [
               'name' => 'Condimentos y Aderezos',
               'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
 
@@ -77,7 +77,7 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Galletitas',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
                 ]
             );
             
@@ -86,7 +86,7 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Infusiones y Endulzantes',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
 
@@ -94,7 +94,7 @@ class seedUsuarios extends Seeder
             [
               'name' => 'Yerbas',
               'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
 
@@ -102,7 +102,7 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Conservas y Legumbres',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
                 ]
             );
             
@@ -111,7 +111,7 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Rebozadores',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
 
@@ -119,7 +119,7 @@ class seedUsuarios extends Seeder
             [
               'name' => 'Harinas y Premezclas',
               'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
 
@@ -127,7 +127,7 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Arroz',
                 'imagen' => '../img/subComestibles.jpg',
-               'sub_category_id' => 4, 
+               'sub_category_id' => 1, 
                 ]
             );
             
@@ -136,42 +136,42 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Fideos',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Snacks',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Repostería',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Lácteos',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Panes',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Cereales',
                 'imagen' => '../img/subComestibles.jpg',
-                'sub_category_id' => 4,
+                'sub_category_id' => 1,
             ]
         );
  
@@ -184,35 +184,35 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Higiene Personal',
                 'imagen' => '../img/subPerLimp.jpg',
-                'sub_category_id' => 6,
+                'sub_category_id' => 3,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Superficies y Pisos',
                 'imagen' => '../img/subPerLimp.jpg',
-                'sub_category_id' => 6,
+                'sub_category_id' => 3,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Repelentes',
                 'imagen' => '../img/subPerLimp.jpg',
-                'sub_category_id' => 6,
+                'sub_category_id' => 3,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Ropa',
                 'imagen' => '../img/subPerLimp.jpg',
-                'sub_category_id' => 6,
+                'sub_category_id' => 3,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Varios',
                 'imagen' => '../img/subPerLimp.jpg',
-                'sub_category_id' => 6,
+                'sub_category_id' => 3,
             ]
         );
 
@@ -225,14 +225,14 @@ class seedUsuarios extends Seeder
             [
                 'name' => 'Con Alcohol',
                 'imagen' => '../img/subBebi.jpg',
-                'sub_category_id' => 5,
+                'sub_category_id' => 2,
             ]
         );
         DB::table('categories')->insert(
             [
                 'name' => 'Sin Alcohol',
                 'imagen' => '../img/subBebi.jpg',
-                'sub_category_id' => 5,
+                'sub_category_id' => 2,
             ]
         );
     }

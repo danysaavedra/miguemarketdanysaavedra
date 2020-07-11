@@ -66,36 +66,22 @@ $subtotal[]= $detalle->price * $detalle->pivot->quantity;
 ?>
 @endforeach
 @endif
-@if(isset($detalles))
+
+
+
+ @if(isset($detalles))
 <form action="/pedidos" method="post">
 @csrf
-
-<input type="hidden" value='{{Auth::user()->name}}' name="name">
-<input type="hidden" value="{{Auth::user()->lastname}}" name="lastname">
-<input type="hidden" value="{{Auth::user()->domicilio}}" name="domicilio">
-<input type="hidden" value="{{Auth::user()->nro}}" name="nro">
-<input type="hidden" value='{{Auth::user()->dto}}' name="dto" >
-<input type="hidden" value='{{Auth::user()->piso}}' name="piso" >
-<input type="hidden" value='{{Auth::user()->localidad}}' name="localidad" >
-<input type="hidden" value='{{Auth::user()->partido}}' name="partido"> 
-<input type="hidden" value='{{Auth::user()->calle1}}' name="calle1" >
-<input type="hidden" value='{{Auth::user()->calle2}}' name="calle2" >
-<input type="hidden" value='{{Auth::user()->tel1}}' name="tel1" >
-<input type="hidden" value='{{Auth::user()->tel2}}' name="tel2" > 
-
-@foreach($detalles as $detalle)
-
-<input type="hidden" value='{{$detalle->name}}' name="producto">
-<input type="hidden" value='{{$detalle->price}}' name="precio">
-<input type="hidden" value='{{$detalle->pivot->quantity}}' name="cantidad">
-<input type="hidden" value='{{$detalle->price * $detalle->pivot->quantity}}' name="total">
+@foreach($detalles as $detalle)    
 
 
-<input type="hidden" value=" now() " name='fecha_pedido')>
 
+<input type="hidden" value='{{$detalle->name}}' name="carrito[]">
+<input type="hidden" value='{{$detalle->pivot->quantity}}' name="carrito[]">
+<input type="hidden" value='{{$detalle->price}}' name="carrito[]">
+<input type="hidden" value='{{$loop->count}}' name="qty">
+<input type="hidden" value='{{$suma}}' name="total">
 @endforeach
-
-
 <div class="card text-black bg-primary mb-3">
   <div  class="total-carrito" >
     <ul class="list-group list-group-flush">
@@ -105,20 +91,19 @@ $subtotal[]= $detalle->price * $detalle->pivot->quantity;
       <li class="list-group-item"> <strong>TOTAL: ${{$suma}}</strong></li>
       <li class="list-group-item">
          <strong>
-
            <button id="finalizar" type="submit" name="" value="">Finalizar compra</button>
-
          </strong>
-
        </li>
     </ul>
-
+  </div>
   </div>
 
 
-</div>
 </form>
 @endif
+</div>
+
+
 <script src="/js/botonarriba.js"></script>
 <script src="/js/librerias.js"></script>
 <script src="/js/products.js"></script>

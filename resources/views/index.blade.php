@@ -3,14 +3,19 @@
 @section('contenido')
 
 <div class="container-fluid">
+    <!-- volverArriba -->
+    <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+      <span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
 <!-- volverArriba -->
-<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
-  <span class="fa-stack">
-    <i class="fa fa-circle fa-stack-2x"></i>
-    <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
-  </span>
-</a>
-<!-- volverArriba -->
+  @if (session('mensaje'))
+  <div class="alert alert-warning">
+    {{ session('mensaje') }}
+  </div>
+  @endif
 
 <!-- buscador -->
 <form  class="buscador" action="/listaProductos" method="get">
@@ -21,6 +26,7 @@
         </div>
   </div>
 </form>
+
 <!-- fin-buscador -->
 
     <!-- Elegi como hacer tus compras en tu SuperMigue -->
@@ -47,65 +53,51 @@
       <hr>
     </div>
     @if(isset($productos))
-
     <div class="center">
           @foreach ($productos as $producto)
           @if( $producto->promo === 1 && $producto->stock === 0)
-
-
           <div style="text-align:center">
-          <a href="/productos/detalles/{{$producto->id}}">
-                 
+            <a href="/productos/detalles/{{$producto->id}}">   
             <ul class="list-group">
-
- <li class="list-group-item list-group-item-danger">Sin Stock</li>
- 
-</ul>
+              <li class="list-group-item list-group-item-danger">Sin Stock</li>
+            </ul>
             <br>
             <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
             <strong>{{$producto->name}}</strong>
             <br>
             <strong>${{$producto->price}}</strong>
             </a>
-        </div>
+          </div>
  
         <!-- https://fullstacklima2.slack.com/files/U6G1JK4KX/FRWDVE1UG/mercadopago_edit.mp4 -->
 
             @elseif( $producto->promo === 1 && $producto->stock < 50 )
             <div style="text-align:center">
             <a href="/productos/detalles/{{$producto->id}}">
-            <ul class="list-group">
-
-  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
-
-</ul><img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
-            <br>
-            <strong>{{$producto->name}}</strong>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            </a>
+              <ul class="list-group">
+              <li class="list-group-item list- group-item-warning">Stock Limitado</li>
+              </ul>
+                <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
+              <br>
+              <strong>{{$producto->name}}</strong>
+              <br>
+              <strong>${{$producto->price}}</strong>
+              </a>
             </div>
-
-          
             @elseif($producto->promo === 1 && $producto->stock >= 50)
-
             <div style="text-align:center">
-            <a href="/productos/detalles/{{$producto->id}}">
-            <ul class="list-group">
- 
-  <li class="list-group-item list-group-item-success">Disponible</li>
-
-</ul>
-            <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
-            <br>
-            <strong>{{$producto->name}}</strong>
-            <br>
-            <strong>${{$producto->price}}</strong>
-            </a>
+              <a href="/productos/detalles/{{$producto->id}}">
+              <ul class="list-group">
+                <li class="list-group-item list-group-item-success">Disponible</li>
+              </ul>
+              <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
+              <br>
+              <strong>{{$producto->name}}</strong>
+              <br>
+              <strong>${{$producto->price}}</strong>
+              </a>
             </div>
-           
             @endif
-
           @endforeach
         </div>
       @endif
@@ -128,7 +120,7 @@
   <section id="productosDestacados">
     <div class="titulo-productos">
         <h3>Comestibles// <br>
-        Infusiones y Endulzantes'</h3>
+        Infusiones y Endulzantes</h3>
       <hr>
     </div>
     @if(isset($productos))
@@ -137,7 +129,6 @@
           @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Infusiones y Endulzantes')
           @if($loop->odd)
           <article class="producto">
-            
             <a href="/productos/detalles/{{$producto->id}}">
               <div class="producto-hover">
                   <div class="producto-hover-content">
@@ -181,8 +172,8 @@
             <strong>${{$producto->price}}</strong>
             <br>
             <ul class="list-group">
-  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
-</ul>
+            <li class="list-group-item list-group-item-warning">Stock Limitado</li>
+            </ul>
             <br>
 
 </a>
@@ -195,10 +186,10 @@
             <br>
             <ul class="list-group">
             <li class="list-group-item list-group-item-success">Disponible</li>
-</ul>
+            </ul>
             <br>
-</a>
-@endif
+        </a>
+        @endif
             </article>
           @endif
           @endif
@@ -246,7 +237,7 @@
         <span class="sr-only">Next</span>
       </a>
   </div>
-
+  </div>
 
  <!-- primer carrusel -->
 
@@ -405,5 +396,6 @@
 
    <script type="text/javascript" src="js/slide.js"></script>
 <script src="js/botonarriba.js"></script>
-
+<script src="../js/librerias.js"></script>
+<script src="../js/products.js"></script>
 @endsection

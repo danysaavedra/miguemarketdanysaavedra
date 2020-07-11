@@ -71,6 +71,11 @@ public function hasRole($role)
     return false;
 }
 
+public function orders(){
+
+    return $this->hasMany('App\Order');
+
+}
 
 public function productoos()
 {

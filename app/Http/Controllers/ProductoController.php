@@ -13,6 +13,10 @@ use App\User;
 class ProductoController extends Controller
 {
 
+
+
+
+  
   // detalle de producto
     public function detalle($id)
     {

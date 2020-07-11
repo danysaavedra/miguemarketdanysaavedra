@@ -7,38 +7,29 @@
   Route::get('/categoriecreate','CategoryController@createSub')->middleware(['auth', 'admin']);
 
 
-
   Route::get('/subcategoriecreate','SubcategoryController@subcategory')->middleware(['auth', 'admin']);
   Route::post('/subcategoriecreate', 'SubcategoryController@save')->middleware(['auth', 'admin']);
 
-
  Route::get('/productos/agregar', 'ProductoController@createProduct')->middleware(['auth', 'admin']);
-
- Route::get('/pedidos', 'UsuarioController@seccMigue')->middleware(['auth', 'admin']);
-
-
- Route::post('/pedidos', 'UsuarioController@finalizar')->middleware(['auth', 'admin']);
-
  Route::post('/productos', 'ProductoController@save')->middleware(['auth', 'admin']);
  Route::get('/productos/editar/{id}', 'ProductoController@edit')->middleware(['auth', 'admin']);
  Route::post('/productos/editar/{id}', 'ProductoController@update')->middleware(['auth', 'admin']);
  Route::get('/productos/delete/{id}', 'ProductoController@borrarProducto')->middleware(['auth', 'admin']);
  Route::post('/productos/delete/{id}', 'ProductoController@borrar')->middleware(['auth', 'admin']);
 
-//USUARIOS
 
- Route::get('/productos/detalles/{id}', 'ProductoController@detalle');
- Route::get('/productos', 'ProductoController@index');
+//allUSUARIOS
+Route::get('/', 'PrincipalController@buscador');
+Route::get('/', 'PrincipalController@productosDestacados');
 
+Route::get('/productos/detalles/{id}', 'ProductoController@detalle');
+Route::get('/productos', 'ProductoController@index');
  //SUBCATEGORIAS
 
  Route::get('/productos/com', 'ProductoController@catProdCom');
  Route::get('/productos/limp', 'ProductoController@catProdLimpi');
  Route::get('/productos/beb', 'ProductoController@catProdBeb');
  Route::get('/listaProductos', 'ProductoController@prueba');
-
-
-
 
 //CATEGORIAS
 
@@ -76,26 +67,17 @@
  Route::get('/productos/detallesSub/com/congelados', 'ProductoController@subCong');
 
 
-
+//CARRITO
 
  Route::get('/carrito', 'CarritoController@index')->middleware('auth');
  Route::get('/carrito', 'CarritoController@miCarrito')->middleware('auth');
-
-
-
  Route::post('/productos/agregarCarrito', 'CarritoController@agregarAlCarrito')
   ->middleware('auth');
-
  Route::post('/carrito/sacarCarrito', 'CarritoController@sacarDelCarrito')->middleware('auth');
 
- Route::post('/productos/delete/{id}', 'ProductoController@borrar');
-
- Route::get('/', 'PrincipalController@buscador');
-
- Route::get('/', 'PrincipalController@productosDestacados');
-
-
-
+ Route::get('/pedidos', 'UsuarioController@seccMigue')->middleware(['auth']);
+ Route::post('/pedidos', 'UsuarioController@finalizar')->middleware(['auth']);
+ 
 
 
 

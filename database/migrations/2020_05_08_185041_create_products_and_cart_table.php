@@ -24,17 +24,7 @@ class CreateProductsAndCartTable extends Migration
 
             $table->timestamps();
         });
-
-        Schema::create('Categories', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name', 100);
-            //valor por defecto
-            $table->string('imagen', 200)->nullable();
-
-
-            $table->timestamps();
-
-        });
+        
         Schema::create('Subcategories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name', 100);
@@ -45,6 +35,16 @@ class CreateProductsAndCartTable extends Migration
 
 
 
+
+        });
+        Schema::create('Categories', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name', 100);
+            //valor por defecto
+            $table->string('imagen', 200)->nullable();
+
+
+            $table->timestamps();
 
         });
         Schema::create('cart', function (Blueprint $table) {
@@ -67,9 +67,9 @@ class CreateProductsAndCartTable extends Migration
      */
     public function down()
     {
-      Schema::dropIfExists('products');
-      Schema::dropIfExists('Categories');
-      Schema::dropIfExists('Subcategories');
-      Schema::dropIfExists('cart');
+        Schema::dropIfExists('cart');
+        Schema::dropIfExists('Categories');
+        Schema::dropIfExists('Subcategories');
+        Schema::dropIfExists('products');
     }
 }
