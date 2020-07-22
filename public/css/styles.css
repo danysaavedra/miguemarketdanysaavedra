@@ -226,7 +226,7 @@ cursor: default!important;
 
 .dropdown-menu{
   color: #e2efee;
-  min-width: 5rem;
+  min-width: 2rem;
   padding: 0.5rem;
 }
 .dropdown-item{
@@ -356,7 +356,7 @@ footer .btn {
 
 @media (min-width:200px)
 {
-  
+
 
   footer a {
   font-size: x-large;
@@ -537,7 +537,7 @@ footer .btn {
   .logoMigue {
     background-image: url(../img/logoHoriz2.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         position: absolute;
         top: 21px;
         left: 52px;
@@ -656,8 +656,8 @@ footer.logo-footer {
     left: 6px;
     width: 27%;
     height: auto;
-    margin: 18px 4px 8px 15px;
-    padding: 15px 0px 89px 17px;
+    margin: 17px 4px 8px 70px;
+    padding: 14px 0px 89px 24px;
 
 
   }
@@ -1021,7 +1021,7 @@ nav ul li a{
   nav .logoMigue {
     background-image: url(../img/logoHoriz2.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         position: absolute;
         top: 3px;
         left: 14px;
@@ -1160,10 +1160,13 @@ nav ul li a{
                                                   /* 32 pulgadas */
 
 @media (min-width: 1919px){
+  .container{
+    max-width: 1720px;
+  }
 
   .logoHoridex{
     width: 40%;
-  
+
     }
 
 .navbar-expand-lg .navbar-nav {
@@ -1176,7 +1179,7 @@ nav ul li a{
 nav .logoMigue {
   background-image: url(../img/logoHoriz2.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       position: absolute;
       top: 3px;
       left: 14px;
@@ -1184,7 +1187,7 @@ nav .logoMigue {
       height: auto;
       margin: 1px 1px 1px 1px;
       margin: 3px 14px 2px 230px;
-       
+
   }
 
 footer {
@@ -1519,9 +1522,7 @@ background-color:#346397!important;
 .text-md-right{
   text-align: center ! important;
 }
-.row {
-  margin: auto;
-}
+
 form-check {
   padding: 1rem;
 }

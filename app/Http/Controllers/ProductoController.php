@@ -182,7 +182,6 @@ class ProductoController extends Controller
   }
 
     public function borrar(Request $request)
-
     {
         $id = $request['id'];
 

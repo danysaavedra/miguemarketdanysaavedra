@@ -1,5 +1,7 @@
-.containerCarroPapa{
-  margin: 1% 1% 10% 1%;padding-right:25%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 #boton-sacarCarrito{
   max-width: fit-content;
@@ -14,8 +16,8 @@
   border-color:cornflowerblue;
   width: 150px;
   align-items: center;
-  margin:0% 0% 0% 22%;
-  margin-top: 10px;
+  margin:0% 0% 0% 0%;
+  margin-top: 0px;
   line-height: 49px;
 }
 
@@ -117,23 +119,20 @@ div.total-carrito .list-group .list-group-flush{
   background-color: #6EB3C9!important;
 }
 div.total-carrito {
-
-  z-index: 1;
-      display: block;
-      position: fixed;
-      left: 77%;
+      background-color: #597aa6;
+      right: 1px;
       right: 0;
       top: 15%;
       width: 19rem;
       font-size: larger;
       text-align: center;
 }
-.card-title {
+.carrito.card-title {
   padding-left:inherit;
 }
 
 .miCarrito{
-padding-left: 6em;
+padding-left: 0em;
 text-align: center;
 }
 
@@ -147,13 +146,10 @@ div.cardp a {
 
 
 @media (max-width:1439px ) {
-.containerCarroPapa{
-    margin: 1% 1% 10% 1%;padding-right:20%;
-  }
 
   div.total-carrito {
     display: block;
-  position: fixed;
+
   left: 78%;
   right: 0;
   top: 15%;
@@ -174,9 +170,7 @@ div.cardp a {
 
 
 @media (max-width:1365px ) {
-.containerCarroPapa{
-    margin: 1% 13% 10% 1%;padding-right:13%;
-  }
+
   #boton-sacarCarrito{
     max-width: fit-content;
     flex: 1 1 auto;
@@ -292,7 +286,7 @@ div.cardp a {
 
   div.total-carrito {
     display: block;
-  position: fixed;
+
   left: 75%;
   right: 0;
   top: 32%;
@@ -326,9 +320,7 @@ div.cardp a {
 }
 
 @media (max-width:1023px ) {
-.containerCarroPapa{
-    margin: 1% 20% 10% 1%;padding-right:5%;
-  }
+
   #boton-sacarCarrito{
     max-width: fit-content;
     flex: 1 1 auto;
@@ -446,7 +438,7 @@ div.cardp a {
   div.total-carrito {
   font-size: 89%;
   display: block;
-  position: fixed;
+
   left: 73%;
   right: 0;
   top: 27%;
@@ -482,11 +474,9 @@ div.cardp a {
 }
 
 @media (max-width:767px) {
-.containerCarroPapa{
-    margin: 5% 10% 10% 10%;padding-right:0%;
-  }
 
-  .card-group {
+
+.carrito.card-group {
     margin: -29% -5% 11% 5%!important;
 }
   #boton-sacarCarrito{
@@ -593,7 +583,7 @@ div.cardp a {
      margin-top: 50%;
   }
 
-.card-body{
+.carrito.card-body{
   padding: 0.25rem;
 }
   small.text-muted {
@@ -611,7 +601,7 @@ div.cardp a {
   div.total-carrito {
     font-size: 96%;
     display: block;
-    position: fixed;
+
     left: 0%;
     right: 0;
     top: 59%;
@@ -641,9 +631,7 @@ div.cardp a {
 }
 
 @media (max-width:424px ) {
-  .containerCarroPapa{
-      margin: 5% 10% 10% 10%;padding-right:0%;
-    }
+
 
 
 
@@ -657,7 +645,7 @@ div.cardp a {
       div.total-carrito {
         font-size: 96%;
         display: block;
-        position: fixed;
+
         left: 0%;
         right: 0;
         top: 59%;
@@ -677,7 +665,7 @@ div.cardp a {
     border-color:cornflowerblue;
     width: 150px;
     align-items: center;
-    margin:0% 0% 0% 25%;
+    margin:0% 0% 0% 0%;
     margin-top: 10px;
     line-height: 49px;
   }
@@ -794,9 +782,7 @@ div.cardp a {
 
   }
   @media (max-width:374px ) {
-    .containerCarroPapa{
-        margin: 5% 10% 10% 10%;padding-right:0%;
-      }
+
 
 
         small.text-muted {
@@ -809,7 +795,7 @@ div.cardp a {
         div.total-carrito {
           font-size: 76%;
           display: block;
-          position: fixed;
+
           left: 0%;
           right: 0;
           top: 50%;
@@ -829,7 +815,7 @@ div.cardp a {
       border-color:cornflowerblue;
       width: 150px;
       align-items: center;
-      margin:0% 0% 0% 6%;
+      margin:0% 0% 0% 0%;
       margin-top: 10px;
       line-height: 49px;
     }
@@ -947,10 +933,6 @@ div.cardp a {
     }
     @media (max-width:319px ) {
 
-      .containerCarroPapa{
-          margin: 5% 10% 10% 10%;padding-right:0%;
-        }
-
 
           small.text-muted {
             padding-top: 1.5rem;
@@ -962,7 +944,7 @@ div.cardp a {
           div.total-carrito {
             font-size: 96%;
             display: block;
-            position: fixed;
+
             left: 0%;
             right: 0;
             top: 59%;
@@ -982,7 +964,7 @@ div.cardp a {
         border-color:cornflowerblue;
         width: 150px;
         align-items: center;
-        margin:0% 0% 0% 18%;
+        margin:0% 0% 0% 0%;
         margin-top: 10px;
         line-height: 49px;
       }
@@ -1099,16 +1081,23 @@ div.cardp a {
 
       }
 
+      .alert {
+        position: relative;
+        padding: .75rem 1.25rem;
+        /* margin-bottom: 1rem; */
+        border: 1px solid transparent;
+        border-radius: .25rem;
+    }
 /* Agregar producto */
-.card-group>.card {
+form.card-group>.card {
   margin-bottom: -3px;
 }
 
-.card {
+form.card {
   margin: 10px auto;
 }
 /* celu*/
-.card-group{
+form.card-group{
 margin: -17px auto;
 
 }

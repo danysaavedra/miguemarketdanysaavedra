@@ -2,7 +2,7 @@
 
 @section('contenido')
 
-<div class="container-fluid">
+<div class="container">
     <!-- volverArriba -->
     <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
       <span class="fa-stack">
@@ -12,8 +12,8 @@
     </a>
 <!-- volverArriba -->
   @if (session('mensaje'))
-  <div class="alert alert-warning">
-    {{ session('mensaje') }}
+  <div style="margin: 0px auto" class="alert alert-success" role="alert">
+   <strong>{{ session('mensaje') }}</strong>
   </div>
   @endif
 
@@ -30,12 +30,12 @@
 <!-- fin-buscador -->
 
     <!-- Elegi como hacer tus compras en tu SuperMigue -->
-    <div class="row">
-      <div class="col-12 " id="inf" >
+
+      <div id="inf" >
          <h1 class="elh1">Migue Market</h1>
         <h3 class="elh3MP">Podés pagar con</h3>
       </div>
-    </div>
+
  <!-- Elegi como hacer tus compras en tu SuperMigue -->
 
  <!-- botonera productos -->
@@ -57,31 +57,31 @@
           @foreach ($productos as $producto)
           @if( $producto->promo === 1 && $producto->stock === 0)
           <div style="text-align:center">
-            <a href="/productos/detalles/{{$producto->id}}">   
+            <a href="/productos/detalles/{{$producto->id}}">
             <ul class="list-group">
               <li class="list-group-item list-group-item-danger">Sin Stock</li>
             </ul>
             <br>
             <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
-            <strong>{{$producto->name}}</strong>
+            <strong class="titulo-productos">{{$producto->name}}</strong>
             <br>
-            <strong>${{$producto->price}}</strong>
+            <strong class="titulo-productos">${{$producto->price}}</strong>
             </a>
           </div>
- 
-        <!-- https://fullstacklima2.slack.com/files/U6G1JK4KX/FRWDVE1UG/mercadopago_edit.mp4 -->
+
+                  <!-- https://fullstacklima2.slack.com/files/U6G1JK4KX/FRWDVE1UG/mercadopago_edit.mp4 -->
 
             @elseif( $producto->promo === 1 && $producto->stock < 50 )
             <div style="text-align:center">
-            <a href="/productos/detalles/{{$producto->id}}">
+              <a href="/productos/detalles/{{$producto->id}}">
               <ul class="list-group">
-              <li class="list-group-item list- group-item-warning">Stock Limitado</li>
+              <li class="list-group-item list-group-item-warning">Stock Limitado</li>
               </ul>
                 <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
               <br>
-              <strong>{{$producto->name}}</strong>
+              <strong class="titulo-productos">{{$producto->name}}</strong>
               <br>
-              <strong>${{$producto->price}}</strong>
+              <strong class="titulo-productos">${{$producto->price}}</strong>
               </a>
             </div>
             @elseif($producto->promo === 1 && $producto->stock >= 50)
@@ -92,9 +92,9 @@
               </ul>
               <img class="productoPromo"src="/storage/{{$producto->avatar}}"alt="">
               <br>
-              <strong>{{$producto->name}}</strong>
+              <strong class="titulo-productos">{{$producto->name}}</strong>
               <br>
-              <strong>${{$producto->price}}</strong>
+              <strong class="titulo-productos">${{$producto->price}}</strong>
               </a>
             </div>
             @endif
@@ -114,17 +114,17 @@
     </div>
   </div>
 <!-- logoHoridex -->
-    
+
 
   <!-- seccion Comestibles-->
   <section id="productosDestacados">
-    <div class="titulo-productos">
-        <h3>Comestibles// <br>
-        Infusiones y Endulzantes</h3>
-      <hr>
-    </div>
-    @if(isset($productos))
-        <div class="container-productos">
+      <div class="titulo-productos">
+          <h3>Comestibles// <br>
+          Infusiones y Endulzantes</h3>
+        <hr>
+      </div>
+        @if(isset($productos))
+      <div class="container-productos">
           @foreach ($productos as $producto)
           @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Infusiones y Endulzantes')
           @if($loop->odd)
@@ -142,27 +142,27 @@
                   </div>
               </div>
               </a>
-              
+
               <div class="titulo">
             <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
             </div>
-                 
+
                   <img src="/storage/{{$producto->avatar}}"alt="Comestible">
                   </a>
 
-                
+
                   @if($producto->stock == 0)
-                  
+
             <br>
             <p>{{$producto->description}}</p>
             <br>
             <strong>${{$producto->price}}</strong>
             <br>
             <ul class="list-group">
- 
-  <li class="list-group-item list-group-item-danger">Sin Stock</li>
 
-</ul>
+            <li class="list-group-item list-group-item-danger">Sin Stock</li>
+
+          </ul>
             <br>
             @elseif($producto->stock < 50)
             <a href="/productos/detalles/{{$producto->id}}">
@@ -176,10 +176,10 @@
             </ul>
             <br>
 
-</a>
-  @elseif($producto->stock >= 50)
-  <a href="/productos/detalles/{{$producto->id}}">
-  <br>
+          </a>
+            @elseif($producto->stock >= 50)
+            <a href="/productos/detalles/{{$producto->id}}">
+            <br>
             <p>{{$producto->description}}</p>
             <br>
             <strong>${{$producto->price}}</strong>
@@ -220,23 +220,23 @@
           <img src="/img/comestibles.jpg" class="d-block w-100" alt="...">
         </div>
 
-      <div class="carousel-item">
-          <img src="/img/carrB.png" class="d-block w-100" alt="...">
+          <div class="carousel-item">
+              <img src="/img/carrB.png" class="d-block w-100" alt="...">
+            </div>
+
+          <div class="carousel-item">
+              <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
+            </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-       
-      <div class="carousel-item">
-          <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
-        </div>
-    
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-  </div>
   </div>
 
  <!-- primer carrusel -->
@@ -254,9 +254,9 @@
       <div class="container-productos">
         @foreach ($productos as $producto)
         @if($producto->category->dameSubCategoria() == 'Perfumería y Limpieza' && $producto->dameCategoria() == 'Higiene Personal')
-       
+
         <article class="producto">
-            
+
             <a href="/productos/detalles/{{$producto->id}}">
               <div class="producto-hover">
                   <div class="producto-hover-content">
@@ -270,24 +270,24 @@
                   </div>
               </div>
               </a>
-              
+
               <div class="titulo">
             <a href="/productos/detalles/{{$producto->id}}"><h5>{{$producto->name}}</h5>
             </div>
-                 
+
                   <img src="/storage/{{$producto->avatar}}"alt="Comestible">
                   </a>
 
-                
+
                   @if($producto->stock == 0)
-                 
+
             <br>
             <p>{{$producto->description}}</p>
             <br>
             <strong>${{$producto->price}}</strong>
             <br>
             <ul class="list-group">
- 
+
   <li class="list-group-item list-group-item-danger">Sin Stock</li>
 
 </ul>
@@ -304,7 +304,7 @@
 </ul>
             <br>
 </a>
-            
+
   @elseif($producto->stock >= 50)
   <a href="/productos/detalles/{{$producto->id}}">
   <br>
@@ -319,7 +319,7 @@
             </a>
 @endif
             </article>
-       
+
         @endif
         @endforeach
         </div>
@@ -330,13 +330,13 @@
 
      <!-- botonVerMas -->
 
-<div class="verMas">
-<a href='/productos/detallesSub/limp/higiene'> <button type="button" class="btnon">Ver Más</button></a>
-</div>
+    <div class="verMas">
+      <a href='/productos/detallesSub/limp/higiene'> <button type="button" class="btnon">Ver Más</button></a>
+    </div>
 
 <!-- botonVerMas -->
 
-
+</div>
 <!-- Tipo de envio -->
 
     <div class="barra">
@@ -387,14 +387,7 @@
 
 
 
-
-
-
-
-
-</div>
-
-   <script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
 <script src="js/botonarriba.js"></script>
 <script src="../js/librerias.js"></script>
 <script src="../js/products.js"></script>

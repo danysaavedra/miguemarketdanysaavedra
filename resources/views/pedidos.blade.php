@@ -1,190 +1,78 @@
 @extends('layouts.plantilla')
-
 @section('contenido')
-
-<div style="background-color:black"class="row">
-
-    <div class="col-md-8 col-md-offset-2">
-        <h1>Perfil de Usuario</h1>
+<div class="container">
+    <h1>Perfil de Usuario</h1>
         <br>
         <h2>Mis Pedidos</h2>
-        @foreach($orders as $order)
-        <div class="panel panel-default">
-            <div class="panel-body">
-            <ul class="list-group">
-            <li>Fecha Pedido: {{$order->created_at}}</li>
-           
-<br>
-            @foreach($order->cart->carrito as $key => $value)
-            @if($key == 0 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 2 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 1 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
+            <div class="card-group">
+                @foreach($orders as $order)
+                    <div class="card text-black bg-info mb-3" style="max-width: 18rem; display-content:space-beetwwen">
+                        <h5 class="card-title">Fecha Pedido: <br> {{$order->created_at}}</h5>
+                        @foreach($order->cart->carrito as $key => $value)
+                        <ul class="list-group list-group-flush">
 
+                            @if($key == 0 ) <li class="list-group-item">Producto : {{$value}} </li> @endif
+                            @if($key == 1 ) <li class="list-group-item">Precio Unitario:$ {{$value}} </li> @endif
+                            @if($key == 2 )<li class="list-group-item">Cantidad : {{$value}} </li> @endif
 
-            @if($key == 3 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 5 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 4 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
+                            @if($key == 3 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 4 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 5 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
+                            @if($key == 6 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 7 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 8 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
-            @if($key == 6 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 8 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 7 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
+                            @if($key == 9)<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 10 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 11 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
+                            @if($key == 12 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 13 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 14 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
-            @if($key == 9 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 11 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 10 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
+                            @if($key == 15 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 16 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 17 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
+                            @if($key == 18 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 19 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 20 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
-            @if($key == 12 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 14 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 13 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
+                            @if($key == 21 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 22 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 23 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
+                            @if($key == 24 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 25 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 26 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
-            @if($key == 15 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 17 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 16 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
+                            @if($key == 27 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 28 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 29 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
+                            @if($key == 30 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 31 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 32 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
-            @if($key == 18 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 20 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 19 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
+                            @if($key == 33 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 34 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 35 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
-            <!-- NUEVOS -->
+                            @if($key == 36 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 37 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 38 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
 
-
-
-           
-            @if($key == 21 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 23 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 22 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
-
-
-            @if($key == 24 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 26 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 25 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
-
-
-            @if($key == 27 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 29 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 28 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
-
-
-            @if($key == 30 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 32 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 31 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
-
-
-            @if($key == 33 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 35 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 34 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
-
-
-            @if($key == 36 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 38 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 37 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
-
-
-            @if($key == 39 )
-            <li>Producto : {{$value}}</li>
-            @endif
-            @if($key == 41 )
-            <li>Precio Unitario:$ {{$value}}</li>
-            @endif
-            @if($key == 40 )
-            <li>Cantidad : {{$value}}</li>
-            @endif
-
-            @endforeach
-            <br>  
-        </div>
-            <div class="panel-footer"> 
-            
-            <li>Precio Total:$ {{$order->cart->total}}</li>
-        
+                            @if($key == 39 )<li class="list-group-item">Producto : {{$value}}</li>@endif
+                            @if($key == 40 )<li class="list-group-item">Precio Unitario:$ {{$value}}</li>@endif
+                            @if($key == 41 )<li class="list-group-item">Cantidad : {{$value}}</li>@endif
+                        </ul>
+                            @endforeach
+                            <br>
+                            <div class="card-footer"><small class="text-muted">Precio Total:$ {{$order->cart->total}}</small></div>
+                    </div>
+                @endforeach
             </div>
-            <br>
-        </div>
-        @endforeach
-
-    </div>
+        <br>
 </div>
 @endsection

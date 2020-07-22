@@ -2,6 +2,11 @@
 
 @section('contenido')
 
+
+
+
+
+
 <div class="container-fluid">
 
 
@@ -19,14 +24,12 @@
       </div>
   @endif
 
-@if(isset($detalles))
+  @if(isset($detalles))
   <div class="carrito">
     <h2 class="miCarrito">Este es tu Carrito {{Auth::user()->name}}</h2>
         <a href="/listaProductos">Seguir Comprando</a>
               <?php $suma = 0; ?>
-              @foreach($detalles as $detalle)
-
-
+      @foreach($detalles as $detalle)
       <form class="" action="/carrito/sacarCarrito" method="post">
           @csrf
           <br>
@@ -59,48 +62,48 @@
           </div>
         </div>
       </div>
-  
-<?php  
-$subtotal[]= $detalle->price * $detalle->pivot->quantity;
- $suma = array_sum($subtotal);
-?>
-@endforeach
-@endif
+
+            <?php
+            $subtotal[]= $detalle->price * $detalle->pivot->quantity;
+            $suma = array_sum($subtotal);
+            ?>
+            @endforeach
+            @endif
 
 
 
- @if(isset($detalles))
-<form action="/pedidos" method="post">
-@csrf
-@foreach($detalles as $detalle)    
+      @if(isset($detalles))
+      <form action="/pedidos" method="post">
+      @csrf
 
+      @foreach($detalles as $detalle)
 
+      <input type="hidden" value='{{$detalle->name}}' name="carrito[]"> <!-- producto -->
+      <input type="hidden" value='{{$detalle->price}}' name="carrito[]"> <!-- precio -->
+      <input type="hidden" value='{{$detalle->pivot->quantity}}' name="carrito[]"><!-- cantidad -->
+      <input type="hidden" value='{{$detalle->id}}' name="numberId[]">
+      <input type="hidden" value='{{$loop->count}}' name="qty">
+      <input type="hidden" value='{{$suma}}' name="total">
+      @endforeach
+      <div class="card text-black mb-3">
+        <div  class="total-carrito">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><strong>Total Del Carrito</strong></li>
+            <li class="list-group-item">SUBTOTAL: ${{$suma}}</li>
+            <li class="list-group-item">ENVÍO:(ACA SE PODRIA CALCULAR..)</li>
+            <li class="list-group-item"> <strong>TOTAL: ${{$suma}}</strong></li>
+            <li class="list-group-item">
+              <strong>
+                <button id="finalizar" type="submit" name="" value="">Finalizar compra</button>
+              </strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </form>
+      @endif
 
-<input type="hidden" value='{{$detalle->name}}' name="carrito[]">
-<input type="hidden" value='{{$detalle->pivot->quantity}}' name="carrito[]">
-<input type="hidden" value='{{$detalle->price}}' name="carrito[]">
-<input type="hidden" value='{{$loop->count}}' name="qty">
-<input type="hidden" value='{{$suma}}' name="total">
-@endforeach
-<div class="card text-black bg-primary mb-3">
-  <div  class="total-carrito" >
-    <ul class="list-group list-group-flush">
-    <li class="list-group-item"><strong>Total Del Carrito</strong></li>
-      <li class="list-group-item">SUBTOTAL: ${{$suma}}</li>
-      <li class="list-group-item">ENVÍO:(ACA SE PODRIA CALCULAR..)</li>
-      <li class="list-group-item"> <strong>TOTAL: ${{$suma}}</strong></li>
-      <li class="list-group-item">
-         <strong>
-           <button id="finalizar" type="submit" name="" value="">Finalizar compra</button>
-         </strong>
-       </li>
-    </ul>
-  </div>
-  </div>
-
-
-</form>
-@endif
+</div>
 </div>
 
 

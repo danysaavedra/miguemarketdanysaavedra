@@ -12,6 +12,7 @@ use App\Category;
 use App\Subcategory;
 
 
+
 class CarritoController extends Controller
 {
 
@@ -19,8 +20,6 @@ class CarritoController extends Controller
     $subcategorias = Subcategory::all();
     return view('cart.carrito',compact('subcategorias'));
   }
-
-
 
   public function agregarAlCarrito(Request $request){
 
@@ -45,18 +44,16 @@ class CarritoController extends Controller
     {
       return response()->json(['exito' => true, 'cantidad' => $user->carrito->sum('quantity')])->with('mensaje', 'Producto agregado al carrito exitosamente!');
     }
-
     return redirect( $_SERVER['HTTP_REFERER'])->with('mensaje', 'Producto agregado al carrito exitosamente!');
   }
-
-
+  
   public function miCarrito(){
     $user =Auth::user();
     $datalles=$user->carrito;
-
+    $now = now();
     return view('cart.carrito')
       ->with([
-        'detalles' => $datalles
+        'detalles' => $datalles, 'now' => $now
       ]);
   }
 

@@ -9,7 +9,7 @@
   right: 0;
   top: 15%;
   text-align: center;
-} 
+}
 
 .container .ir-arriba{
   display:none;
@@ -98,16 +98,17 @@ h2{
 @media (min-width: 200px) {
 .elh1{
   color: white;
-    margin: 9px -10px;
-    font-size: 28px;
+    margin: 0px 5px;
+    padding-top: 0.5rem;
+    font-size: 26px;
 }
 .elh3MP{
   font-size: 21px;
-  margin-left: -4px;
+  margin-left: 10px;
 color: white;
 }
   #inf{
-    height: 88px;
+    height: 80px;
   }
 
   .divisor{
@@ -119,33 +120,12 @@ color: white;
 
   }
 }
-  @media (min-width: 374px) {
-    .elh1{
-      color: white;
-      margin: 12px 1px;
-      font-size: 31px;
-    }
-    .elh3MP{
-      color: white;
-    }
-    #inf{
-      
-      height: 102px;
-    }
 
-    .divisor{
-      width: 100%;
-      height: 100%;
-    }
-    .carousel-item {
-      height: 207px;
-
-    }
-  }
     @media (min-width: 424px) {
       .elh1{
         color: white;
-      margin: 14px 3px;
+      margin: 0px 11px;
+      padding-left: inherit;
       font-size: 34px;
       }
       .elh3MP{
@@ -153,11 +133,7 @@ color: white;
         color: white;
       }
       #inf{
-        height: 114px;
-      }
-      .divisor{
-        width: 100%;
-        height: 100%;
+        height: 108px;
       }
       .carousel-item {
         height: 210px;
@@ -170,16 +146,16 @@ color: white;
         }
         .elh1{
           color: white;
-          margin: 40px 20px 10px 20px;
+          margin: 0px 20px 10px 20px;
           font-size: 59px;
         }
         .elh3MP{
           color: white;
-          padding-left: 55px;
+          padding-left: 45px;
           font-size: 45px;
         }
         #inf{
-          height: 212px;
+          height: 190px;
         }
 
       .carousel-item {
@@ -508,7 +484,7 @@ section {
          }
 
     #productosDestacados {
-      
+
       text-align: center;
     }
     #productosDestacados h3 {
@@ -622,7 +598,7 @@ section {
   }
 
 
-  
+
                                             /* MEDIAQUERIES */
 
 
@@ -771,7 +747,7 @@ section {
   }
 
 
-  
+
                                             /* MEDIAQUERIES */
 
 
@@ -785,7 +761,7 @@ section {
     padding: 2px 25px;
     text-align: center;
   }
-  
+
   #sobreNosotros2 p {
     padding: 30px 30px 10px;
     margin: 0 50px;
@@ -832,15 +808,15 @@ section {
     font-weight: bold;
   }
   .btnon {
-             color: white;
-             background-color: #597aa6;
-             border-radius: 20px;
-             border-color:cornflowerblue;
-             width: 150px;
-             align-items: center;
-             margin:0% 0% 0% 316px;
-             margin-top: 10px;
-             line-height: 49px;
+    color: white;
+    background-color: #597aa6;
+    border-radius: 20px;
+    border-color:cornflowerblue;
+    width: 150px;
+    align-items: center;
+    margin:0% 0% 0% 265px;
+    margin-top: 10px;
+    line-height: 49px;
 
        }
   .producto img{
@@ -949,7 +925,7 @@ section {
   }
 
   #productosDestacados {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
   }
 
@@ -973,15 +949,15 @@ section {
     font-weight: bold;
   }
   .btnon {
-             color: white;
-             background-color: #597aa6;
-             border-radius: 20px;
-             border-color:cornflowerblue;
-             width: 150px;
-             align-items: center;
-             margin:0% 0% 0% 438px;
-             margin-top: 10px;
-             line-height: 49px;
+    color: white;
+    background-color: #597aa6;
+    border-radius: 20px;
+    border-color:cornflowerblue;
+    width: 150px;
+    align-items: center;
+    margin:0% 0% 0% 380px;
+    margin-top: 10px;
+    line-height: 49px;
 
        }
   .producto img{
@@ -1031,8 +1007,9 @@ section {
  width: 21vw; height:19vh;padding:5px 5px 5px 5px; margin:5px 5px 5px 5px;
 }
 .elh1{
+  padding-top: 37px;
   color: white;
-  margin: 45px 20px 5px 42px;
+  margin: 0px 20px 5px 42px;
   font-size: 73px;
 }
 .elh3MP{
@@ -1056,48 +1033,36 @@ height: 237px;
 
 
 
-                                                  /* 1365 */
+                                               /* 1400 */
+    @media (min-width: 1399px) {
+      .breadcrumb{
+        font-size: 2.3em;
+        border: groove;
+        background-color: #e2efee;
+        margin-top: 2%;
+        font-weight: bold;
+      }
+      .elh1{
+        color: white;
+        margin: 0px 20px 0px 59px;
+        font-size: 85px;
+      }
+      .elh3MP{
+        padding-left: 50px;
+        font-size: 65px;
+        color: white;
+        padding-top: 20px;
+      }
+      #inf{
+        height: 310px;
+      }
 
-@media (min-width: 1365px) {
-  .breadcrumb{
-    font-size: 2em;
-    border: groove;
-    background-color: #e2efee;
-    margin-top: 2%;
-    font-weight: bold;
-  }
-  .btnon {
-             color: white;
-             background-color: #597aa6;
-             border-radius: 20px;
-             border-color:cornflowerblue;
-             width: 150px;
-             align-items: center;
-             margin:0% 0% 0% 609px;
-             margin-top: 10px;
-             line-height: 49px;
+    .carousel-item {
+    height: 350px;
 
-       }
-  .elh1{
-    color: white;
-    margin: 75px 20px 0px 59px;
-    font-size: 100px;
-  }
-  .elh3MP{
-padding-left: 67px;
-font-size: 61px;
-color: white;
-  }
-  #inf{
-    height: 300px;
-  }
+    }
 
-.carousel-item {
-height: 300px;
-
-}
-}
-
+    }
 
                                             /* MEDIAQUERIES */
 
@@ -1121,7 +1086,7 @@ height: 300px;
       border-color:cornflowerblue;
       width: 150px;
       align-items: center;
-      margin:0% 0% 0% 633px;
+      margin:0% 0% 0% 470px;
       margin-top: 10px;
       line-height: 49px;
 
@@ -1170,39 +1135,6 @@ height: 300px;
 }
 
 
-                                            /* MEDIAQUERIES */
-
-
-
-                                                  /* 1400 */
-@media (min-width: 1399px) {
-  .breadcrumb{
-    font-size: 2.3em;
-    border: groove;
-    background-color: #e2efee;
-    margin-top: 2%;
-    font-weight: bold;
-  }
-  .elh1{
-       color: white;
-    margin: 50px 20px 0px 106px;
-    font-size: 90px;
-  }
-  .elh3MP{
-padding-left: 107px;
-font-size: 81px;
-color: white;
-  }
-  #inf{
-    height: 310px;
-  }
-
-.carousel-item {
-height: 350px;
-
-}
-
-}
 
                                             /* MEDIAQUERIES */
 
@@ -1210,76 +1142,32 @@ height: 350px;
 
                                                   /* 32 pulgadas */
 
-@media (min-width: 1919px) {
-
-  #productosDestacados .titulo-productos h3 {
-    font-size: 2.8em;
-}
-
-  .buscador{
-    padding: 21px 2px 21px 2px;
-    background-color: #346397;
-    
-    }
-    
-
-  .navbar {
-    height: 135px;
-    padding: 0;
-}
-
-  .breadcrumb{
-    font-size: 2.8em;
-    border: groove;
-    background-color: #e2efee;
-    margin-top: 2%;
-    font-weight: bold;
-  }
-  .elh1{
-    color: white;
-    margin: 30px 20px 0px 170px;
-    font-size: 115px;
-}
-  
-  .elh3MP{
-    
-    font-size: 85px;
-    color: white;
-    padding: 56px 56px 56px 175px;
-  }
-  #inf{
-
-    background-image: url('../img/bannMP.jpg');
-    height: 400px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-.carousel-item {
-height: 440px;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-}
-
+@media (min-width: 1919px){
   .btnon {
+    color: white;
+    background-color: #597aa6;
+    border-radius: 20px;
+    border-color:cornflowerblue;
+    width: 150px;
+    align-items: center;
+    margin:0% 0% 0% 760px;
+    margin-top: 10px;
+    line-height: 49px;
+
+     }
+     .elh1{
+      padding-left: 80px;
       color: white;
-      background-color: #597aa6;
-      border-radius: 20px;
-      border-color: cornflowerblue;
-      width: 150px;
-      align-items: center;
-      margin: 0% 0% 0% 46%;
-      margin-top: 10px;
-      line-height: 49px;
-  }
-  
+      margin: 0px 20px 0px 59px;
+      font-size: px;
+    }
+    .elh3MP{
+      padding-left: 130px;
+      font-size: 65px;
+      color: white;
+      padding-top: 20px;
+    }
 }
-
-
 
 
   @media (max-width:590px) {
@@ -1380,6 +1268,8 @@ background-size: cover;
     }
 
   }
+
+
 .migueblanco{
   border: 2px solid;
   border-color: #597aa6;

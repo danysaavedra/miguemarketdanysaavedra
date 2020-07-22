@@ -90,10 +90,10 @@
 
 
             @if((Auth::user()) && (Auth::user()->admin))
-  <!-- <li>
-    <a href="/productos/agregar"><ion-icon name="beer-outline"></ion-icon><br>Agregar</a>
+  <li>
+    <a href="/productos/agregar"><ion-icon name="beer-outline"></ion-icon><br>Crear<br>Producto</a>
   </li> 
-  <li class="nav-item active">
+  <!-- <li class="nav-item active">
     <a  href="/categoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar <br> Categoria </a>
   </li>
   <li class="nav-item active">
@@ -107,7 +107,7 @@
       (<span style="color:red"; id="cantCar">{{ $user->carrito()->sum('quantity') }}</span>)
       <br> Carrito</a>
     </li>
-    <li><a href="/pedidos"><ion-icon name="people-circle-outline"></ion-icon><br> Perfil <br>{{Auth::user()->name}} </a></li>
+
     @endif
 
   @guest
@@ -119,6 +119,8 @@
   </li>
 
     @else
+  
+
 
     <li class="nav-item dropdown">
       <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre >
@@ -127,6 +129,7 @@
         {{ Auth::user()->name }} <span class="caret"></span>
       </a>
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+     <a class="dropdown-item" href="/pedidos">Perfil <br>{{Auth::user()->name}} </a>
         <a class="dropdown-item" href="{{ route('logout') }}"
           onclick="event.preventDefault();
           document.getElementById('logout-form').submit();">
