@@ -50,19 +50,19 @@
               <div class="producto-hover-content">
                   <form action="/productos/agregarCarrito" method="post">
                   @csrf
-                  
+
                   @if(Auth::user() && $product->stock > 0)
 
 
                   <button type="submit" class=""  name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
                   @endif
                   @if($product->stock == 0)
-                   
+
                     <!-- <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a> -->
                     <strong >Sin stock</strong>
-                   
+
                     @elseif($product->stock > 0)
-                  
+
                     <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
                     @endif
 
@@ -73,13 +73,13 @@
 
 
           <ul class="list-group">
- 
+
  <li class="list-group-item list-group-item-danger">Sin stock</li>
-  
+
 </ul>
             <br>
             @elseif($product->stock < 50)
- 
+
             <ul class="list-group">
 
   <li class="list-group-item list-group-item-warning">Stock Limitado</li>
@@ -88,14 +88,14 @@
             <br>
             @elseif($product->stock >= 50)
 
-            
+
             <ul class="list-group">
 
   <li class="list-group-item list-group-item-success">Disponible</li>
 
 </ul>
             <br>
- 
+
             @endif
 
 

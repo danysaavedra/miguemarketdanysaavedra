@@ -11,6 +11,44 @@ use App\Order;
 
 class OrderController extends Controller
 {
+
+  public function  seccMigue(){
+
+
+    $orders = Auth::user()->orders;
+
+    $orders->transform(function($order, $key)
+    {
+        $order->cart = unserialize($order->cart);
+        return $order;
+    });
+
+ return view('/pedidos',['orders' => $orders]);
+    }
+
+
+  public function finalizar(Request $request){
+   $carritoCompra = $request->except('_token');
+   if(isset($carritoCompra['numberId'])) {
+    foreach($carritoCompra['numberId'] as $key => $value){
+   $carritos = Cart::where('product_id', '=', $value);
+   $carritos->delete();
+     }
+    }
+   $cart = new Cart ($carritoCompra);
+   $order = new Order();
+   $order->cart = serialize($cart);
+   Auth::user()->orders()->save($order);
+   return redirect('/')->with('mensaje', 'TU PEDIDO SE PROCESÓ CON EXITO! (En breve nos comunicaremos con vos.)');
+  }
+
+
+
+
+
+
+
+
     public function borrarPedido($id)
   {
     $productoBorrar = Product::find($id);

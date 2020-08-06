@@ -38,6 +38,8 @@
       <a class="enlace_desactivado" href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
       <ul>
 
+
+
           <li>
             <a  class="enlace_desactivado" href="/productos/com">Comestibles</a>
           <ul>
@@ -54,15 +56,15 @@
               <li><a class="" href="/productos/detallesSub/com/arroz">Arroz</a></li>
               <li><a class="" href="/productos/detallesSub/com/fideos">Fideos</a></li>
               <li><a class="" href="/productos/detallesSub/com/snacks">Snacks</a></li>
-              <!-- <li>
+              <li>
                 <a class="" href="/productos/detallesSub/com/reposteria">Repostería</a>
-              </li> -->
+              </li>
               <li><a class="" href="/productos/detallesSub/com/lacteos">Lacteos</a></li>
               <li><a class="" href="/productos/detallesSub/com/panes">Panes</a></li>
               <li><a class="" href="/productos/detallesSub/com/cereales">Cereales</a></li>
-              <!-- <li>
+              <li>
                 <a class="" href="/productos/detallesSub/com/congelados">Congelados</a>
-              </li> -->
+              </li>
           </ul>
 
           </li>
@@ -86,13 +88,11 @@
   </li>
 
   <li><a href="/"><ion-icon name="home-outline"></ion-icon> <br> Home</a></li>
-  <li><a href="#"><ion-icon name="mail-outline"></ion-icon> <br> Contacto<span class="flecha">&#9660;</span></a></li>
-
 
             @if((Auth::user()) && (Auth::user()->admin))
   <li>
     <a href="/productos/agregar"><ion-icon name="beer-outline"></ion-icon><br>Crear<br>Producto</a>
-  </li> 
+  </li>
   <!-- <li class="nav-item active">
     <a  href="/categoriecreate"><i class="fas fa-plus"></i></i></ion-icon><br>Agregar <br> Categoria </a>
   </li>
@@ -119,9 +119,34 @@
   </li>
 
     @else
-  
 
+    <ul>
 
+<li> <a class="enlace_desactivado"> <img src="/storage/{{Auth::user()->foto}}" alt="" class="foto">
+        <br>
+
+        {{ Auth::user()->name }} <span class="flecha">&#9660;</span><span class="caret"></span></a>
+  <ul>
+    <li>
+    @if((Auth::user()->admin))
+     <a href="/pedidos/cliente"> Pedidos </a>
+  @elseif($user = Auth::user())
+  <a href="/pedidos"> Mis Pedidos </a>
+  @endif
+     </li>
+    <li> <a href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+          </a> <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form></li>
+  </ul>
+
+</li>
+</ul>
+
+<!--
     <li class="nav-item dropdown">
       <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre >
         <img src="/storage/{{Auth::user()->foto}}" alt="" class="foto">
@@ -129,19 +154,22 @@
         {{ Auth::user()->name }} <span class="caret"></span>
       </a>
       <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-     <a class="dropdown-item" href="/pedidos">Perfil <br>{{Auth::user()->name}} </a>
-        <a class="dropdown-item" href="{{ route('logout') }}"
-          onclick="event.preventDefault();
-          document.getElementById('logout-form').submit();">
-          {{ __('Logout') }}
-        </a>
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-            @csrf
-        </form>
-      </div>
-    </li>
 
-      @endguest 
+          <a class="dropdown-item" href="/pedidos">Perfil <br>{{Auth::user()->name}} </a>
+          <a class="dropdown-item" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+            document.getElementById('logout-form').submit();">
+            {{ __('Logout') }}
+          </a>
+
+          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+          </form>
+
+        </div>
+    </li> -->
+
+      @endguest
       </ul>
     </ul>
   </div>

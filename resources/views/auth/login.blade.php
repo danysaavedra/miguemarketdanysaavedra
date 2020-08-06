@@ -49,8 +49,8 @@
                             </div>
                         </div>
 
-                        <div class="form-group row ">
-                            <div class="col-md-8 offset-md-4">
+                        <div class="col-12">
+                            <div class="col-sm-6">
                                 <button type="submit" class="btn btn-info">
                                     {{ __('Loguearse') }}
                                 </button>
@@ -67,13 +67,13 @@
                             </div>
                         </div>
 
-                        <!--
-                        <div class="col-12">
+
+                      <!-- <div class="col-12">
                             <div class="col-sm-6">
                                 <a href="/login/facebook" class="btn btn-info">Ingresar con Facebook</a>
                             </div>
                         </div>
-                        -->
+ -->
 
                       </div>
                     </form>

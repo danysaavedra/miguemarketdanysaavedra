@@ -16,7 +16,7 @@ class ProductoController extends Controller
 
 
 
-  
+
   // detalle de producto
     public function detalle($id)
     {
@@ -151,7 +151,7 @@ class ProductoController extends Controller
       $subcategorias = Subcategory::all();
       return view('product.products', compact('subcategorias'));
     }
-    
+
 
     public function catProdCom(){
       $subcategorias = Subcategory::where('name','=','Comestibles')->get();
@@ -194,7 +194,7 @@ class ProductoController extends Controller
         if ($request->isJson()) {
           return response()->json(['mensaje' => 'que seas muy feliz']);
         }
-      return redirect('/productos')->with('mensaje', 'Borrado de Producto exitoso!');
+      return redirect('/listaProductos')->with('mensaje', 'Borrado de Producto exitoso!');
     }
 
 

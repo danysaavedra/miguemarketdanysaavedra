@@ -36,7 +36,7 @@
 <!-- <img class="fondo" src="{{$subcategoria->imagen}}" alt="ok"> -->
 
 @if($subcategoria->name=="Bebidas")
-<ol style='padding-left:8%' class="breadcrumb">
+<ol  id="linkCat" class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
@@ -44,7 +44,7 @@
  <!-- <a href="/productos/com"><button type="button" class="btnb btn-lg btn-inline-block">Comestibles</button></a>
 <a href="/productos/limp"><button type="button" class="btnb btn-lg btn-inline-block">Perfumería y Limpieza</button></a> -->
 @elseif($subcategoria->name=="Perfumería y Limpieza")
-<ol style='padding-left:8%'
+<ol id="linkCat"
 class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
@@ -53,7 +53,7 @@ class="breadcrumb">
  <!-- <a href="/productos/com"><button type="button" class="btnb btn-lg btn-inline-block">Comestibles</button></a>
  <a href="/productos/beb"><button type="button" class="btnb btn-lg btn-inline-block">Bebidas</button></a> -->
 @elseif($subcategoria->name=="Comestibles")
-<ol style='padding-left:8%'
+<ol  id="linkCat"
  class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
@@ -133,18 +133,18 @@ class="breadcrumb">
               <div class="producto-hover-content">
                   <form action="/productos/agregarCarrito" method="post">
                   @csrf
-                  
+
                   @if(Auth::user() && $product->stock > 0)
 
 
                   <button type="submit" class=""  name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
                   @endif
                   @if($product->stock == 0)
-              
+
                     <strong >Sin stock</strong>
-                   
+
                     @elseif($product->stock > 0)
-                  
+
                     <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
                     @endif
 
@@ -155,13 +155,13 @@ class="breadcrumb">
 
 
           <ul class="list-group">
- 
+
  <li class="list-group-item list-group-item-danger">Sin stock</li>
-  
+
 </ul>
             <br>
             @elseif($product->stock < 50)
- 
+
             <ul class="list-group">
 
   <li class="list-group-item list-group-item-warning">Stock Limitado</li>
@@ -170,14 +170,14 @@ class="breadcrumb">
             <br>
             @elseif($product->stock >= 50)
 
-            
+
             <ul class="list-group">
 
   <li class="list-group-item list-group-item-success">Disponible</li>
 
 </ul>
             <br>
- 
+
             @endif
 
 

@@ -8,6 +8,18 @@
 
     <div class="row" id="div-papi">
       <div class="col-12">
+<br>
+      <a style="border: 2px solid black;
+    background-color: #346397!important;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    padding: 10px 24px;
+    transition: 0.2s background-color;" href="{{ url()->previous() }}">Seguir comprando</a>
+  <br>
+  <br>
         <ul>
           <li><a href="/listaProductos">Productos</a></li> /
           <li><a href="#"><strong>{{$caca->name}}</strong></a></li>
@@ -24,7 +36,7 @@
               {{ session('mensaje') }}
             </div>
           @endif
-<!-- carrusel -->
+
 
       <img src="/storage/{{$caca->avatar}}" class="card-img" alt="...">
 
@@ -54,8 +66,11 @@
                   <br><br><br>
                   @endif
                   @elseif($caca->stock === 0)
+                  <div class="alert alert-warning" role="alert">
+                    <h4 class="alert-heading">SIN STOCK.</h4>
 
-                <a href="{{ url()->previous() }}">SIN STOCK. Volver a sección compras</a>
+                  </div>
+                <a href="{{ url()->previous() }}">Volver</a>
                 <br><br><br>
                 @endif
                   @if((Auth::user())&& (Auth::user()->admin))
@@ -95,7 +110,7 @@
             </div>
           </div>
         </div>
-        <!-- end modal -->
+        <!-- end Modal -->
       </div>
     </section>
     </div>

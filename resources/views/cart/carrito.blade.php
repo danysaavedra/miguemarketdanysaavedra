@@ -71,11 +71,10 @@
             @endif
 
 
-
+<!-- NO INVERTIR ORDEN DE LOS INPUTS -->
       @if(isset($detalles))
       <form action="/pedidos" method="post">
       @csrf
-
       @foreach($detalles as $detalle)
 
       <input type="hidden" value='{{$detalle->name}}' name="carrito[]"> <!-- producto -->
@@ -85,7 +84,9 @@
       <input type="hidden" value='{{$loop->count}}' name="qty">
       <input type="hidden" value='{{$suma}}' name="total">
       @endforeach
-      <div class="card text-black mb-3">
+<!-- NO INVERTIR ORDEN DE LOS INPUTS -->
+
+   <div class="card text-center">
         <div  class="total-carrito">
           <ul class="list-group list-group-flush">
             <li class="list-group-item"><strong>Total Del Carrito</strong></li>
@@ -100,6 +101,9 @@
           </ul>
         </div>
       </div>
+
+
+
       </form>
       @endif
 
