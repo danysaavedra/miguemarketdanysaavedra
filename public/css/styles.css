@@ -22,7 +22,7 @@
 .dropdown-item:focus, .dropdown-item:hover {
     text-decoration: none;
     background-color: rgb(56,182,255);
-    color: white;
+    color: #F7F1C4;
 }
 
 
@@ -47,9 +47,10 @@ p {
   font-size: 16px;
 }
 a{
-  color: #597aa6;
+    color: #597aa6;
     text-decoration: none;
-    background-color: transparent;
+    list-style-type: none;
+
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fredoka One', cursive;
@@ -74,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Estilos del Nav */
 
 .logoMigue {
-    background-image: url(../img/logoHoriz2.png);
+    background-image: url(..\img\miguelogocnro.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: absolute;
@@ -86,7 +87,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 65px 0px 68px 20px;
 }
 nav{
-  background-color: #e2efee;
+  border: #007ECF;
+  background-color:#007ECF;
   height: 128px;
   z-index: 1000;
 
@@ -96,7 +98,7 @@ nav{
   padding: 0;
 }
 .navbar-expand-lg .navbar-nav {
-  background-color: #e2efee;
+  background-color: #007ECF;
   width: 100%;
   padding: 1% 1% 1% 1%;
   font-size: 10px;
@@ -132,12 +134,13 @@ ul.nav ul {
 }
 
 ion-icon {
-color: #597aa6;
+color: #F7F1C4;
 font-size: 4em;
 }
 
 nav ul {
-background-color: #e2efee;
+  border: #007ECF;
+  background-color:#007ECF;
 }
 
 nav ul li a{
@@ -150,7 +153,7 @@ nav ul li a{
 }
 nav ul li a :hover{
   background-color: rgb(56,182,255);
-  color: white;
+  color: #F7F1C4;
 }
 nav i{
   font-size: 1.5em;
@@ -174,21 +177,22 @@ img.foto{
 
 
 .nav > li {
-color: #e2efee;
+  border: #007ECF;
+  background-color:#007ECF;
 float:left;
 }
 
 .nav li a {
   text-decoration: none;
   list-style-type: none;
-color: #597aa6;
+color: #F7F1C4;
 display:block;
 padding:10px 12px;
 }
 
 .nav li a:hover {
   background-color: rgb(56,182,255);
-  color: white;
+  color: #F7F1C4;
 }
 .nav li ul {
 display:none;
@@ -228,7 +232,7 @@ cursor: default!important;
 
 
 .dropdown-menu{
-  color: #e2efee;
+  color: #007ECF;
   min-width: 2rem;
   padding: 0.5rem;
 }
@@ -259,7 +263,7 @@ color: #597aa6;
 }
 
 footer {
-    background-color: #e2efee;
+    background-color: #007ECF;
     padding-top: 5px;
     text-align: center;
     bottom: 0;
@@ -268,7 +272,7 @@ footer .container {
     margin: 3px auto 2px auto;
 }
 footer .footer-copyright {
-    background-color: #597aa6;
+    background-color: #346397;
     padding-top: 3px;
     padding-bottom: 3px;
 
@@ -276,7 +280,7 @@ footer .footer-copyright {
 footer .footer-copyright p {
     font-size: 0.8em;
     margin: 10px;
-    color: #ccc;
+    color:  #F7F1C4;
 }
 footer ul {
     list-style-type: none;
@@ -297,13 +301,13 @@ footer h5 {
     text-transform: uppercase;
 }
 footer a {
-  color: #597aa6;
+  color:  #F7F1C4;
   text-decoration: none;
   list-style-type: none;
 }
 footer a:hover, footer a:active {
     text-decoration: none;
-    color: white;
+    color: #F7F1C4;
 }
 footer h1 a{
     font-size: 50px;
@@ -319,7 +323,7 @@ footer .iconos-redes {
 
 footer .iconos-redes a {
   font-size: 12px;
-    color: #e2efee;
+    color: #007ECF;
     padding: 5px;
     transition: 0.2s;
 }
@@ -335,8 +339,8 @@ footer .iconos-redes a:hover {
 }
 
 footer .btn {
-    color: white;
-    background-color: #597aa6;
+  background-color: #F7F1C4;
+  color: #597aa6;
     border-radius: 20px;
     border: none;
     width: 150px;
@@ -371,7 +375,7 @@ footer .btn {
   }
 
     .logoMigue {
-      background-image: url(../img/logoVert.png);
+      background-image: url(../img/miguelogocnro.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -402,7 +406,8 @@ footer .btn {
 }
 
     nav {
-    background-color: #e2efee;
+      border: #007ECF;
+      background-color:#007ECF;
     height: 89px;
     z-index: 1000;
   }
@@ -418,7 +423,8 @@ footer .btn {
 
     }
     .navbar-expand-lg .navbar-nav {
-      background-color: #e2efee;
+      border: #007ECF;
+      background-color:#007ECF;
       width: 100%;
       margin-top: 10%;
       padding: 0% 2% 2% 2%;
@@ -452,7 +458,7 @@ footer .btn {
 
   }
   .logoMigue {
-    background-image: url(../img/logoVert.png);
+    background-image: url(../img/miguelogocnro.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -491,7 +497,8 @@ footer .btn {
 }
 
     nav {
-    background-color: #e2efee;
+    border: #007ECF;
+    background-color:#007ECF;
     height: 89px;
     z-index: 1000;
   }
@@ -507,7 +514,8 @@ footer .btn {
 
     }
     .navbar-expand-lg .navbar-nav {
-      background-color: #e2efee;
+      border: #007ECF;
+      background-color:#007ECF;
       width: 100%;
       padding: 0% 2% 2% 2%;
       font-size: 10px;
@@ -540,7 +548,7 @@ footer .btn {
   }
   .logoMigue {
 
-    background-image: url(../img/logoHoriz2.png);
+    background-image: url(../img/miguelogocnro.png);
     background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -578,7 +586,8 @@ footer .btn {
 
   }
   .navbar-expand-lg .navbar-nav {
-    background-color: #e2efee;
+    border: #007ECF;
+    background-color:#007ECF;
     width: 100%;
     padding: 0% 2% 2% 2%;
     font-size: 11px;
@@ -612,13 +621,14 @@ footer .btn {
 
   }
   nav {
-    background-color: #e2efee;
+    border: #007ECF;
+    background-color:#007ECF;
     height: 120px;
     z-index: 1000;
 }
 
   footer .iconos-redes ion-icon {
-  color: #597aa6;
+  color: #F7F1C4;
   font-size: 1em;
   }
 
@@ -636,8 +646,8 @@ footer .logo-footer {
 }
 
   footer .btn {
-    color: white;
-    background-color: #597aa6;
+    background-color: #F7F1C4;
+     color: #597aa6;
     border-radius: 20px;
     border: none;
     width: 200px;
@@ -654,7 +664,7 @@ footer.logo-footer {
   }
 
   nav .logoMigue{
-    background-image: url(../img/logoVert.png);
+    background-image: url(../img/miguelogocnro.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -671,14 +681,14 @@ footer.logo-footer {
   nav ul li a{
     font-family: 'Krona One', sans-serif;
     font-size: 1.3em;
-    color: white;
+    color: #F7F1C4;
     text-transform: uppercase;
     margin-top: 5px;
   }
 
 
   .dropdown-menu{
-    background-color: #e2efee;
+    background-color: #007ECF;
     min-width: 5rem;
     padding: 0.5rem;
   }
@@ -754,8 +764,8 @@ footer.logo-footer {
 
   }
   footer {
-      background-color: #e2efee;
-
+    border: #007ECF;
+    background-color:#007ECF;
       padding-top: 5px;
       text-align: center;
       bottom: 0;
@@ -764,7 +774,7 @@ footer.logo-footer {
       margin: auto 30px;
   }
   footer .footer-copyright {
-      background-color: #597aa6;
+      background-color: #346397;
       padding-top: 3px;
       padding-bottom: 3px;
 
@@ -772,7 +782,7 @@ footer.logo-footer {
   footer .footer-copyright p {
       font-size: 0.8em;
       margin: 10px;
-      color: #ccc;
+      color: #F7F1C4;
   }
   footer ul {
       list-style-type: none;
@@ -793,13 +803,13 @@ footer.logo-footer {
       text-transform: uppercase;
   }
   footer a {
-    color: #597aa6;
+    color: #F7F1C4;
     text-decoration: none;
     list-style-type: none;
   }
   footer a:hover, footer a:active {
       text-decoration: none;
-      color: white;
+      color: #F7F1C4;
   }
   footer h1 a{
       font-size: 50px;
@@ -815,7 +825,7 @@ footer.logo-footer {
 
   footer .iconos-redes a {
 
-      color: #e2efee;
+      color: #007ECF;
       padding: 5px;
       transition: 0.2s;
   }
@@ -831,8 +841,8 @@ footer.logo-footer {
   }
 
   footer .btn {
-      color: white;
-      background-color: #597aa6;
+    background-color: #F7F1C4;
+     color: #597aa6;
       border-radius: 20px;
       border: none;
       width: 150px;
@@ -842,18 +852,18 @@ footer.logo-footer {
       line-height: 25px;
   }
 
-nav .logoMigue{
-  background-image: url(../img/logoHoriz2.png);
+nav .logoMigue {
+  background-image: url(../img/miguelogocnro.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 0px;
-  left: 44px;
-  width: 38%;
-  height: 100px;
-  margin: 15px 15px 4px 6px;
-  padding: 5px 0px 0px 6px;
-}
+  top: 5px;
+  left: 12px;
+  width: 45%;
+  height: 90%;
+  margin: 2px 14px 2px 70px;
+  padding: 53px 1px 68px 0px;
+  }
 
 nav ul li a{
     font-family: 'Krona One', sans-serif;
@@ -880,7 +890,7 @@ nav ul li a{
     margin-right:  00px;
   }
 }
-
+/*
 @media (min-width: 1365px){
 
   .logoHoridex{
@@ -890,7 +900,7 @@ nav ul li a{
 
 
   nav .logoMigue {
-    background-image: url(../img/logoHoriz2.png);
+    background-image: url(../img/miguelogocnro.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -1015,7 +1025,7 @@ nav ul li a{
   margin-right:  00px;
 }
 
-}
+} */
 @media (min-width: 1399px){
 
 /* .nav li ul li ul {
@@ -1025,25 +1035,24 @@ nav ul li a{
 
 
   nav .logoMigue {
-    background-image: url(../img/logoHoriz2.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        position: absolute;
-        top: 3px;
-        left: 14px;
-        width: 34%;
-        height: auto;
-        margin: 1px 1px 1px 1px;
-        margin: 2px 14px 2px 70px;
-        padding: 53px 1px 68px 0px;
+    background-image: url(../img/miguelogocnro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 5px;
+    left: 14px;
+    width: 45%;
+    height: 90%;
+    margin: 2px 14px 2px 70px;
+    padding: 53px 1px 68px 0px;
     }
 
 
 
 
   footer {
-      background-color: #e2efee;
-
+      border: #007ECF;
+      background-color:#007ECF;
       padding-top: 5px;
       text-align: center;
       bottom: 0;
@@ -1052,7 +1061,7 @@ nav ul li a{
       margin: 5px auto 5px;
   }
   footer .footer-copyright {
-      background-color: #597aa6;
+      background-color: #346397;
       padding-top: 3px;
       padding-bottom: 3px;
 
@@ -1060,7 +1069,7 @@ nav ul li a{
   footer .footer-copyright p {
       font-size: 0.8em;
       margin: 10px;
-      color: #ccc;
+      color: #F7F1C4;
   }
   footer ul {
       font-size:1.3em;
@@ -1082,13 +1091,13 @@ nav ul li a{
       text-transform: uppercase;
   }
   footer a {
-      color: #597aa6;
+      color: #F7F1C4;
       text-decoration: none;
       list-style-type: none;
   }
   footer a:hover, footer a:active {
       text-decoration: none;
-      color: white;
+      color: #F7F1C4;
   }
   footer h1 a{
       font-size: 50px;
@@ -1120,8 +1129,8 @@ nav ul li a{
   }
 
   footer .btn {
-      color: white;
-      background-color: #597aa6;
+    background-color: #F7F1C4;
+     color: #597aa6;
       border-radius: 20px;
       border: none;
       width: 220px;
@@ -1132,7 +1141,7 @@ nav ul li a{
   }
 
   ion-icon {
-  color: #597aa6;
+  color: #F7F1C4;
   font-size: 3em;
   }
 
@@ -1143,7 +1152,7 @@ nav ul li a{
 
 .navbar-expand-lg .navbar-nav {
     width: 100%;
-    padding: 0% 3% 1% 15%;
+    padding: 0% 7% 1% 15%;
     justify-content: flex-end;
     text-align: center;
 
@@ -1175,6 +1184,16 @@ nav ul li a{
 
     }
 
+
+.breadcrumb {
+    padding-left: 3rem;
+    font-size: 2em;
+    border: #007ECF;
+    background-color: #007ECF;
+    margin-top: 0%;
+    font-weight: bold;
+}
+
 .navbar-expand-lg .navbar-nav {
   width: 100%;
   padding: 0% 16% 0% 0%;
@@ -1183,13 +1202,13 @@ nav ul li a{
 }
 
 nav .logoMigue {
-  background-image: url(../img/logoHoriz2.png);
+      background-image: url(../img/miguelogocnro.png);
       background-repeat: no-repeat;
       background-size: contain;
       position: absolute;
       top: 3px;
       left: 14px;
-      width: 25%;
+      width: 30%;
       height: auto;
       margin: 1px 1px 1px 1px;
       margin: 3px 14px 2px 230px;
@@ -1198,7 +1217,6 @@ nav .logoMigue {
 
 footer {
     background-color: #e2efee;
-
     padding-top: 5px;
     text-align: center;
     bottom: 0;
@@ -1242,7 +1260,7 @@ footer a {
 }
 footer a:hover, footer a:active {
     text-decoration: none;
-    color: white;
+    color: #F7F1C4;
 }
 footer h1 a{
     font-size: 50px;
@@ -1274,7 +1292,7 @@ footer .iconos-redes a:hover {
 }
 
 footer .btn {
-    color: white;
+    color: #F7F1C4;
     background-color: #597aa6;
     border-radius: 20px;
     border: none;
@@ -1286,7 +1304,7 @@ footer .btn {
 }
 
 ion-icon {
-color: #597aa6;
+color: #F7F1C4;
 font-size: 3em;
 }
 

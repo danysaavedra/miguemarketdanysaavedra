@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-lg-4">
-                  <img src="/img/logoHoriz2.png" class="logo-footer"> </a>
+                  <img src="/img/logomigueCelu.png" class="logo-footer"> </a>
                 </div>
 
                 <div class="col-sm-4 col-lg-4" id="infoFoo">

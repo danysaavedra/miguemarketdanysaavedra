@@ -4,6 +4,7 @@
     <h2>Historial de Compras</h2>
     @foreach($orders as $order)
 
+    
     <table id="data_table" class="table table-striped">
     <strong>Fecha y Hora del Pedido: {{date_format($order->created_at,"d/m/y g:i a")}} </strong>
 

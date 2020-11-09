@@ -31,11 +31,10 @@
 
     <!-- Elegi como hacer tus compras en tu SuperMigue -->
 
-      <div id="inf" >
-         <h1 class="elh1">Migue Market</h1>
-        <h3 class="elh3MP">Podés pagar con</h3>
-      </div>
+  <!--     <div id="inf" >
 
+      </div>
+ -->
  <!-- Elegi como hacer tus compras en tu SuperMigue -->
 
  <!-- botonera productos -->
@@ -104,17 +103,37 @@
   </section>
 <!-- promo -->
 
+<!-- primer carrusel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <!--   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="\img\bannerMigue.jpg" class="d-block w-100" alt="...">
+        </div>
 
-<!-- logoHoridex -->
-<div class="row">
-    <div class="col-12 ">
-      <div class="migueblanco">
-        <img class="logoHoridex"src="/img/logoHoriz2.gif" alt="">
-      </div>
-    </div>
+          <div class="carousel-item">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52512.53898028717!2d-58.59321136907228!3d-34.653852189889605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1603384577977!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+<!--
+          <div class="carousel-item">
+              <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
+            </div> -->
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
   </div>
-<!-- logoHoridex -->
-
+ <!-- primer carrusel -->
 
   <!-- seccion Comestibles-->
   <section id="productosDestacados">
@@ -205,41 +224,53 @@
 </div>
 <!-- botonVerMas -->
 
+<!-- Tipo de envio -->
 
-
-
-<!-- primer carrusel -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/img/comestibles.jpg" class="d-block w-100" alt="...">
+<div class="barra">
+      <div class="row-barra">
+        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
+          <a href="/" id="enlace"></a>
+          <img class="creditcard" src="/img/wspBlanco.png" alt="">
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
+          <a href="/" id="enlace"></a>
+          <p class="texto1">¡TAMBIÉN POR WHATSAPP!</p>
+          <p class="texto2">Para todas tus compras</p>
         </div>
 
-          <div class="carousel-item">
-              <img src="/img/carrB.png" class="d-block w-100" alt="...">
-            </div>
-
-          <div class="carousel-item">
-              <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
-            </div>
-
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
+          <a href="/" id="enlace"></a>
+          <img class="delivery" src="/img/truck.png" alt="">
         </div>
-  </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
+          <a href="/" id="enlace"></a>
+          <p class="texto1">ENVIOS A DOMICILIO</p>
+          <p class="texto2">¡Rápido,sin vueltas!</p>
+        </div>
 
- <!-- primer carrusel -->
+        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
+          <a href="/" id="enlace"></a>
+          <img class="location" src="/img/barbijo.png" alt="">
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
+          <a href="/" id="enlace"></a>
+          <p class="texto1">¡PREVENCIÓN COVID-19!</p>
+          <p class="texto2">Cumplimos requerimientos <br>
+             sanitarios y de higiene</p>
+        </div>
+
+        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
+          <a href="/" id="enlace"></a>
+          <img class="ok" src="/img/ok.png" alt="">
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
+          <a href="/c"  id="enlace"></a>
+          <p class="texto1">COMPRA 100% SEGURA</p>
+          <p class="texto2">Hasta la puerta de tu casa!</p>
+        </div>
+      </div>
+    </div>
+<!-- Tipo de envio -->
 
 
     <!-- Perfu y Limpieza -->
@@ -337,53 +368,7 @@
 <!-- botonVerMas -->
 
 </div>
-<!-- Tipo de envio -->
 
-    <div class="barra">
-      <div class="row-barra">
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="creditcard" src="/img/mercPag.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/" id="enlace"></a>
-          <p class="texto1">¡MERCADO PAGO!</p>
-          <p class="texto2">Para todas tus compras</p>
-        </div>
-
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="delivery" src="/img/truck.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/" id="enlace"></a>
-          <p class="texto1">ENVIOS A DOMICILIO</p>
-          <p class="texto2">¡Rápido,sin vueltas!</p>
-        </div>
-
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="location" src="/img/barbijo.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/" id="enlace"></a>
-          <p class="texto1">¡PREVENCIÓN COVID-19!</p>
-          <p class="texto2">Cumplimos requerimientos <br>
-             sanitarios y de higiene</p>
-        </div>
-
-        <div class="col-12 col-sm-2 col-md-2 col-lg-1" id="relativo">
-          <a href="/" id="enlace"></a>
-          <img class="ok" src="/img/ok.png" alt="">
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-2" id="relativo">
-          <a href="/c"  id="enlace"></a>
-          <p class="texto1">COMPRA 100% SEGURA</p>
-          <p class="texto2">Hasta la puerta de tu casa!</p>
-        </div>
-      </div>
-    </div>
-<!-- Tipo de envio -->
 
 
 

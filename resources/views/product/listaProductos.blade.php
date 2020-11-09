@@ -30,14 +30,34 @@
     </div>
   </form>
 
-
-<h2 class="titulo-productos">Encontrá acá Todos tus Productos</h2>
+<br>
+<h2 style="text-align :center" class="titulo-productos">Encontrá acá Todos tus Productos</h2>
 
 <ol class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
 </ol>
+
+
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Ordenar por
+  </a>
+
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="/listaProductos/PrecioMay">Precio:Mayor</a>
+    <a class="dropdown-item" href="/listaProductos/PrecioMen">Precio:Menor</a>
+    <a class="dropdown-item" href="/listaProductos/a-z">A-Z</a>
+    <a class="dropdown-item" href="/listaProductos/z-a">Z-A</a>
+    <a class="dropdown-item" href="/listaProductos/Desc">Del mas Viejo al mas Nuevo</a>
+    <a class="dropdown-item" href="/listaProductos/Asc">Del mas Nuevo al mas Viejo</a>
+    <a class="dropdown-item" href="/listaProductos/Promociones">En Promo</a>
+  </div>
+</div>
+
+<br>
+
 
     <div class="row" id="div-papi">
 @if(isset($productos))
@@ -105,7 +125,9 @@
 
 
         <div class="titulo">
-            <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
+            <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}
+            <br>
+            {{$product->dameSubCategoria()}}</h5></a>
             <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
                   Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
               @endif <br> Precio: $ {{$product->price}} </em></p>

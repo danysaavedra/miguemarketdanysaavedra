@@ -5,6 +5,9 @@
     @foreach($orders as $order)
 
     <table id="data_table" class="table table-striped">
+    <a href=" /pedidos/cliente/{{$order->id}}"><strong>BORRAR ESTE PEDIDO</strong></a>
+    <br>
+    <br>
     <strong>PEDIDO N°: {{$order->id}} </strong>
     ,
     <strong>Fecha y Hora: {{date_format($order->created_at,"d/m/y g:i a")}} </strong>

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Product;
 use App\Cart;
 use App\User;
 use App\Category;
@@ -31,6 +32,16 @@ class Product extends Model
       return $this->hasOneThrough(Subcategory::class, Category::class);
     }
 
+    public function dameSubategoriaId()
+    {
+      if($this->category_id){
+        $categoria = Category::find($this->category_id);
+         $subcatId =  $categoria->sub_category_id;
+        return $subcatId;
+      }
+      return 'Sin Id de Categoria';
+    }
+
     public function dameCategoria()
     {
       if($this->category_id){
@@ -38,6 +49,17 @@ class Product extends Model
         return $categoria->name;
       }
       return 'Sin Categoria';
+    }
+
+    public function dameSubCategoria()
+    {
+      if($this->category_id){
+        $categoria = Category::find($this->category_id);
+        $subcategoria =  $categoria->sub_category_id;
+        $subcategoria  = Subcategory::find($subcategoria);
+        return $subcategoria->name;
+      }
+      return 'Sin Subcategoria';
     }
 
 }

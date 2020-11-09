@@ -26,72 +26,35 @@
   </div>
   @endif
 
-  <!-- <button type="button" class="btn btn-primary btn-lg btn-block"> <a href="/productos/beb">Bebidas</a></button>
-  <button type="button" class="btn btn-secondary btn-lg btn-block"><a href="/productos/limp">Perfumería y Limpieza</a></button> -->
+  <br>
 
-@if(isset($subcategorias))
+<h2 style="text-align :center" class="titulo-productos"><strong>Comestibles</strong></h2>
 
-@foreach($subcategorias as $subcategoria)
-
-<!-- <img class="fondo" src="{{$subcategoria->imagen}}" alt="ok"> -->
-
-@if($subcategoria->name=="Bebidas")
-<ol  id="linkCat" class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
-  <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
-  <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
-</ol>
- <!-- <a href="/productos/com"><button type="button" class="btnb btn-lg btn-inline-block">Comestibles</button></a>
-<a href="/productos/limp"><button type="button" class="btnb btn-lg btn-inline-block">Perfumería y Limpieza</button></a> -->
-@elseif($subcategoria->name=="Perfumería y Limpieza")
-<ol id="linkCat"
-class="breadcrumb">
-  <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
-  <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
-  <li class="breadcrumb-item active" aria-current="page">Perfumería y Limpieza</li>
-</ol>
- <!-- <a href="/productos/com"><button type="button" class="btnb btn-lg btn-inline-block">Comestibles</button></a>
- <a href="/productos/beb"><button type="button" class="btnb btn-lg btn-inline-block">Bebidas</button></a> -->
-@elseif($subcategoria->name=="Comestibles")
 <ol  id="linkCat"
  class="breadcrumb">
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
   <li class="breadcrumb-item active" aria-current="page">Comestibles</li>
 </ol>
- <!-- <a href="/productos/beb"><button type="button" class="btnb btn-lg btn-inline-block">Bebidas</button></a>
-<a href="/productos/limp"><button type="button" class="btnb btn-lg btn-inline-block">Perfumería y Limpieza</button></a> -->
-@endif
-@endforeach
-@foreach($subcategorias as $subcategoria)
-<h2 class="titulo-productos"><strong> {{$subcategoria->name}}</strong></h2>
-@endforeach
 
-@endif
 
-@if(isset($subcategorias))
+
+
+
+
+
 <div style="display:flex" class="botoncat">
 
 
   <div class="dropdown">
-      @foreach ($subcategorias as $subcategoria)
+
       <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
       aria-haspopup="true" aria-expanded="false">
       Categorías
       </a>
 
   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    @if($subcategoria->name=="Bebidas")
-    <a class="dropdown-item" href="/productos/detallesSub/beb/alcohol">Con Alcohol</a>
-    <a class="dropdown-item" href="/productos/detallesSub/beb/sinAlcohol">Sin Alcohol</a>
 
-    @elseif($subcategoria->name=="Perfumería y Limpieza")
-    <a class="dropdown-item" href="/productos/detallesSub/limp/higiene">Higiene Personal</a>
-    <a class="dropdown-item" href="/productos/detallesSub/limp/super">Superficies y Pisos</a>
-    <a class="dropdown-item" href="/productos/detallesSub/limp/repelentes">Repelentes</a>
-    <a class="dropdown-item" href="/productos/detallesSub/limp/ropa">Ropa</a>
-    <a class="dropdown-item" href="/productos/detallesSub/limp/varios">Varios</a>
-    @elseif($subcategoria->name=="Comestibles")
 
     <a class="dropdown-item" href="/productos/detallesSub/com/fiambresQuesos">Fiambres y Quesos</a>
     <a class="dropdown-item" href="/productos/detallesSub/com/aceites">Aceites y Vinagres</a>
@@ -110,24 +73,43 @@ class="breadcrumb">
 
     <a class="dropdown-item" href="/productos/detallesSub/com/cereales">Cereales</a>
     <a class="dropdown-item" href="/productos/detallesSub/com/congelados">Congelados</a>
-    @endif
-    @endforeach
+
+
   </div>
 </div>
-<strong style="padding:1% 1% 1% 3%; font-size:1.2rem"> Filtrá por Categorías </strong >
+
 </div>
-@endif
+<br>
 
 
-@if(isset($subcategorias))
+<div class="dropdown">
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Ordenar por
+  </a>
 
-<div class="row" id="div-papi">
-      @foreach ($subcategorias as $subcategoria)
-      @foreach($subcategoria ->categorias as $categoria)
-      @foreach ($categoria->products as $product)
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item"href="/productos/com/Mayor-Com">Precio:Mayor</a>
+    <a class="dropdown-item" href="/productos/com/Menor-Com">Precio:Menor</a>
+    <a class="dropdown-item" href="/productos/com/a-z-Com">A-Z</a>
+    <a class="dropdown-item" href="/productos/com/z-a-Com">Z-A</a>
+    <a class="dropdown-item" href="/productos/com/Desc-Com">Del mas Viejo al mas Nuevo</a>
+    <a class="dropdown-item" href="/productos/com/Asc-Com">Del mas Nuevo al mas Viejo</a>
+    <a class="dropdown-item" href="/productos/com/promo-Com">En Promo</a>
+  </div>
+</div>
+
+<br>
+
+
+<br>
+
+    <div class="row" id="div-papi">
+@if(isset($productos))
+      @foreach ($productos as $product)
+
+ @if($product->dameSubCategoria()   == "Comestibles")
       <div class="col-sm-4" id="div-producto{{$product->id}}">
     <div class="card mb-3">
-
         <div class="card-producto">
           <div class="producto-hover">
               <div class="producto-hover-content">
@@ -141,6 +123,7 @@ class="breadcrumb">
                   @endif
                   @if($product->stock == 0)
 
+                    <!-- <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a> -->
                     <strong >Sin stock</strong>
 
                     @elseif($product->stock > 0)
@@ -156,26 +139,26 @@ class="breadcrumb">
 
           <ul class="list-group">
 
- <li class="list-group-item list-group-item-danger">Sin stock</li>
+            <li class="list-group-item list-group-item-danger">Sin stock</li>
 
-</ul>
+            </ul>
             <br>
             @elseif($product->stock < 50)
 
             <ul class="list-group">
 
-  <li class="list-group-item list-group-item-warning">Stock Limitado</li>
+            <li class="list-group-item list-group-item-warning">Stock Limitado</li>
 
-</ul>
+            </ul>
             <br>
             @elseif($product->stock >= 50)
 
 
             <ul class="list-group">
 
-  <li class="list-group-item list-group-item-success">Disponible</li>
+            <li class="list-group-item list-group-item-success">Disponible</li>
 
-</ul>
+            </ul>
             <br>
 
             @endif
@@ -183,27 +166,30 @@ class="breadcrumb">
 
             <img src="/storage/{{$product->avatar}}" alt="">
 
+            </div>
+
+
+            <div class="titulo">
+                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}
+                <br>
+                {{$product->dameSubCategoria()}}</h5></a>
+                <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
+                    Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
+                @endif <br> Precio: $ {{$product->price}} </em></p>
+
+            </div>
+     </form>
         </div>
-
-
-        <div class="titulo">
-            <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}</h5></a>
-            <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
-                  Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-              @endif <br> Precio: $ {{$product->price}} </em></p>
-
         </div>
-        </form>
-        </div>
-      </div>
+    @endif
+      @endforeach
 
-@endforeach
-@endforeach
-@endforeach
-
-</div>
 @endif
 </div>
+</div>
+
+
+
 
 <script src="../js/botonarriba.js"></script>
 <script src="../js/librerias.js"></script>

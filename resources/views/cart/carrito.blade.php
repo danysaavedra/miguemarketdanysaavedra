@@ -68,6 +68,7 @@
             $suma = array_sum($subtotal);
             ?>
             @endforeach
+
             @endif
 
 
@@ -101,9 +102,6 @@
           </ul>
         </div>
       </div>
-
-
-
       </form>
       @endif
 

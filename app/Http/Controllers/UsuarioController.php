@@ -28,6 +28,28 @@ class UsuarioController extends Controller
 
       }
 
+      public function borrarPedido($id)
+      {
+        $orderBorrar = Order::find($id);
+
+        return view('pedidosdelete',['orders' => $orderBorrar]);
+
+
+      }
+
+        public function borrarP(Request $request)
+        {
+            $id = $request['id'];
+
+            $order = Order::find($id);
+            $order->delete();
+
+            if ($request->isJson()) {
+              return response()->json(['mensaje' => 'que seas muy feliz']);
+            }
+           return redirect('/pedidos/cliente')->with('mensaje', 'Borrado del Pedido exitoso!');
+        }
+
 
 }
 

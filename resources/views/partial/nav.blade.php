@@ -22,6 +22,8 @@
         <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
   </head>
 
+  <!-- class="enlace_desactivado" -->
+
   <body>
 
     <div class="container-fluid">
@@ -35,13 +37,11 @@
     <ul class="navbar-nav mr-auto">
       <ul class="nav">
   <li>
-      <a class="enlace_desactivado" href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
+      <a href=""><ion-icon name="beer-outline"></ion-icon><br>Productos<span class="flecha">&#9660;</span></a>
       <ul>
 
-
-
           <li>
-            <a  class="enlace_desactivado" href="/productos/com">Comestibles</a>
+            <a href="/productos/com">Comestibles</a>
           <ul>
               <li><a class="" href="/productos/detallesSub/com/fiambresQuesos">Fiambres y Quesos</a></li>
               <li><a class="" href="/productos/detallesSub/com/aceites">Aceites Y Vinagres</a></li>
@@ -68,7 +68,7 @@
           </ul>
 
           </li>
-          <li><a class="enlace_desactivado" href="/productos/limp">Perfumería <br>y Limpieza</a>
+          <li><a href="/productos/limp">Perfumería <br>y Limpieza</a>
             <ul>
                   <li><a class="" href="/productos/detallesSub/limp/super">Superficies y Pisos</a></li>
                   <li><a class="" href="/productos/detallesSub/limp/repelentes">Repelentes</a></li>
@@ -78,7 +78,7 @@
                   </li>
                 </ul>
           </li>
-          <li><a class="enlace_desactivado" href="/productos/beb">Bebidas</a>
+          <li><a href="/productos/beb">Bebidas</a>
               <ul>
                   <li><a class="" href="/productos/detallesSub/beb/alcohol">Con Alcohol</a></li>
                   <li><a class="" href="/productos/detallesSub/beb/sinAlcohol">Sin Alcohol</a></li>
