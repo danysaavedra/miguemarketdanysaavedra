@@ -29,8 +29,8 @@ class CarritoController extends Controller
   //  dd($producto);
 
     if ($producto) {
-      $cantidad = $producto->pivot->quantity + $request->quantity; 
-      
+      $cantidad = $producto->pivot->quantity + $request->quantity;
+
       $user->carrito()->updateExistingPivot($request->product_id,['quantity'=> $cantidad ]);
 
     } else {
@@ -46,7 +46,7 @@ class CarritoController extends Controller
     }
     return redirect( $_SERVER['HTTP_REFERER'])->with('mensaje', 'Producto agregado al carrito exitosamente!');
   }
-  
+
   public function miCarrito(){
     $user =Auth::user();
     $datalles=$user->carrito;
@@ -68,7 +68,7 @@ class CarritoController extends Controller
   }
 
 
-  
+
 
   public function sacarDelCarrito( Request $request){
 

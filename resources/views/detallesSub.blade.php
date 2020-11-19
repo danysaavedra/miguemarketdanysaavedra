@@ -39,19 +39,19 @@
 
     @foreach($categorias as $categoria)
     @if($categoria->name=="Higiene Personal"||$categoria->name=="Superficies y Pisos"||$categoria->name=="Repelentes"||$categoria->name=="Ropa"||$categoria->name=="Varios")
-    <ol style='padding-left:18%' class="breadcrumb">
+    <ol class="breadcrumb justify-content-center">
       <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
       <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
       <li class="breadcrumb-item active" aria-current="page">Perfumería y Limpieza</li>
     </ol>
     @elseif($categoria->name=="Con Alcohol"||$categoria->name=="Sin Alcohol")
-    <ol style='padding-left:18%' class="breadcrumb">
+    <ol class="breadcrumb justify-content-center">
       <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
       <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
       <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
     </ol>
     @elseif($categoria->name=="Fiambres y Quesos"||$categoria->name=="Aceites y Vinagres"||$categoria->name=="Dulces y Mermeladas"||$categoria->name=="Condimentos y Aderezos"||$categoria->name=="Galletitas"||$categoria->name=="Infusiones y Endulzantes"||$categoria->name=="Conservas y Legumbres"||$categoria->name=="Rebozadores"||$categoria->name=="Harinas y Premezclas"||$categoria->name=="Arroz"||$categoria->name=="Fideos"||$categoria->name=="Snacks"||$categoria->name=="Repostería"||$categoria->name=="Lácteos"||$categoria->name=="Panes"||$categoria->name=="Cereales"||$categoria->name=="Congelados")
-    <ol style='padding-left:18%' class="breadcrumb">
+    <ol class="breadcrumb justify-content-center">
     <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
       <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
     <li class="breadcrumb-item active" aria-current="page">Comestibles</li>

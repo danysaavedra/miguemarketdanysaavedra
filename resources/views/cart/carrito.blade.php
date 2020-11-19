@@ -84,15 +84,17 @@
       <input type="hidden" value='{{$detalle->id}}' name="numberId[]">
       <input type="hidden" value='{{$loop->count}}' name="qty">
       <input type="hidden" value='{{$suma}}' name="total">
-      @endforeach
+
+
 <!-- NO INVERTIR ORDEN DE LOS INPUTS -->
+@if(isset($detalle->id))
 
    <div class="card text-center">
-        <div  class="total-carrito">
+        <div class="total-carrito " style="width: 80%; margin: auto auto">
           <ul class="list-group list-group-flush">
-            <li class="list-group-item"><strong>Total Del Carrito</strong></li>
+            <br>
+            <h3 style="color: #F7F1C4">Total Del Carrito</h3>
             <li class="list-group-item">SUBTOTAL: ${{$suma}}</li>
-            <li class="list-group-item">ENVÍO:(ACA SE PODRIA CALCULAR..)</li>
             <li class="list-group-item"> <strong>TOTAL: ${{$suma}}</strong></li>
             <li class="list-group-item">
               <strong>
@@ -103,6 +105,8 @@
         </div>
       </div>
       </form>
+      @endif
+      @endforeach
       @endif
 
 </div>

@@ -38,7 +38,7 @@
  <!-- Elegi como hacer tus compras en tu SuperMigue -->
 
  <!-- botonera productos -->
-<ol class="breadcrumb">
+<ol class="breadcrumb justify-content-center">
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
@@ -48,7 +48,7 @@
  <!-- promociones -->
   <section id="productosDestacados">
     <div class="titulo-productos">
-        <h3>PROMOCIONES <br>Semana del 3/7 al 10/7</h3>
+        <h3>Productos Nuevos en nuestro Super</h3>
       <hr>
     </div>
     @if(isset($productos))
@@ -104,48 +104,34 @@
 <!-- promo -->
 
 <!-- primer carrusel -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <!--   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-        <img src="\img\bannerMigue.jpg" class="d-block w-100" alt="...">
-        </div>
 
-          <div class="carousel-item">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52512.53898028717!2d-58.59321136907228!3d-34.653852189889605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d93bab75a3%3A0xaafe140bc9dea3db!2sRamos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1603384577977!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-<!--
-          <div class="carousel-item">
-              <img src="/img/limpieza.jpg" class="d-block w-100" alt="...">
-            </div> -->
+<div class="card" style="width: 60%; margin: auto auto">
+  <div class="card-body">
+    <h3 class="card-title" style="  font-family: 'Fredoka One', cursive;
+  color: #597aa6;
+  font-weight: 400;"> Envios sin cargo</h3>
+    <p> <strong>  Por las zonas que se especifican en el mapa </strong></p>
+    <p> <strong> Consultar por envios no cubiertos al WhatsApp +54 11 30917451 </strong> </p>
 
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
   </div>
+  <div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m48!1m12!1m3!1d7657.102551716248!2d-58.5648792358041!3d-34.65463791610816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m33!3e0!4m5!1s0x95bcc7da7f0cfc07%3A0xbaf6f94546220d36!2sOro%20998-900%2C%20B1704JNH%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.6592419!2d-58.5626987!4m5!1s0x95bcc7c3c598b81d%3A0xafe3c4dd994ddb85!2sCnel.%20Brandsen%20%26%20Gral.%20Alvarado%2C%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!3m2!1d-34.6547796!2d-58.570595399999995!4m3!3m2!1d-34.6574485!2d-58.573439799999996!4m3!3m2!1d-34.6700278!2d-58.557620199999995!4m3!3m2!1d-34.660104499999996!2d-58.543653!4m3!3m2!1d-34.6455674!2d-58.559697799999995!4m3!3m2!1d-34.654607!2d-58.570436099999995!5e0!3m2!1ses-419!2sar!4v1605793131227!5m2!1ses-419!2sar" height="450" width="100%"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+</div>
+
  <!-- primer carrusel -->
 
   <!-- seccion Comestibles-->
   <section id="productosDestacados">
       <div class="titulo-productos">
           <h3>Comestibles// <br>
-          Infusiones y Endulzantes</h3>
+          Fideos</h3>
         <hr>
       </div>
         @if(isset($productos))
       <div class="container-productos">
           @foreach ($productos as $producto)
-          @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Infusiones y Endulzantes')
+          @if($producto->category->dameSubCategoria() == 'Comestibles' && $producto->dameCategoria() == 'Fideos')
           @if($loop->odd)
           <article class="producto">
             <a href="/productos/detalles/{{$producto->id}}">
@@ -277,14 +263,14 @@
 
     <section id="productosDestacados">
       <div class="titulo-productos">
-          <h3>Perfumería y Limpieza //<br> Higiene Personal
+          <h3>Perfumería y Limpieza //<br> Varios
         </h3>
         <hr>
       </div>
       @if(isset($productos))
       <div class="container-productos">
         @foreach ($productos as $producto)
-        @if($producto->category->dameSubCategoria() == 'Perfumería y Limpieza' && $producto->dameCategoria() == 'Higiene Personal')
+        @if($producto->category->dameSubCategoria() == 'Perfumería y Limpieza' && $producto->dameCategoria() == 'Varios')
 
         <article class="producto">
 

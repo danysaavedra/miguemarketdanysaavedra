@@ -33,7 +33,7 @@
 <br>
 <h2 style="text-align :center" class="titulo-productos">Encontrá acá Todos tus Productos</h2>
 
-<ol class="breadcrumb">
+<ol class="breadcrumb justify-content-center">
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item"><a href="/productos/beb">Bebidas</a></li>
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>

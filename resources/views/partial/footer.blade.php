@@ -7,7 +7,7 @@
                 </div>
 
                 <div class="col-sm-4 col-lg-4" id="infoFoo">
-                    <h5>INFO </h5>
+                    <h5>INFO</h5>
                     <ul>
                         <li><a href="https://web.whatsapp.com/" target="_blank">011 15 30917451 </a></li>
                         <li><a href="mailto:..">migue@gmail.com</a></li>

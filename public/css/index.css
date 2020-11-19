@@ -84,8 +84,13 @@ background-color: #346397;
 .breadcrumb a{
 
 color:#F7F1C4;
-
 }
+.breadcrumb a:hover{
+
+  text-decoration: none;
+}
+
+
 footer h5{
   color: #F7F1C4;
 }
@@ -268,26 +273,26 @@ border-radius: 100%;
   font-weight: 400;
 }
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
-  color: #597aa6;
-  background-color: #e2efee;
+  color: #F7F1C4;
+  background-color: #007ECF;
   border-color: #e2efee;
 }
 .btn-secondary {
-  color: #597aa6;
-  background-color: #e2efee;
+  color: #F7F1C4;
+  background-color: #007ECF;
   border: groove;
 }
 .btn-secondary:hover {
-    color: #597aa6;
+    color:#007ECF;
     background-color: #e2efee;
     border-color: #e2efee;
 }
-.breadcrumb{
+/* .breadcrumb{
   font-size: 2em;
   border: #007ECF;
   background-color:#007ECF;
   margin-top: 2%;
-}
+} */
 section {
   margin-top: 0px;
 }
@@ -453,7 +458,7 @@ section {
              border-color:cornflowerblue;
              width: 150px;
              align-items: center;
-             margin:0% 0% 0% 45%;
+             margin:0% 0% 0% auto;
              margin-top: 10px;
              line-height: 49px;
 
@@ -475,8 +480,6 @@ section {
       font-size: 1.3em;
       border: #007ECF;
       background-color:#007ECF;
-      margin-top: 0%;
-      padding-left: 8%;
       font-weight: bold;
     }
     .btnon {
@@ -486,7 +489,7 @@ section {
       border-color:cornflowerblue;
       width: 150px;
       align-items: center;
-      margin:0% 0% 0% 83px;
+      margin:0 auto;
       margin-top: 10px;
       line-height: 49px;
 
@@ -618,11 +621,9 @@ section {
   @media (min-width: 374px) {
 
     .breadcrumb{
-      font-size: 1.3em;
+      font-size: 1.5em;
       border: #007ECF;
       background-color:#007ECF;
-      margin-top: 0%;
-      padding-left: 10%;
       font-weight: bold;
     }
     .btnon {
@@ -632,7 +633,7 @@ section {
       border-color:cornflowerblue;
       width: 150px;
       align-items: center;
-      margin:0% 0% 0% 115px;
+      margin:0 auto;
       margin-top: 10px;
       line-height: 49px;
 
@@ -778,10 +779,9 @@ section {
     ;
   }
   .breadcrumb{
-    font-size: 1.4em;
+    font-size: 1.6em;
     border: #007ECF;
     background-color:#007ECF;
-    margin-top: 0%;
     font-weight: bold;
   }
   .btnon {
@@ -791,7 +791,7 @@ section {
     border-color:cornflowerblue;
     width: 150px;
     align-items: center;
-    margin:0% 0% 0% 137px;
+    margin:0 auto;
     margin-top: 10px;
     line-height: 49px;
 
@@ -812,8 +812,6 @@ section {
     font-size: 1.5em;
     border: #007ECF;
     background-color:#007ECF;
-    margin-top: 0%;
-    padding-left: 10%;
     font-weight: bold;
   }
   .btnon {
@@ -823,7 +821,7 @@ section {
     border-color:cornflowerblue;
     width: 150px;
     align-items: center;
-    margin:0% 0% 0% 265px;
+    margin:0 auto;
     margin-top: 10px;
     line-height: 49px;
 
@@ -917,28 +915,7 @@ section {
 
                                                   /* 900 */
 
-@media (min-width: 900px) {
-  .breadcrumb{
-    font-size: 2em;
-    border: #007ECF;
-    background-color:#007ECF;
-    margin-top: 0%;
-    font-weight: bold;
-  }
-  .producto img{
-    width: 160px;
-    height: 148px;
-  }
-  .producto {
-    width: 33%;
-  }
 
-  #productosDestacados {
-    max-width: 90%;
-    margin: auto;
-  }
-
-}
 
 
                                             /* MEDIAQUERIES */
@@ -949,14 +926,14 @@ section {
 
 
 @media (min-width: 1023px){
-  .breadcrumb{
+/*   .breadcrumb{
     font-size: 1.7em;
     border: #007ECF;
     background-color:#007ECF;
     margin-top: 0%;
     padding-left: 18%;
     font-weight: bold;
-  }
+  } */
   .btnon {
     color: white;
     background-color: #597aa6;
@@ -964,7 +941,7 @@ section {
     border-color:cornflowerblue;
     width: 150px;
     align-items: center;
-    margin:0% 0% 0% 380px;
+    margin:0 auto;
     margin-top: 10px;
     line-height: 49px;
 
@@ -1048,7 +1025,7 @@ height: 237px;
         font-size: 2.3em;
         border: #007ECF;
         background-color:#007ECF;
-        margin-top: 2%;
+
         font-weight: bold;
       }
       .elh1{
@@ -1085,7 +1062,7 @@ height: 237px;
     font-size: 2em;
     border: #007ECF;
     background-color:#007ECF;
-    margin-top: 0%;
+
     font-weight: bold;
   }
   .btnon {
@@ -1095,7 +1072,7 @@ height: 237px;
       border-color:cornflowerblue;
       width: 150px;
       align-items: center;
-      margin:0% 0% 0% 470px;
+      margin:0 auto;
       margin-top: 10px;
       line-height: 49px;
 
@@ -1159,7 +1136,7 @@ height: 237px;
     border-color:cornflowerblue;
     width: 150px;
     align-items: center;
-    margin:0% 0% 0% 760px;
+    margin:0 auto;
     margin-top: 10px;
     line-height: 49px;
 
@@ -1180,13 +1157,12 @@ height: 237px;
       height: 467px;
     }
     .breadcrumb {
-      padding-left: 28%;
       font-size: 2em;
       border: #007ECF;
       background-color: #007ECF;
-      margin-top: 0%;
       font-weight: bold;
   }
+
 }
 
 
@@ -1197,28 +1173,31 @@ height: 237px;
     /* estilo barra png's creditcard/delivery/location/ok */
 
   .creditcard {
-    width: 25%;
+    width: 18%;
     display: block;
     margin: auto;
     padding-top: 2%;
   }
 
   .delivery {
-    width: 25%;
+    width: 23%;
     display: block;
     margin: auto;
+    padding-top: 2%;
   }
 
   .location {
-    width: 25%;
+    width: 23%;
     display: block;
     margin: auto;
+    padding-top: 2%;
   }
 
   .ok {
-    width: 27%;
+    width: 25%;
     display: block;
     margin: auto;
+    padding-top: 2%;
   }
 
   .texto1 {
@@ -1250,21 +1229,22 @@ height: 237px;
     }
 
     .creditcard {
-      width: 35%;
-      padding-top: 2%;
+      width: 55%;
+      padding-top: 15%;
       display: block;
       margin: auto;
     }
 
     .delivery {
-      width: 35%;
-      padding-top: 2%;
+      width: 60%;
+      padding-top: 15%;
       display: block;
       margin: auto;
     }
 
     .location {
-      width: 35%;
+      width: 60%;
+      padding-top: 15%;
       display: block;
       margin: auto;
 
@@ -1272,6 +1252,7 @@ height: 237px;
 
     .ok {
       width: 60%;
+      padding-top: 15%;
       display: block;
       margin-left:16%;
     }
@@ -1288,7 +1269,61 @@ height: 237px;
     }
 
   }
+  @media (min-width:1000px) and (max-width:1399px) {
+    .row-barra {
+      margin: 0.5%;
+      display:flex;
+      flex-wrap: wrap;
+      flex-direction: row;
 
+    }
+
+    .creditcard {
+      width: 75%;
+      padding-top: 15%;
+      display: block;
+      margin: auto;
+    }
+
+    .delivery {
+      width: 80%;
+      padding-top: 15%;
+      display: block;
+      margin: auto;
+    }
+
+    .location {
+      width: 80%;
+      padding-top: 15%;
+      display: block;
+      margin: auto;
+
+    }
+
+    .ok {
+      width: 80%;
+      padding-top: 15%;
+      display: block;
+      margin-left:16%;
+    }
+
+    .texto1 {
+      width: auto;
+      font-size: 1em;
+    }
+
+
+    .texto2 {
+      width: auto;
+      font-size: 14px;
+    }
+
+
+
+
+
+
+  }
 
 .migueblanco{
   border: 2px solid;
@@ -1297,6 +1332,7 @@ height: 237px;
   text-align: center;
 }
 .verMas{
+  text-align: center;
   margin: 1%  1%  5%  1%;
 }
 

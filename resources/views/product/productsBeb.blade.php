@@ -30,8 +30,7 @@
 
 <h2 style="text-align :center" class="titulo-productos"><strong>Bebidas</strong></h2>
 
-<ol  id="linkCat"
- class="breadcrumb">
+<ol class="breadcrumb justify-content-center">
   <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
   <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
   <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
