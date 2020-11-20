@@ -206,7 +206,7 @@
 
 <!-- botonVerMas -->
 <div class="verMas">
-<a href='/productos/detallesSub/com/infusiones'> <button type="button" class="btnon">Ver Más</button></a>
+<a href="{{route('fideos')}}"> <button type="button" class="btnon">Ver Más</button></a>
 </div>
 <!-- botonVerMas -->
 
@@ -295,7 +295,6 @@
                   <img src="/storage/{{$producto->avatar}}"alt="Comestible">
                   </a>
 
-
                   @if($producto->stock == 0)
 
             <br>
@@ -348,7 +347,7 @@
      <!-- botonVerMas -->
 
     <div class="verMas">
-      <a href='/productos/detallesSub/limp/higiene'> <button type="button" class="btnon">Ver Más</button></a>
+      <a href="{{route('varios')}}"> <button type="button" class="btnon">Ver Más</button></a>
     </div>
 
 <!-- botonVerMas -->

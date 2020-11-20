@@ -84,7 +84,7 @@
       <input type="hidden" value='{{$detalle->id}}' name="numberId[]">
       <input type="hidden" value='{{$loop->count}}' name="qty">
       <input type="hidden" value='{{$suma}}' name="total">
-
+      @endforeach
 
 <!-- NO INVERTIR ORDEN DE LOS INPUTS -->
 @if(isset($detalle->id))
@@ -106,7 +106,7 @@
       </div>
       </form>
       @endif
-      @endforeach
+
       @endif
 
 </div>

@@ -9,6 +9,10 @@ use \App\User;
 use \App\Product;
 use App\Order;
 
+use Illuminate\Support\Facades\Mail;
+use App\Mail\CorreoDelPedido;
+use App\Mail\CorreoParaAdmin;
+
 class OrderController extends Controller
 {
 
@@ -39,6 +43,33 @@ class OrderController extends Controller
    $order = new Order();
    $order->cart = serialize($cart);
    Auth::user()->orders()->save($order);
+
+
+   $orders = Auth::user()->orders;
+   $orders->transform(function($order, $key)
+   {
+       $order->cart = unserialize($order->cart);
+       return $order;
+   });
+
+   $email=Auth::user()->email;
+
+
+    Mail::to($email)->send(new CorreoDelPedido($orders->last()));
+
+    $orders = Order::all();
+
+    $orders->transform(function($order, $key)
+    {
+        $order->cart = unserialize($order->cart);
+
+        return $order;
+    });
+
+
+    Mail::to('maildepruebasdany@gmail.com')->send(new CorreoParaAdmin($orders->last()));
+
+
    return redirect('/')->with('mensaje', 'TU PEDIDO SE PROCESÓ CON EXITO! (En breve nos comunicaremos con vos.)');
   }
 

@@ -36,7 +36,7 @@ Route::get('/productos/detallesSub/limp/higiene', 'ProductoController@subHig');
 Route::get('/productos/detallesSub/limp/super', 'ProductoController@subSuper');
 Route::get('/productos/detallesSub/limp/repelentes', 'ProductoController@subRepe');
 Route::get('/productos/detallesSub/limp/ropa', 'ProductoController@subRopa');
-Route::get('/productos/detallesSub/limp/varios', 'ProductoController@subVar');
+Route::get('/productos/detallesSub/limp/varios', 'ProductoController@subVar')->name('varios');
 
 //limpiezaFiltrado
 Route::get('/productos/limp', 'ProductoController@catProdLimpi');
@@ -79,7 +79,7 @@ Route::get('/productos/detallesSub/com/rebozadores', 'ProductoController@subRebo
 Route::get('/productos/detallesSub/com/harinas', 'ProductoController@subHari');
 Route::get('/productos/detallesSub/com/arroz', 'ProductoController@subArroz');
 
-Route::get('/productos/detallesSub/com/fideos', 'ProductoController@subFid');
+Route::get('/productos/detallesSub/com/fideos', 'ProductoController@subFid')->name('fideos');
 Route::get('/productos/detallesSub/com/snacks', 'ProductoController@subSnacks');
 Route::get('/productos/detallesSub/com/reposteria', 'ProductoController@subRepo');
 Route::get('/productos/detallesSub/com/lacteos', 'ProductoController@subLac');
