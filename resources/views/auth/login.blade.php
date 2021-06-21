@@ -4,9 +4,13 @@
 
 <div class="log">
     <div class="row justify-content-center">
+
+
         <div class="col-md-6">
             <div class="card">
                 <div style="background-color: #597aa6;" class="card-header" ><h4>{{ __('- LOGIN -') }}</h4></div>
+
+
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
@@ -66,15 +70,6 @@
                                 @endif
                             </div>
                         </div>
-
-
-                      <!-- <div class="col-12">
-                            <div class="col-sm-6">
-                                <a href="/login/facebook" class="btn btn-info">Ingresar con Facebook</a>
-                            </div>
-                        </div>
- -->
-
                       </div>
                     </form>
                 </div>

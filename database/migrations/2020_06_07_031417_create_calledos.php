@@ -15,7 +15,7 @@ class CreateCalledos extends Migration
      {
          Schema::table('users', function (Blueprint $table) {
 
-              $table->string('calle2', 100);
+              $table->string('calle2', 100)->nullable();
 
 
 

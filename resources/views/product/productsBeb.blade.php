@@ -5,15 +5,15 @@
 
 
 <div class="container">
-  <form  class="buscador" action="/listaProductos" method="get">
+  <form class="buscador" action="/listaProductos" method="get">
     <div class="input-group mt-3">
       <input type="text" name="name" class="form-control" placeholder="¿¿QUE ESTÁS BUSCANDO??" aria-label="¿¿QUE ESTÁS BUSCANDO??" aria-describedby="basic-addon2">
-          <div class="input-group-append">
-              <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
-          </div>
+      <div class="input-group-append">
+        <button class="input-group-text" id="basic-addon2" type="submit"><i class="fas fa-search"></i></button>
+      </div>
     </div>
   </form>
-  <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+  <a class="ir-arriba" javascript:void(0) title="Volver arriba">
     <span class="fa-stack">
       <i class="fa fa-circle fa-stack-2x"></i>
       <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
@@ -28,87 +28,86 @@
 
   <br>
 
-<h2 style="text-align :center" class="titulo-productos"><strong>Bebidas</strong></h2>
+  <h2 style="text-align :center" class="titulo-productos"><strong>Bebidas</strong></h2>
 
-<ol class="breadcrumb justify-content-center">
-  <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
-  <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
-  <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
-</ol>
-
-
+  <ol class="breadcrumb justify-content-center">
+    <li class="breadcrumb-item"><a href="/productos/com">Comestibles</a></li>
+    <li class="breadcrumb-item"><a href="/productos/limp">Perfumería y Limpieza</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Bebidas</li>
+  </ol>
 
 
 
 
-<div style="display:flex" class="botoncat">
 
 
-  <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-      aria-haspopup="true" aria-expanded="false">
-      Categorías
+  <div style="display:flex" class="botoncat">
+
+
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Categorías
       </a>
 
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="/productos/detallesSub/beb/sinAlcohol">Con Alcohol</a>
-    <a class="dropdown-item" href="/productos/detallesSub/beb/alcohol">Sin Alcohol</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="/productos/detallesSub/beb/sinAlcohol">Con Alcohol</a>
+        <a class="dropdown-item" href="/productos/detallesSub/beb/alcohol">Sin Alcohol</a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 
-<br>
-<div class="dropdown">
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Ordenar por
-  </a>
+  <br>
+  <div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Ordenar por
+    </a>
 
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item"href="/productos/beb/Mayor-Beb">Precio:Mayor</a>
-    <a class="dropdown-item" href="/productos/beb/Menor-Beb">Precio:Menor</a>
-    <a class="dropdown-item" href="/productos/beb/a-z-Beb">A-Z</a>
-    <a class="dropdown-item" href="/productos/beb/z-a-Beb">Z-A</a>
-    <a class="dropdown-item" href="/productos/beb/Desc-Beb">Del mas Viejo al mas Nuevo</a>
-    <a class="dropdown-item" href="/productos/beb/Asc-Beb">Del mas Nuevo al mas Viejo</a>
-    <a class="dropdown-item" href="/productos/beb/promo-Beb">En Promo</a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="/productos/beb/Mayor-Beb">Precio:Mayor</a>
+      <a class="dropdown-item" href="/productos/beb/Menor-Beb">Precio:Menor</a>
+      <a class="dropdown-item" href="/productos/beb/a-z-Beb">A-Z</a>
+      <a class="dropdown-item" href="/productos/beb/z-a-Beb">Z-A</a>
+      <a class="dropdown-item" href="/productos/beb/Desc-Beb">Del mas Viejo al mas Nuevo</a>
+      <a class="dropdown-item" href="/productos/beb/Asc-Beb">Del mas Nuevo al mas Viejo</a>
+      <a class="dropdown-item" href="/productos/beb/promo-Beb">En Promo</a>
+    </div>
   </div>
-</div>
 
-<br>
-
-
-<br>
+  <br>
 
 
-    <div class="row" id="div-papi">
-@if(isset($productos))
-      @foreach ($productos as $product)
+  <br>
 
- @if($product->dameSubCategoria()   == "Bebidas")
-      <div class="col-sm-4" id="div-producto{{$product->id}}">
-    <div class="card mb-3">
+
+  <div class="row" id="div-papi">
+    @if(isset($productos))
+    @foreach ($productos as $product)
+
+    @if($product->dameSubCategoria() == "Bebidas")
+    <div class="col-sm-4" id="div-producto{{$product->id}}">
+      <div class="card mb-3">
         <div class="card-producto">
           <div class="producto-hover">
-              <div class="producto-hover-content">
-                  <form action="/productos/agregarCarrito" method="post">
-                  @csrf
+            <div class="producto-hover-content">
+              <form action="/productos/agregarCarrito" method="post">
+                @csrf
 
-                  @if(Auth::user() && $product->stock > 0)
+                @if(Auth::user() && $product->stock > 0)
 
 
-                  <button type="submit" class=""  name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
-                  @endif
-                  @if($product->stock == 0)
+                <button type="submit" class="" name="product_id" value="{{$product->id}}"><i class="fas fa-cart-plus"></i></button>
+                @endif
+                @if($product->stock == 0)
 
-                    <!-- <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a> -->
-                    <strong >Sin stock</strong>
+                <!-- <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a> -->
+                <strong>Sin stock</strong>
 
-                    @elseif($product->stock > 0)
+                @elseif($product->stock > 0)
 
-                    <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
-                    @endif
+                <a href="/productos/detalles/{{$product->id}}"><i class="fas fa-search-plus"></i></a>
+                @endif
 
-              </div>
+            </div>
           </div>
 
           @if($product->stock == 0)
@@ -118,11 +117,9 @@
 
             <li class="list-group-item list-group-item-danger">Sin stock</li>
 
-            </ul>
-            <br>
-            @elseif($product->stock < 50)
-
-            <ul class="list-group">
+          </ul>
+          <br>
+          @elseif($product->stock < 50) <ul class="list-group">
 
             <li class="list-group-item list-group-item-warning">Stock Limitado</li>
 
@@ -133,7 +130,7 @@
 
             <ul class="list-group">
 
-            <li class="list-group-item list-group-item-success">Disponible</li>
+              <li class="list-group-item list-group-item-success">Disponible</li>
 
             </ul>
             <br>
@@ -143,27 +140,30 @@
 
             <img src="/storage/{{$product->avatar}}" alt="">
 
-            </div>
-
-
-            <div class="titulo">
-                <a href="/productos/detalles/{{$product->id}}"><h5>{{$product->name}}
-                <br>
-                {{$product->dameSubCategoria()}}</h5></a>
-                <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
-                    Cuántos querés?         <input style="text-align:center;margin-left: 5%;width:10%"type="number" min =1  name="quantity" placeholder="0" required>
-                @endif <br> Precio: $ {{$product->price}} </em></p>
-
-            </div>
-     </form>
         </div>
+
+
+        <div class="titulo">
+          <a href="/productos/detalles/{{$product->id}}">
+            <h5>{{$product->name}}
+              <br>
+              {{$product->dameSubCategoria()}}
+            </h5>
+          </a>
+          <p style="color:black; font-size:1em"><em> @if($product->stock > 0)
+              Cuántos querés? <input style="text-align:center;margin-left: 5%;width:10%" type="number" min=1 name="quantity" placeholder="0" required>
+              @endif <br> Precio: $ {{$product->price}} </em></p>
+
         </div>
+        </form>
+      </div>
+    </div>
     @endif
 
-      @endforeach
+    @endforeach
 
-@endif
-</div>
+    @endif
+  </div>
 </div>
 
 

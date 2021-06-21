@@ -15,7 +15,7 @@ class CreateCalle extends Migration
      {
          Schema::table('users', function (Blueprint $table) {
 
-               $table->string('calle1', 100);
+               $table->string('calle1', 100)->nullable();
 
 
 

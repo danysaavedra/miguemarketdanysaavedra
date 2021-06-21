@@ -16,7 +16,7 @@ class User extends Authenticatable
    * @var array
    */
   protected $fillable = [
-      'name', 'lastname','email','domicilio','nro', 'dto','piso','localidad','partido','calle1', 'calle2','tel1','tel2', 'password', 'foto',
+      'name', 'lastname','email','domicilio','nro','localidad','partido','tel1','password', 'foto','confirmation_code'
   ];
 
   /**
@@ -58,8 +58,8 @@ public function hasAnyRole($roles)
         }
     } else {
         if ($this->hasRole($roles)) {
-             return true; 
-        }   
+             return true;
+        }
     }
     return false;
 }

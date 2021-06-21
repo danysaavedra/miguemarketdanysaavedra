@@ -15,7 +15,7 @@ class CreateColPiso extends Migration
      {
          Schema::table('users', function (Blueprint $table) {
 
-              $table->string('piso', 100);
+              $table->string('piso', 100)->nullable();
 
 
 

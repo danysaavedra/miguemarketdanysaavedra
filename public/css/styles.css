@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Estilos del Nav */
 
 .logoMigue {
-    background-image: url(..\img\miguelogocnro.png);
+    background-image: url(..\img\miguelogocnro1.png);
     background-repeat: no-repeat;
     background-size:contain;
     position: absolute;
@@ -262,6 +262,9 @@ color: #597aa6;
   font-family: 'Quicksand', sans serif;
 }
 
+
+
+
 footer {
     background-color: #007ECF;
     padding-top: 5px;
@@ -296,7 +299,6 @@ footer .logo-footer {
 
 footer h5 {
     font-size: 1.3em;
-
     margin-top: 15px;
     text-transform: uppercase;
 }
@@ -668,7 +670,7 @@ footer.logo-footer {
   }
 
   nav .logoMigue{
-    background-image: url(../img/miguelogocnro.png);
+    background-image: url(../img/miguelogocnro1.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -859,7 +861,7 @@ footer.logo-footer {
   }
 
 nav .logoMigue {
-  background-image: url(../img/miguelogocnro.png);
+  background-image: url(../img/miguelogocnro1.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -1041,7 +1043,7 @@ nav ul li a{
 
 
   nav .logoMigue {
-    background-image: url(../img/miguelogocnro.png);
+    background-image: url(../img/miguelogocnro1.png);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;

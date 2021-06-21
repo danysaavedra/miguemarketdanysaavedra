@@ -1,5 +1,5 @@
 <?php
-            
+
 use Illuminate\Database\Seeder;
 
 class sederDePrueba extends Seeder
@@ -35,7 +35,7 @@ class sederDePrueba extends Seeder
               'avatar' => '../img/seedPro/siemLib.png',
               'category_id' => 18,
               'stock' => 50,
-              'promo' => 0,
+              'promo' => 1,
             ]
         );
 
@@ -58,7 +58,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\alcGel.png',
                 'category_id' => 18,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -108,7 +108,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\AntiAyu.png',
                 'category_id' => 19,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -229,7 +229,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\aublem900Neg.png',
                 'category_id' => 19,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -307,7 +307,7 @@ class sederDePrueba extends Seeder
               'avatar' => '..\img\seedPro\procx900Mar.png',
               'category_id' => 19,
               'stock' => 50,
-              'promo' => 0,
+              'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -362,7 +362,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\echo450Re.png',
                 'category_id' => 19,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         // PERFURMERÍA Y LIMPIEZA
@@ -408,7 +408,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\insRaidAero.png',
                 'category_id' => 20,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
 
@@ -446,7 +446,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\suaViv900.png',
                 'category_id' => 21,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -505,7 +505,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\papelMant.png',
                 'category_id' => 22,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -586,7 +586,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\mermBroLightArand.png',
                 'category_id' => 3,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -829,7 +829,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\mermCabLightFb.png',
                 'category_id' => 3,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
 
@@ -978,7 +978,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\mariNsLinoChia.png',
                 'category_id' => 5,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -1084,7 +1084,7 @@ class sederDePrueba extends Seeder
                 'avatar' => '..\img\seedPro\galleCereBagleyAvena.png',
                 'category_id' => 5,
                 'stock' => 50,
-                'promo' => 0,
+                'promo' => 1,
             ]
         );
         DB::table('products')->insert(
@@ -3462,7 +3462,7 @@ class sederDePrueba extends Seeder
                     'promo' => 0,
                 ]
             );
-            
+
 
 
     }

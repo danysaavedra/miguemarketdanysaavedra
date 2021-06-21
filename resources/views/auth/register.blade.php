@@ -78,7 +78,7 @@
                                 @enderror
                             </div>
                         </div>
-
+<!--
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="dto" class="col-form-label text-md-left">{{ __('Dpto.') }}</label>
@@ -98,7 +98,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -125,10 +125,10 @@
                                 @enderror
                             </div>
                         </div>
-
+<!--
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label for="calle1" class="col-form-label text-md-left">{{ __('Entre calle 1 *') }}</label>
+                                <label for="calle1" class="col-form-label text-md-left">{{ __('Entre calle *') }}</label>
                                 <input id="calle1" type="text" class="form-control @error('calle1') is-invalid @enderror" name="calle1" value="{{ old('calle1') }}" autocomplete="calle1" autofocus>
 
                                 @error('calle1')
@@ -137,8 +137,8 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
-
+                        </div> -->
+<!--
                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="calle2" class="col-form-label text-md-left">{{ __('Entre Calle 2 *') }}</label>
@@ -150,7 +150,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-sm-6">
                             <div class="form-group">
@@ -165,7 +165,7 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-6">
+<!--                         <div class="col-sm-6">
                             <div class="form-group">
                                 <label for="tel2" class="col-form-label text-md-left">{{ __('teléfono 2 *') }}</label>
                                 <input id="tel2" type="number" class="form-control @error('tel2') is-invalid @enderror" name="tel2" value="{{ old('tel2') }}" autocomplete="tel2" autofocus>
@@ -176,7 +176,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col-sm-6">
                             <div class="form-group">

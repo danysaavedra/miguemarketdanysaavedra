@@ -35,8 +35,8 @@ class OrderController extends Controller
    $carritoCompra = $request->except('_token');
    if(isset($carritoCompra['numberId'])) {
     foreach($carritoCompra['numberId'] as $key => $value){
-   $carritos = Cart::where('product_id', '=', $value);
-   $carritos->delete();
+      $carritos = Cart::where('product_id', '=', $value);
+      $carritos->delete();
      }
     }
    $cart = new Cart ($carritoCompra);
